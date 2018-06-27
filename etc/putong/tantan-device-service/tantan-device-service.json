@@ -1,0 +1,17 @@
+{
+	"listen":":21224",
+    "debuglisten":":21225",
+	"syslog": {
+		"Output": [
+			"syslog"
+		  ],
+		  "Syslog": {
+			"Address": "10.9.169.163:514",
+			"Facility": "local6",
+			"Protocol": "udp"
+		  }
+	},
+	"debug" : {
+		"enable": true
+	}
+}

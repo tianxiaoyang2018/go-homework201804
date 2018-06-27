@@ -1,0 +1,747 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-16 16:49+0800\n"
+"PO-Revision-Date: 2018-04-03 11:29+0800\n"
+"Last-Translator: Jipeng Li\n"
+"Language-Team: Thai (Thailand)\n"
+"Language: th-TH\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Project-Id: 17300\n"
+"X-Loco-Lookup: id\n"
+"X-Loco-Api-Version: 1.0.19 20180328-1"
+
+#: backend 完成.xlsx loco:58985f2c52e1a173538b456c
+#| msgid "[Audio]"
+msgid "MEDIA_MESSAGE_AUDIO_PREVIEW_TEXT"
+msgstr "[เสียง]"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4587
+#| msgid "[Audio] received, please update Tantan to listen to it"
+msgid "MEDIA_MESSAGE_AUDIO_UPGRADE_TEXT"
+msgstr "ได้รับ [เสียง] กรุณาอัปเดต Tantan เพื่อฟัง"
+
+#: backend 完成.xlsx loco:58985f2c52e1a173538b4568
+#| msgid "[Picture]"
+msgid "MEDIA_MESSAGE_IMAGE_PREVIEW_TEXT"
+msgstr "[รูปภาพ]"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4586
+#| msgid "[Picture] received, please update Tantan to see it"
+msgid "MEDIA_MESSAGE_IMAGE_UPGRADE_TEXT"
+msgstr "ได้รับ [รูปภาพ] กรุณาอัปเดต Tantan เพื่อดู"
+
+#: backend 完成.xlsx loco:58985f2c52e1a173538b456b
+#| msgid "[Location]"
+msgid "MEDIA_MESSAGE_LOCATION_PREVIEW_TEXT"
+msgstr "[ตำแหน่ง]"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b458b
+#| msgid "[Location] received, please update Tantan to see it"
+msgid "MEDIA_MESSAGE_LOCATION_UPGRADE_TEXT"
+msgstr "ได้รับ [ตำแหน่ง] กรุณาอัปเดต Tantan เพื่อดู"
+
+#: backend.xlsx loco:58204c1452e1a126758b4571
+#| msgid "❤"
+msgid "MEDIA_MESSAGE_MOMENTLIKE_UPGRADE_TEXT"
+msgstr "❤"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b458a
+#| msgid ""
+#| "[Question Game] message received, please update Tantan to see the "
+#| "question options"
+msgid "MEDIA_MESSAGE_QUESTION_UPGRADE_TEXT"
+msgstr "ได้รับ [เกมคำถาม] กรุณาอัปเดต Tantan เพื่อดูตัวเลือกคำถาม"
+
+#: backend 完成.xlsx loco:58985f2c52e1a173538b456a
+#| msgid "[Sticker]"
+msgid "MEDIA_MESSAGE_STICKER_PREVIEW_TEXT"
+msgstr "[สติกเกอร์]"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4589
+#| msgid "[Sticker] received, please update Tantan to see it"
+msgid "MEDIA_MESSAGE_STICKER_UPGRADE_TEXT"
+msgstr "ได้รับ [สติกเกอร์] กรุณาอัปเดต Tantan เพื่อดู"
+
+#: backend 完成.xlsx loco:58985f2c52e1a173538b4569
+#| msgid "[Video]"
+msgid "MEDIA_MESSAGE_VIDEO_PREVIEW_TEXT"
+msgstr "[วิดีโอ]"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4588
+#| msgid "[Video] received, please update Tantan to see it"
+msgid "MEDIA_MESSAGE_VIDEO_UPGRADE_TEXT"
+msgstr "ได้รับ [วิดีโอ] กรุณาอัปเดต Tantan เพื่อดู"
+
+#: backend 完成.xlsx loco:57b5575614d72501658b4568
+#| msgid "[Audio]"
+msgid "MEIDA_MESSAGE_AUDIO_PREVIEW_TEXT"
+msgstr "[เสียง]"
+
+#: backend 完成.xlsx loco:57ba7b0114d7250d1f8b456e
+#| msgid "❤"
+msgid "MEIDA_MESSAGE_MOMENTLIKE_UPGRADE_TEXT"
+msgstr "❤"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b457f
+#| msgid "You've got %v new matches"
+msgid "PUSH_MESSAGE_AGGREGATED_MATCH_VALUE_TEXT"
+msgstr "คุณได้การจับคู่ใหม่ %v คน"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4579
+#| msgid "Unread messages from %v people"
+msgid "PUSH_MESSAGE_AGGREGATED_MESSAGE_VALUE_TEXT"
+msgstr "ข้อความที่ยังไม่ได้อ่านจาก %v คน"
+
+#: backend.xlsx loco:57b2f65a14d7252a418b4572
+#| msgid "Tantan"
+msgid "PUSH_MESSAGE_APPNAME_TEXT"
+msgstr "Tantan"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4571
+#| msgid "%v sent you a voice message"
+msgid "PUSH_MESSAGE_AUDIO_MESSAGE_TICKER_TEXT"
+msgstr "%v ส่งข้อความเสียงถึงคุณ"
+
+#: backend 完成.xlsx loco:57b2f52c14d725e1418b456b
+#| msgid "[Audio]"
+msgid "PUSH_MESSAGE_AUDIO_MESSAGE_VALUE_TEXT"
+msgstr "[เสียง]"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4572
+#| msgid "%v sent a photo to you"
+msgid "PUSH_MESSAGE_IMAGE_MESSAGE_TICKER_TEXT"
+msgstr "%v ส่งรูปถึงคุณ"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4578
+#| msgid "[Image]"
+msgid "PUSH_MESSAGE_IMAGE_MESSAGE_VALUE_TEXT"
+msgstr "[รูปภาพ]"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4574
+#| msgid "%v sent a location to you"
+msgid "PUSH_MESSAGE_LOCATION_MESSAGE_TICKER_TEXT"
+msgstr "%v ส่งตำแหน่งถึงคุณ"
+
+#: backend 完成.xlsx loco:57b2f63114d725c9418b456d
+#| msgid "[Location]"
+msgid "PUSH_MESSAGE_LOCATION_MESSAGE_VALUE_TEXT"
+msgstr "[ตำแหน่ง]"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4568
+#| msgid ""
+#| "Someone around you just liked you! ❤ Add a real profile picture and find "
+#| "out who he is!"
+msgid "PUSH_MESSAGE_MASS_MESSAGE_FEMALE_TICKER_TEXT"
+msgstr "มีใครบางคนชอบคุณ! ❤ เพิ่มรูปประจำตัวของจริง และหาคำตอบว่าเขาคือใคร!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4569
+#| msgid ""
+#| "Someone around you just liked you! Add a real profile picture and find "
+#| "out who she is!"
+msgid "PUSH_MESSAGE_MASS_MESSAGE_MALE_TICKER_TEXT"
+msgstr "มีใครบางคนชอบคุณ! เพิ่มรูปประจำตัวของจริง และหาคำตอบว่าเธอคือใคร!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b457c
+#| msgid "New Match!"
+msgid "PUSH_MESSAGE_MATCH_TICKER_SHORT_TEXT"
+msgstr "การจับคู่ใหม่!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b457b
+#| msgid "Congratulations, you've got a new match!"
+msgid "PUSH_MESSAGE_MATCH_TICKER_TEXT"
+msgstr "ยินดีด้วย คุณได้รับการจับคู่ใหม่!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4570
+#| msgid "New Message"
+msgid "PUSH_MESSAGE_MESSAGE_TICKER_SHORT_TEXT"
+msgstr "ข้อความใหม่"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b456c
+#| msgid "%v sent you a message"
+msgid "PUSH_MESSAGE_MESSAGE_TICKER_TEXT"
+msgstr "%v ส่งข้อความถึงคุณ"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4577
+#| msgid "%v has commented on your moment"
+msgid "PUSH_MESSAGE_MOMENT_COMMENT_TICKER_TEXT"
+msgstr "%v แสดงความคิดเห็นในข้อความของคุณ"
+
+#: loco:5a1fc889a39ff3c0118b4567
+#| msgid "New Moment"
+msgid "PUSH_MESSAGE_MOMENT_MATCH_POST_TICKER_TEXT"
+msgstr "新的朋友圈"
+
+#: loco:5a1fc7d7a39ff352118b4567
+#| msgid "Your match %v just posted a new moment! Check it out!"
+msgid "PUSH_MESSAGE_MOMENT_MATCH_POST_VALUE_TEXT"
+msgstr "你的配对好友%v刚刚上传了一条新的朋友圈，快去点赞评论吧！"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b45a0
+#| msgid ""
+#| "Dear %v, in the first 24 hours with Tantan, you have liked %v people and "
+#| "%v people have liked you.\n"
+#| "\n"
+#| "It’s actually quite easy for girls to get a match on Tantan! Based on our "
+#| "history data, if you sent out 5 likes, there are 90%%%% chances you’d get "
+#| "a match!"
+msgid "PUSH_MESSAGE_ONBOARDING_FEWSWIPES_FEMALE_MESSAGE"
+msgstr ""
+"สวัสดีคุณ %v ใน 24 ชั่วโมงแรกของการใช้ Tantan คุณได้ถูกใจผู้อื่น %v คน และมี "
+"%v คนถูกใจคุณ\n"
+"\n"
+"ผู้หญิงสามารถหาคู่บน Tantan ได้อย่างง่ายดาย! อ้างอิงตามข้อมูลที่ผ่านมาของเรา "
+"หากคุณกดถูกใจ 5 ครั้ง จะมีโอกาสถึง 90%%%% ที่คุณจะได้เจอคู่!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b459d
+#| msgid ""
+#| "Dear %v, in the first 24 hours with Tantan, you have liked %v people and "
+#| "%v people have liked you.\n"
+#| "\n"
+#| "You’re almost there to get your first match! But you just need to be a "
+#| "little more patient. In Tantan an average boy gets a match for every 66 "
+#| "likes he sent. So keep swiping! You’re getting really close."
+msgid "PUSH_MESSAGE_ONBOARDING_FEWSWIPES_MALE_MESSAGE"
+msgstr ""
+"สวัสดีคุณ %v ใน 24 ชั่วโมงแรกของการใช้ Tantan คุณได้ถูกใจผู้อื่น %v คน และมี "
+"%v คนถูกใจคุณ\n"
+"\n"
+"อีกไม่นานคุณก็จะได้เจอคู่คนแรก! อดทนรออีกนิด โดยเฉลี่ยผู้ชายใน Tantan "
+"จะได้เจอคู่ทุกๆ การกดถูกใจ 66 ครั้ง ดังนั้นกดถูกใจต่อไป! "
+"เป้าหมายของคุณใกล้มาถึงแล้ว"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b459f
+#| msgid ""
+#| "Dear %v, in the first 24 hours with Tantan, you have liked %v people and "
+#| "%v people have liked you.\n"
+#| "\n"
+#| "It’s actually quite easy for girls to get a match on Tantan! Here are a "
+#| "few tips: update your profile picture to a perfect selfie. Complete your "
+#| "profile with more information, interests, and answers. Broaden your "
+#| "search settings for age and distance.You wouldn’t be far from getting a "
+#| "match!"
+msgid "PUSH_MESSAGE_ONBOARDING_UNPOPULAR_FEMALE_MESSAGE"
+msgstr ""
+"สวัสดีคุณ %v ใน 24 ชั่วโมงแรกของการใช้ Tantan คุณได้ถูกใจผู้อื่น %v คน และมี "
+"%v คนถูกใจคุณ\n"
+"\n"
+"ผู้หญิงสามารถหาคู่บน Tantan ได้อย่างง่ายดาย! นี่คือเคล็ดลับที่จะช่วยคุณ: "
+"อัปเดตรูปประจำตัวเพื่อแสดงตัวตนของคุณ เขียนข้อมูลในประวัติส่วนตัวเพิ่มเติม "
+"บอกสิ่งที่สนใจและคำตอบ ขยายเกณฑ์การค้นหาสำหรับอายุและระยะทาง "
+"อีกไม่นานคุณก็จะได้เจอคู่!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b459e
+#| msgid ""
+#| "Dear %v, in the first 24 hours with Tantan, you have liked %v people and "
+#| "%v people have liked you.\n"
+#| "\n"
+#| "You’re almost there to get your first match! Here are a few tips: update "
+#| "your profile picture to one that showcases your lifestyle. Complete your "
+#| "profile with more information, interests and answers. Broaden your search "
+#| "settings for age and distance. These would highly increase your chances "
+#| "of matching!"
+msgid "PUSH_MESSAGE_ONBOARDING_UNPOPULAR_MALE_MESSAGE"
+msgstr ""
+"สวัสดีคุณ %v ใน 24 ชั่วโมงแรกของการใช้ Tantan คุณได้ถูกใจผู้อื่น %v คน และมี "
+"%v คนถูกใจคุณ\n"
+"\n"
+"อีกไม่นานคุณก็จะได้เจอคู่คนแรก! นี่คือเคล็ดลับที่จะช่วยคุณ: "
+"อัปเดตรูปประจำตัวเพื่อแสดงตัวตนของคุณ เขียนข้อมูลในประวัติส่วนตัวเพิ่มเติม "
+"บอกสิ่งที่สนใจและคำตอบ ขยายเกณฑ์การค้นหาสำหรับอายุและระยะทาง "
+"สิ่งเหล่านี้จะเพิ่มโอกาสในการหาคู่ได้เป็นอย่างดี!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4575
+#| msgid "%v asked you a question"
+msgid "PUSH_MESSAGE_QUESTION_MESSAGE_TICKER_TEXT"
+msgstr "%v ส่งคำถามถึงคุณ"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b457a
+#| msgid "[Question]"
+msgid "PUSH_MESSAGE_QUESTION_MESSAGE_VALUE_TEXT"
+msgstr "[คำถาม]"
+
+#: loco:588800dd52e1a111128b4568
+#| msgid ""
+#| "😄Actually boys around you look like this! Open Tantan to find them out."
+msgid "PUSH_MESSAGE_REMINDER_AFTER_CNY_FEMALE_NO_CITY_TICKER_TEXT"
+msgstr "😄原来在你附近，和你一样回家过年的男生长这样！来看看吧！"
+
+#: loco:588696d252e1a1f36b8b456a
+#| msgid ""
+#| "😄Actually boys around you in %s look like this! Open Tantan to find them "
+#| "out."
+msgid "PUSH_MESSAGE_REMINDER_AFTER_CNY_FEMALE_TICKER_TEXT"
+msgstr "😄原来在你附近，回%s过年的男生长这样！来看看吧！"
+
+#: loco:5886968d52e1a1556c8b4567
+#| msgid ""
+#| "Tired with all those red packets? Time to check out some girls on Tantan!"
+msgid "PUSH_MESSAGE_REMINDER_AFTER_CNY_MALE_TICKER_TEXT"
+msgstr "抢红包手累心累，不如上探探捡个妹子"
+
+#: loco:588800cb52e1a1f4118b4567
+#| msgid ""
+#| "Based on your Tantan usage, these are the boys we think will fit you best."
+#| " Check them out!"
+msgid "PUSH_MESSAGE_REMINDER_BEFORE_CNY_FEMALE_2017_TICKER_TEXT"
+msgstr "根据你的探探使用数据，系统测算出这个男生是最适合你的，来看看准不准～"
+
+#: loco:5886967e52e1a1db6b8b456b
+#| msgid ""
+#| "Based on your Tantan usage in 2016, these are the boys we think will fit "
+#| "you best. Check them out!"
+msgid "PUSH_MESSAGE_REMINDER_BEFORE_CNY_FEMALE_TICKER_TEXT"
+msgstr "根据你2016年的探探使用数据，系统测算出这个男生是最适合你的，来看看准不准～"
+
+#: loco:5886966c52e1a1e36b8b456b
+#| msgid ""
+#| "Last chance to go home with a girlfriend during CNY. Open Tantan and "
+#| "swipe right!"
+msgid "PUSH_MESSAGE_REMINDER_BEFORE_CNY_MALE_TICKER_TEXT"
+msgstr "年前最后一次捡个女友回家的机会，现在打开探探开始右滑吧"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4581
+#| msgid "There are new people around you, find out who they are!"
+msgid "PUSH_MESSAGE_REMINDER_WITHOUT_LIKES_TICKER_TEXT"
+msgstr "มีผู้คนใหม่ๆ รอบตัวคุณ หาคำตอบว่าพวกเขาเป็นใคร!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4585
+#| msgid "New people around you"
+msgid "PUSH_MESSAGE_REMINDER_WITHOUT_LIKES_TITLE_TEXT"
+msgstr "ผู้คนใหม่ๆ รอบตัวคุณ"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4582
+#| msgid "Find out who they are!"
+msgid "PUSH_MESSAGE_REMINDER_WITHOUT_LIKES_VALUE_TEXT"
+msgstr "หาคำตอบว่าพวกเขาเป็นใคร!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4580
+#| msgid "There are people nearby that liked you, find out who they are!"
+msgid "PUSH_MESSAGE_REMINDER_WITH_LIKES_TICKER_TEXT"
+msgstr "มีใครบางคนชอบคุณ! หาคำตอบว่าพวกเขาเป็นใคร!"
+
+#: backend 完成.xlsx loco:57b2f7a314d725e4418b456f
+#| msgid "Someone liked you"
+msgid "PUSH_MESSAGE_REMINDER_WITH_LIKES_TITLE_TEXT"
+msgstr "มีคนชอบคุณ"
+
+#: backend 完成.xlsx loco:57b2f7d114d7258d428b4575
+#| msgid "Find out who!"
+msgid "PUSH_MESSAGE_REMINDER_WITH_LIKES_VALUE_TEXT"
+msgstr "หาคำตอบว่าเป็นใคร"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b458f
+#| msgid "Someone is interested in having food with you!"
+msgid "PUSH_MESSAGE_SCENARIO_FOOD_LIKE_TICKER_TEXT"
+msgstr "มีใครบางคนอยากชวนคุณไปทานอาหาร!"
+
+#: backend 完成.xlsx loco:57ce8cf614d7253e268b4567
+#| msgid "Someone liked you"
+msgid "PUSH_MESSAGE_SCENARIO_FOOD_LIKE_TITLE_TEXT"
+msgstr "มีคนชอบคุณ"
+
+#: backend 完成.xlsx loco:57ce8d3b14d725a1238b456c
+#| msgid "Find out who!"
+msgid "PUSH_MESSAGE_SCENARIO_FOOD_LIKE_VALUE_TEXT"
+msgstr "หาคำตอบว่าคือใคร!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4590
+#| msgid "It's showtime! Someone is interested in watching a movie with you!"
+msgid "PUSH_MESSAGE_SCENARIO_MOVIE_LIKE_TICKER_TEXT"
+msgstr "ได้เวลาเจอตัว! มีคนอยากชวนคุณไปดูหนัง!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4591
+#| msgid "Someone liked you"
+msgid "PUSH_MESSAGE_SCENARIO_MOVIE_LIKE_TITLE_TEXT"
+msgstr "มีคนชอบคุณ"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4592
+#| msgid "Find out who!"
+msgid "PUSH_MESSAGE_SCENARIO_MOVIE_LIKE_VALUE_TEXT"
+msgstr "หาคำตอบว่าคือใคร!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b458e
+#| msgid "Get ready! Someone is interested in exercising with you!"
+msgid "PUSH_MESSAGE_SCENARIO_SPORT_LIKE_TICKER_TEXT"
+msgstr "เตรียมตัวให้พร้อม! มีคนอยากชวนคุณไปออกกำลังกายณ!"
+
+#: backend 完成.xlsx loco:57ce8db814d72552268b4569
+#| msgid "Someone liked you"
+msgid "PUSH_MESSAGE_SCENARIO_SPORT_LIKE_TITLE_TEXT"
+msgstr "มีคนชอบคุณ"
+
+#: backend 完成.xlsx loco:57ce8df014d725f9258b4569
+#| msgid "Find out who!"
+msgid "PUSH_MESSAGE_SCENARIO_SPORT_LIKE_VALUE_TEXT"
+msgstr "หาคำตอบว่าคือใคร!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b456d
+#| msgid "Crush notification"
+msgid "PUSH_MESSAGE_SECRET_LIKE_TICKER_SHORT_TEXT"
+msgstr "แจ้งเตือนคนแอบชอบ"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4567
+#| msgid "Someone you know has a crush on you! Find out who it is!"
+msgid "PUSH_MESSAGE_SECRET_LIKE_TICKER_TEXT"
+msgstr "มีใครบางคนแอบชอบคุณ! หาคำตอบว่าเขาคือใคร!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b456e
+#| msgid "You received a secret crush!"
+msgid "PUSH_MESSAGE_SECRET_LIKE_TITLE_TEXT"
+msgstr "คุณมีคนแอบชอบ!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b456f
+#| msgid "Find out now"
+msgid "PUSH_MESSAGE_SECRET_LIKE_VALUE_TEXT"
+msgstr "หาคำตอบด้วยตัวเอง"
+
+#: backend 完成.xlsx loco:57b2eaba14d72573388b4568
+#| msgid "Secret Crush matched!"
+msgid "PUSH_MESSAGE_SECRET_MATCH_TICKER_SHORT_TEXT"
+msgstr "จับคู่คนที่ชอบแล้ว!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b456a
+#| msgid "Amazing! A secret crush was made!"
+msgid "PUSH_MESSAGE_SECRET_MATCH_TICKER_TEXT"
+msgstr "เยี่ยมเลย! มีคนแอบชอบแล้ว!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4596
+#| msgid "Secret Crush!"
+msgid "PUSH_MESSAGE_SECRET_MATCH_TITLE_TEXT"
+msgstr "Crush ลับ!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b456b
+#| msgid "Find out who"
+msgid "PUSH_MESSAGE_SECRET_MATCH_VALUE_TEXT"
+msgstr "หาคำตอบว่าเป็นใคร"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b457d
+#| msgid "Congratulations!"
+msgid "PUSH_MESSAGE_SINGLE_MATCH_TITLE_TEXT"
+msgstr "ยินดีด้วย!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b457e
+#| msgid "You've got a new match"
+msgid "PUSH_MESSAGE_SINGLE_MATCH_VALUE_TEXT"
+msgstr "คุณได้รับการจับคู่ใหม่!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4573
+#| msgid "%v sent a sticker to you"
+msgid "PUSH_MESSAGE_STICKER_MESSAGE_TICKER_TEXT"
+msgstr "%v ส่งสติกเกอร์ถึงคุณ"
+
+#: backend 完成.xlsx loco:57b2f5cd14d7252a418b456e
+#| msgid "[Sticker]"
+msgid "PUSH_MESSAGE_STICKER_MESSAGE_VALUE_TEXT"
+msgstr "[สติกเกอร์]"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b459a
+#| msgid "You invite friends have registered tantan, reward has been released!"
+msgid "PUSH_MESSAGE_SUPERLIKE_INVITE_TICKER_TEXT"
+msgstr "คุณได้ชวนเพื่อนให้ลงทะเบียนกับ tantan คุณได้รับรางวัลแล้ว!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4598
+#| msgid "Get a friend registration reward"
+msgid "PUSH_MESSAGE_SUPERLIKE_INVITE_TITLE_TEXT"
+msgstr "รับรางวัลจากการแนะนำเพื่อนลงทะเบียน"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4599
+#| msgid "Some people around you Super Like you! Find out who they are now!"
+msgid "PUSH_MESSAGE_SUPERLIKE_RECEIVE_TICKER_TEXT"
+msgstr "มีใครบางคนชอบคุณมาก หาคำตอบว่าเป็นใคร!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b459b
+#| msgid "Someone superliked you"
+msgid "PUSH_MESSAGE_SUPERLIKE_RECEIVE_TITLE_TEXT"
+msgstr "มีใครบางคนชอบคุณมาก"
+
+#: loco:59f182bda39ff3086a8b456a
+#| msgid "Somebody wants to know you! Could it be the one you are wating for?"
+msgid "PUSH_MESSAGE_TBH_FRIEND_REQUEST_TICKER_TEXT"
+msgstr "有人想认识你诶！是不是你期待的那个Ta？"
+
+#: loco:5a179468820ee929508b4567
+#| msgid "Oh, you are here!"
+msgid "PUSH_MESSAGE_TBH_FRIEND_REQUEST_TITLE_TEXT"
+msgstr "可算找着你啦！"
+
+#: loco:5a179664820ee9db508b4567
+#| msgid "Somebody sent you a gossip. Check it out!"
+msgid "PUSH_MESSAGE_TBH_VOTE_RECEIVED_TICKER_TEXT"
+msgstr "一个同学向你丢来一张小纸条，快打开看看吧！"
+
+#: loco:59f6ce95a39ff371208b4568
+#| msgid "You received a message!"
+msgid "PUSH_MESSAGE_TBH_VOTE_RECEIVED_TITLE_TEXT"
+msgstr "Piaji ！丢到你啦！"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4576
+#| msgid "%v sent you a video"
+msgid "PUSH_MESSAGE_VIDEO_MESSAGE_TICKER_TEXT"
+msgstr "%v ส่งวิดีโอถึงคุณ"
+
+#: backend 完成.xlsx loco:57b2f56314d72511428b456b
+#| msgid "[Video]"
+msgid "PUSH_MESSAGE_VIDEO_MESSAGE_VALUE_TEXT"
+msgstr "[วิดีโอ]"
+
+#: backend 完成.xlsx loco:57b40a5814d725d8778b4567
+#| msgid "I’ll answer first"
+msgid "QUESTION_MESSAGE_FOOTER_CLASSIC_TEXT"
+msgstr "ฉันจะตอบก่อน"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b458c
+#| msgid "I’ll answer first"
+msgid "QUESTION_MESSAGE_FOOTER_INTIMATE_TEXT"
+msgstr "ฉันจะตอบก่อน"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4583
+#| msgid "Let’s play a mild truth or dare question:"
+msgid "QUESTION_MESSAGE_HEADER_CLASSIC_TEXT"
+msgstr "มาเล่นเกมจริงหรือท้าแบบเบาๆ กันเถอะ:"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4584
+#| msgid "Let’s play an intimate truth or dare question:"
+msgid "QUESTION_MESSAGE_HEADER_INTIMATE_TEXT"
+msgstr "มาเล่นเกมจริงหรือท้าแบบลึกซึ้งกันเถอะ:"
+
+#: backend 完成.xlsx loco:58985f2c52e1a173538b4567
+#| msgid "[This message was recalled]"
+msgid "RECALLED_MESSAGE_TEXT"
+msgstr "[ข้อความนี้ถูกล้มเลิก]"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b458d
+#| msgid ""
+#| "Your confirmation code is: {{verification_code}} (valid for "
+#| "{{verification_code_ttl}} minutes)"
+msgid "SMS_ACCOUNT_CHANGE_PHONE"
+msgstr ""
+"รหัสยืนยันของคุณคือ: {{verification_code}} (ใช้งานได้ "
+"{{verification_code_ttl}} นาที)"
+
+#: backend 完成.xlsx loco:57c3e8d414d725c0768b4567
+#| msgid ""
+#| "Your confirmation code is: {{verification_code}} (valid for "
+#| "{{verification_code_ttl}} minutes)"
+msgid "SMS_ACCOUNT_RESET_PASSWORD"
+msgstr ""
+"รหัสยืนยันของคุณคือ: {{verification_code}} (ใช้งานได้ "
+"{{verification_code_ttl}} นาที)"
+
+#: backend 完成.xlsx loco:57c3e85a14d725d7768b4567
+#| msgid ""
+#| "Your confirmation code is: {{verification_code}} (valid for "
+#| "{{verification_code_ttl}} minutes)"
+msgid "SMS_ACCOUNT_SIGN_IN_VERIFICATION"
+msgstr ""
+"รหัสยืนยันของคุณคือ: {{verification_code}} (ใช้งานได้ "
+"{{verification_code_ttl}} นาที)"
+
+#: backend 完成.xlsx loco:57c3e62514d725b1728b4574
+#| msgid ""
+#| "Your confirmation code is: {{verification_code}} (valid for "
+#| "{{verification_code_ttl}} minutes)"
+msgid "SMS_ACCOUNT_SIGN_UP_VERIFICATION"
+msgstr ""
+"รหัสยืนยันของคุณคือ: {{verification_code}} (ใช้งานได้ "
+"{{verification_code_ttl}} นาที)"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4597
+#| msgid ""
+#| "Hi, someone has a crush on you from Tantan! Download Tantan to find who "
+#| "it is: https://d.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITHOUT_NAME"
+msgstr ""
+"สวัสดี ใครบางคนรู้สึกถูกใจคุณจาก Tantan! ดาวน์โหลด  Tantan "
+"เพื่อหาคำตอบดูว่าเขาคือใคร: https://d.tantanapp.com"
+
+#: backend 完成.xlsx loco:582024e252e1a116718b456d
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://d.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://d.Tantanapp.com"
+
+#: backend 完成.xlsx loco:5833e86352e1a1a4658b4573
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://s.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V10"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://s.Tantanapp.com"
+
+#: backend 完成.xlsx loco:5833e89a52e1a1a4658b4576
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://s.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V11"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://s.Tantanapp.com"
+
+#: backend 完成.xlsx loco:585a3df452e1a168568b456a
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://s.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V12"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://s.Tantanapp.com"
+
+#: backend 完成.xlsx loco:585a3e7252e1a168568b456c
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://s.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V13"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://s.Tantanapp.com"
+
+#: backend.xlsx loco:585a3ee952e1a162568b456a
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://s.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V14"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://s.Tantanapp.com"
+
+#: backend.xlsx loco:58639b5852e1a109658b4567
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://d.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V20"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://d.Tantanapp.com"
+
+#: backend 完成.xlsx loco:5820256152e1a11c718b4568
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://d.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V3"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://d.Tantanapp.com"
+
+#: backend 完成.xlsx loco:5820261452e1a151718b4569
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://d.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V4"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://d.Tantanapp.com"
+
+#: backend 完成.xlsx loco:58203bcc52e1a12f738b4569
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://d.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V5"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://d.Tantanapp.com"
+
+#: backend 完成.xlsx loco:58203c0d52e1a147738b4568
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://d.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V6"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://d.Tantanapp.com"
+
+#: backend 完成.xlsx loco:58203c8652e1a1b7738b4567
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://d.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V7"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://d.Tantanapp.com"
+
+#: backend 完成.xlsx loco:582ab05952e1a11c378b4569
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://d.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V8"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://d.Tantanapp.com"
+
+#: backend 完成.xlsx loco:582ab0af52e1a1d6368b456b
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://d.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V9"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://d.Tantanapp.com"
+
+#: backend 完成.xlsx loco:57c3ea2914d72599778b456e
+#| msgid ""
+#| "Hi, someone has a crush on you from Tantan! Download Tantan to find who "
+#| "it is: https://d.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_WITHOUT_NAME"
+msgstr ""
+"สวัสดี มีใครบางจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบใครชอบคุณ: https://d.Tantanapp.com"
+
+#: backend 完成.xlsx loco:57c3e9b814d72536778b4568
+#| msgid ""
+#| "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to "
+#| "find who it is: https://d.tantanapp.com"
+msgid "SMS_SECRET_CRUSH_WITH_NAME"
+msgstr ""
+"สวัสดี {{name}} มีใครบางคนจาก Tantan รู้สึกชอบคุณ! ดาวน์โหลด Tantan "
+"เพื่อหาคำตอบว่าใครชอบคุณ: https://d.Tantanapp.com"
+
+#: loco:5ac2f4b4a39ff3f51b8b4568
+#| msgid ""
+#| "Your confirmation code is: {{verification_code}} (valid for "
+#| "{{verification_code_ttl}} minutes)"
+msgid "SMS_TANTAN_GROUND_PROMOTION_VERIFICATION"
+msgstr ""
+"รหัสยืนยันของคุณคือ: {{verification_code}} (ใช้งานได้ "
+"{{verification_code_ttl}} นาที)"
+
+#: loco:5ac076dba39ff3f9138b4567
+#| msgid ""
+#| "Your confirmation code is: {{verification_code}} (valid for "
+#| "{{verification_code_ttl}} minutes)"
+msgid "SMS_TANTAN_INVITE_VERIFICATION"
+msgstr ""
+"รหัสยืนยันของคุณคือ: {{verification_code}} (ใช้งานได้ "
+"{{verification_code_ttl}} นาที)"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4594
+#| msgid ""
+#| "Hi {{first_name}}, also try out our new app Tantan, a fun and easy way to "
+#| "meet people around you! https://d.tantanapp.com"
+msgid "SMS_TANTAN_PROMOTION"
+msgstr ""
+"สวัสดี {{first_name}} ลองใช้ Tantan แอปใหม่ล่าสุดของเราดูสิ "
+"การพบกับผู้คนใหม่ๆ ที่ทั้งสนุกและง่ายดาย! https://d.Tantanapp.com"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4593
+#| msgid ""
+#| "Feel free to give us your input and/or ask us any question right here in "
+#| "the chat and we will try our best to get back to you asap!"
+msgid "TEAM_ACCOUNT_DESCRIPTION"
+msgstr ""
+"คุณสามารถแสดงความคิดเห็น และ/หรือสอบถามเราหากมีคำถามในห้องสนทนา "
+"เราจะตอบกลับโดยเร็วที่สุด!"
+
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4595
+#| msgid "Team account"
+msgid "TEAM_ACCOUNT_NAME"
+msgstr "ทีมงาน"

@@ -1,0 +1,22 @@
+{
+    "Services": {
+        "tantan-chat-service" : {
+            "Naming": {
+                "Target": "10.9.169.163:21226",
+                "Type": "file"
+            }
+        },
+        "tantan-user-service": {
+            "Naming": {
+                "Target": "10.9.169.163:21222",
+                "Type": "file"
+            }
+        },
+        "tantan-device-service" : {
+            "Naming": {
+                "Target": "10.9.169.163:21224",
+                "Type": "file"
+            }
+        }
+    }
+}

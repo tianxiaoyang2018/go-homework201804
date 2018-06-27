@@ -1,0 +1,54 @@
+{
+    "Account":{
+        "H5AccessKey":"E2pRnscCVjj63sCGASIWqnwF",
+        "H5SharedKey":"gLhM8E3Q98MEgm_uNE1l96Ep"
+    },
+    "Log": {
+        "Output": [
+            "syslog",
+            "stderr"
+        ],
+        "Syslog": {
+            "Address": "10.9.169.163:514",
+            "Facility": "local6",
+            "Protocol": "udp"
+        }
+    },
+    "EventLogClient": {
+        "Addresses": [
+            "10.9.169.163:18437"
+        ],
+        "Enable": true,
+        "Type": "kafka"
+    },
+    "TantanInviteWeb":{
+        "InviteServiteAddr":"10.9.169.163:21284",
+        "InviteShareTokenPathes":[
+            "/get_reward.html"
+        ],
+        "WithdrawAtLeastAmount": 3000,
+        "SignupRewardAmounts":[
+            {"Amount":166, "Count":500},
+            {"Amount":188, "Count":400},
+            {"Amount":266, "Count":50},
+            {"Amount":288, "Count":20},
+            {"Amount":366, "Count":10},
+            {"Amount":388, "Count":10},
+            {"Amount":666, "Count":5},
+            {"Amount":888, "Count":4},
+            {"Amount":10000, "Count":1}
+        ],
+        "SMSCodeConfig": {
+            "Tmpl": "tantan_invite_verification",
+            "DailyLimit": 6,
+            "Len": 6,
+            "MaxRetryTimes": 5,
+            "TTL": 600
+        }
+    },
+    "Sms": {
+        "baseUrl": "http://10.9.169.163:18428/"
+    }
+}
+
+

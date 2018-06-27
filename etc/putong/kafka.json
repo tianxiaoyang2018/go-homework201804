@@ -1,0 +1,55 @@
+{
+  "default": {
+    "Brokers": [
+      "10.9.169.163:9092",
+      "10.9.169.163:9093",
+      "10.9.169.163:9094"
+    ],
+    "Producer": {
+      "Compression": 2,
+      "Flush": {
+        "Bytes": 1048576,
+        "Frequency": "100ms",
+        "MaxMessages": 100,
+        "Messages": 100
+      },
+      "MaxMessageBytes": 2097152,
+      "RequiredAcks": 1,
+      "Retry": {
+        "Backoff": "100ms",
+        "Max": 3
+      },
+      "Return": {
+        "Errors": true,
+        "Successes": true
+      },
+      "Timeout": "1s"
+    },
+    "ZooKeepers": [
+      "10.9.169.163:2181"
+    ]
+  },
+  "dcl.producer" : {
+    "Brokers": [
+        "10.9.169.163:9092"
+    ],
+    "Producer": {
+        "Compression": 2,
+        "MaxMessageBytes": 2097152,
+        "RequiredAcks": 1,
+        "Retry": {
+            "Backoff": "100ms",
+            "Max": 3
+        },
+        "Return": {
+            "Errors": true,
+            "Successes": true
+        },
+        "Timeout": "1s"
+    },
+    "ZooKeepers": [
+      "10.9.169.163:9092"
+      
+      ]
+  }
+}

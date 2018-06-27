@@ -1,0 +1,462 @@
+{
+  "EventLogClient": {
+    "Addresses": [
+      "10.9.169.163:18437"
+    ],
+    "Enable": true,
+    "Type": "kafka"
+  },
+  "Log": {
+    "Output": [
+        "syslog",
+	"stderr"
+    ],
+    "Syslog": {
+      "Address": "10.9.169.163:514",
+      "Facility": "local6",
+      "Protocol": "udp"
+    }
+  },
+  "Sms": {
+    "baseUrl": "",
+    "listenAddress": ":18428",
+    "providers": {
+      "abroad": {
+        "confirmation": {
+          "nexmo": {
+            "appKey": "fa13d99c",
+            "appSecret": "a37cAzCEugUV76go",
+            "baseUrl": "https://rest.nexmocn.com/sms",
+            "enabled": true,
+            "name": "nexmo",
+            "sender": "12132633597",
+            "senderName": "Tantan"
+          }
+        },
+        "marketing": {
+          "nexmo": {
+            "appKey": "fa13d99c",
+            "appSecret": "a37cAzCEugUV76go",
+            "baseUrl": "https://rest.nexmocn.com/sms",
+            "enabled": true,
+            "name": "nexmo",
+            "sender": "12132633597",
+            "senderName": "Tantan"
+          }
+        }
+      },
+      "domestic": {
+        "confirmation": {
+          "anxinjie": {
+            "appKey": "ttyzm",
+            "appSecret": "tthy31",
+            "baseUrl": "http://124.251.7.232:9007/axj_http_server/sms",
+            "enabled": false,
+            "name": "anxinjie",
+            "weight": 1
+          },
+          "beixinzhengtong": {
+            "appKey": "false",
+            "appSecret": "false",
+            "baseUrl": "http://112.124.56.95:18002/send.do",
+            "enabled": false,
+            "name": "beixinzhengtong",
+            "signature": "【探探社交】",
+            "weight": 1
+          },
+          "chuanglan": {
+            "appKey": "false",
+            "appSecret": "false",
+            "baseUrl": "https://sms.253.com/msg/send",
+            "enabled": false,
+            "name": "chuanglan",
+            "weight": 1
+          },
+          "guodu": {
+            "appKey": "tantanyz",
+            "appSecret": "w1yxFAGp",
+            "baseUrl": "https://csms.guodulink.net:8015",
+            "enabled": false,
+            "name": "guodu",
+            "signature": "【探探APP】",
+            "weight": 1
+          },
+          "montnets": {
+            "appKey": "J81087",
+            "appSecret": "230147",
+            "baseUrl": "https://tsc1.800ct.com:7102/MWGate/wmgw.asmx",
+            "enabled": false,
+            "name": "montnets",
+            "weight": 1
+          },
+          "qcloud": {
+            "appKey": "1400032437",
+            "appSecret": "880ede11d0b22f46a443ca00da3357d4",
+            "baseUrl": "https://yun.tim.qq.com/v5/tlssmssvr/sendsms",
+            "enabled": false,
+            "name": "qcloud",
+            "signature": "探探",
+            "weight": 1
+          },
+          "rongdayouxin": {
+            "appKey": "false",
+            "appSecret": "false",
+            "baseUrl": "http://sdk.youxinyun.com:3000/ServicePoint",
+            "enabled": false,
+            "name": "rongdayouxin",
+            "signature": "【探探应用】",
+            "weight": 1
+          },
+          "welink": {
+            "appKey": "dlyayi11",
+            "appSecret": "tt123welink",
+            "baseUrl": "http://cf.51welink.com/submitdata/service.asmx",
+            "enabled": false,
+            "extra": {
+              "welinkScorpid": "",
+              "welinkSprdid": "1012818"
+            },
+            "name": "welink",
+            "signature": "【探探应用】",
+            "weight": 1
+          },
+          "yunpian": {
+            "appKey": "b5c8b57027048a2c4ff3420aab1a5390",
+            "appSecret": "",
+            "baseUrl": "https://yunpian.com/v1/sms",
+            "enabled": true,
+            "name": "yunpian",
+            "weight": 8
+          },
+          "zhutong": {
+            "appKey": "false",
+            "appSecret": "false",
+            "baseUrl": "http://www.api.zthysms.com/sendSmsBatch.do",
+            "enabled": false,
+            "name": "zhutong",
+            "signature": "【探探应用】",
+            "weight": 1
+          }
+        },
+        "marketing": {
+          "anxinjie": {
+            "appKey": "ttfa11",
+            "appSecret": "ttdx123",
+            "baseUrl": "http://124.251.7.232:9007/axj_http_server/sms",
+            "enabled": false,
+            "name": "anxinjie",
+            "weight": 1
+          },
+          "beixinzhengtong": {
+            "appKey": "tantankj",
+            "appSecret": "367640",
+            "baseUrl": "http://112.124.56.95:18002/send.do",
+            "enabled": false,
+            "name": "beixinzhengtong",
+            "signature": "【探探社交】",
+            "weight": 1
+          },
+          "chuanglan": {
+            "appKey": "M6732873",
+            "appSecret": "Szceshi168",
+            "baseUrl": "https://sms.253.com/msg/send",
+            "enabled": false,
+            "name": "chuanglan",
+            "weight": 1
+          },
+          "guodu": {
+            "appKey": "yywmkj",
+            "appSecret": "loXepVOP",
+            "baseUrl": "https://csms.guodulink.net:8015",
+            "enabled": false,
+            "name": "guodu",
+            "signature": "【探探APP】",
+            "weight": 1
+          },
+          "montnets": {
+            "appKey": "J81088",
+            "appSecret": "632158",
+            "baseUrl": "https://tsc1.800ct.com:7102/MWGate/wmgw.asmx",
+            "enabled": false,
+            "name": "montnets",
+            "weight": 1
+          },
+          "qcloud": {
+            "appKey": "1400031570",
+            "appSecret": "1d03d4183e8857234a60a529a520b2d3",
+            "baseUrl": "https://yun.tim.qq.com/v5/tlssmssvr/sendsms",
+            "enabled": false,
+            "name": "qcloud",
+            "signature": "探探",
+            "weight": 1
+          },
+          "rongdayouxin": {
+            "appKey": "bjtantan",
+            "appSecret": "tantan201709",
+            "baseUrl": "http://sdk.youxinyun.com:3000/ServicePoint",
+            "enabled": false,
+            "name": "rongdayouxin",
+            "signature": "【探探应用】",
+            "weight": 1
+          },
+          "welink": {
+            "appKey": "dlyayiyq",
+            "appSecret": "i77Hgd8bLr8j",
+            "baseUrl": "http://cf.51welink.com/submitdata/service.asmx",
+            "enabled": true,
+            "extra": {
+              "welinkScorpid": "",
+              "welinkSprdid": "1012818"
+            },
+            "name": "welink",
+            "signature": "【探探应用】",
+            "weight": 1
+          },
+          "yunpian": {
+            "appKey": "38ac112e8bfd6bc47c375d2cc90f0527",
+            "appSecret": "",
+            "baseUrl": "https://yunpian.com/v1/sms",
+            "enabled": false,
+            "name": "yunpian",
+            "weight": 8
+          },
+          "zhutong": {
+            "appKey": "tantanhy",
+            "appSecret": "ZTtantanhy2017",
+            "baseUrl": "http://www.api.zthysms.com/sendSmsBatch.do",
+            "enabled": false,
+            "name": "zhutong",
+            "signature": "【探探应用】",
+            "weight": 1
+          }
+        }
+      }
+    },
+    "qcloudTemplates": {
+      "tantan_change_phone": {
+        "en-US": "22177",
+        "zh-CN": "22176"
+      },
+      "tantan_promotion_with_name_v14": {
+        "en-US": "20905",
+        "zh-CN": "20905"
+      },
+      "tantan_promotion_with_name_v20": {
+        "en-US": "20907",
+        "zh-CN": "20907"
+      },
+      "tantan_reset_password": {
+        "en-US": "22177",
+        "zh-CN": "22176"
+      },
+      "tantan_sign_in_verification": {
+        "en-US": "22177",
+        "zh-CN": "22176"
+      },
+      "tantan_sign_up_verification": {
+        "en-US": "22177",
+        "zh-CN": "22176"
+      }
+    },
+    "templates": {
+      "p1_reset_password": {
+        "en-US": "Reset P1 password: {{reset_password_link}}",
+        "zh-CN": "点击链接重置P1账号密码: {{reset_password_link}}"
+      },
+      "p1_sign_up_verification": {
+        "en-US": "Your P1 confirmation code is: {{sign_up_verification_code}} (This code will expire after {{verification_code_ttl}} minutes)",
+        "zh-CN": "您的P1注册验证码为：{{sign_up_verification_code}}（此验证码{{verification_code_ttl}}分钟内有效）"
+      },
+      "street_style_notification": {
+        "en-US": "Hi, your streetstyle picture is waiting for you. Download the P1 app https://p1.com/d/sms and register with the phone number or weibo you provided us to see it.",
+        "zh-CN": "Hi，下载P1 APP，您的街拍照片在等着您来欣赏并分享！提示：请使用您留给摄影师的手机号码或者微博注册。 https://p1.com/d/sms"
+      },
+      "street_style_second_notification": {
+        "en-US": "Hi, your streetstyle picture is still waiting for you. Download the P1 app https://p1.com/d/sms and register with the phone number or weibo you provided us to see it.",
+        "zh-CN": "Hi，您的街拍照片还没有取回。请下载P1 APP，使用留给摄影师的微博、邮箱注册，照片会自动推送给您。 https://p1.com/d/sms"
+      },
+      "tantan_change_phone": {
+        "en-US": "Your Tantan confirmation code is: {{verification_code}} (valid for {{verification_code_ttl}} minutes)",
+        "zh-CN": "您的验证码为： {{verification_code}} （此验证码{{verification_code_ttl}}分钟内有效）"
+      },
+      "tantan_promotion": {
+        "en_US": "Hi {{first_name}}, also try out our new app Tantan, a fun and easy way to meet people around you! http://r.tantanapp.cn/sstyle",
+        "zh-CN": "Hi {{first_name}}，诚邀您试一下我们新推出的APP “探探”，全新社交体验，“左右”你的缘分！ http://r.tantanapp.cn/sstyle"
+      },
+      "tantan_promotion_with_name": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com 回T退订",
+        "zh-CN": "{{name}}，你有一个通讯录好友在［探探］上将你设置为“暗恋对象”。由于你尚未下载探探，特以短信通知。如果你们互相“暗恋”，系统会为你们自动配对。点击https://d.tantanapp.com ，作出你的选择。回T退订"
+      },
+      "tantan_promotion_with_name_v10": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://s.tantanapp.com 回T退订",
+        "zh-CN": "{{name}}，你的一位手机联系人在［探探］上将你设置为“暗恋对象”。由于你尚未下载探探，特短信通知。如果你也选择“暗恋”Ta，你们将自动配对。详情请见https://s.tantanapp.com (你的姓名号码均由该手机联系人提供，如有错误请见谅)回T退订"
+      },
+      "tantan_promotion_with_name_v11": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://s.tantanapp.com 回T退订",
+        "zh-CN": "{{name}}，你的一位手机联系人在［探探］上将你设置为“暗恋对象”。由于你尚未下载探探，特短信通知。如果你也选择“暗恋”Ta，你们将自动配对。详情请见https://s.tantanapp.com (你的姓名号码均由该手机联系人提供，如有错误请见谅)不收通知请回T退订"
+      },
+      "tantan_promotion_with_name_v12": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://s.tantanapp.com 回T退订",
+        "zh-CN": "亲爱的{{name}}，您的一位朋友在使用［探探］，并在Ta的手机联系人中将您选为暗恋对象。如果您也暗恋Ta，系统将自动为你们配对。详情访问：https://s.tantanapp.com（你的姓名由该手机联系人提供，如有错误请见谅) 不想得到通知请"
+      },
+      "tantan_promotion_with_name_v13": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://s.tantanapp.com 回T退订",
+        "zh-CN": "{{name}}，你的一位手机联系人在［探探］上将你设置为“暗恋对象”，如果你也喜欢Ta，你们将配对成功！本条短信由你的联系人向你匿名发送。了解暗恋功能请见：https://d.tantanapp.com。不想得到通知请"
+      },
+      "tantan_promotion_with_name_v14": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://s.tantanapp.com 回T退订",
+        "zh-CN": "{{firstname}}，你的一位手机联系人在［探探］上将你设置为“暗恋对象”。由于你未使用探探，你的联系人发送了短信通知。如果你也“暗恋”Ta，你们将配对成功。详情见https://s.tantanapp.com (你的姓名由该联系人提供，如有打扰请见谅)"
+      },
+      "tantan_promotion_with_name_v20": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://s.tantanapp.com 回T退订",
+        "zh-CN": "{{firstname}}，你的一位手机联系人在［探探］上将你设置为“暗恋对象”。由于你未使用探探，你的联系人发送了短信通知。如果你也“暗恋”Ta，你们将配对成功。详情见https://d.tantanapp.com (你的姓名由该联系人提供，如有打扰请见谅)"
+      },
+      "tantan_promotion_with_name_v3": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com 回T退订",
+        "zh-CN": "{{name}}，你的一位手机联系人在［探探］上将你设置为“暗恋对象”。由于你尚未下载探探，特用短信通知。如果你也选择“暗恋”Ta，你们将自动配对。详情请见https://d.tantanapp.com (你的姓名号码均由该手机联系人提供，如有错误请见谅)。不想得到通知请回T退订"
+      },
+      "tantan_promotion_with_name_v4": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com 回T退订",
+        "zh-CN": "{{name}}，你的一位手机联系人在［探探］上将你设置为“暗恋对象”。由于你尚未下载探探，特短信通知。如果你也选择“暗恋”Ta，你们将自动配对。详情请见https://d.tantanapp.com (你的姓名号码均以好友在Ta的通讯录中的选择为准，如有错误请见谅)回T退订"
+      },
+      "tantan_promotion_with_name_v5": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com 回T退订",
+        "zh-CN": "{{name}}，你有一个手机联系人匿名在[探探]上将你设置为“暗恋对象”。Ta通过探探在Ta的通讯录中选中了你的名字，而你尚未下载探探，所以收到本条短信通知。如果你也在探探的“暗恋表白”里选中Ta，你们将自动配对。详情请见https://d.tantanapp.com 回T退订"
+      },
+      "tantan_promotion_with_name_v6": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com 回T退订",
+        "zh-CN": "{{name}}，你的一位手机联系人在[探探]上将你设置为“暗恋对象”。Ta在Ta的通讯录中选中了你的名字，而你尚未下载探探，特由短信通知。如果你也在探探的”暗恋表白”里选中Ta，你们就会自动配对。详情请见https://d.tantanapp.com 回T退订"
+      },
+      "tantan_promotion_with_name_v7": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com 回T退订",
+        "zh-CN": "{{name}}，你的一位手机联系人在［探探］上将你设置为“暗恋对象”。由于你尚未下载探探，特短信通知。如果你也选择“暗恋”Ta，你们将自动配对。详情请见https://d.tantanapp.com (你的姓名号码均由该手机联系人提供，如有错误请见谅)回T退订"
+      },
+      "tantan_promotion_with_name_v8": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com 回T退订",
+        "zh-CN": "{{name}}，你的一位手机联系人在［探探］上将你设置为“暗恋对象”。由于你尚未下载探探，特短信通知。如果你也选择“暗恋”Ta，你们将自动配对。详情请见https://d.tantanapp.com (你的姓名号码均由该手机联系人提供，如有错误请见谅)不收通知请回T退订"
+      },
+      "tantan_promotion_with_name_v9": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com 回T退订",
+        "zh-CN": "{{name}}，你的一位手机联系人在[探探]上将你设置为“暗恋对象”。Ta在通讯录中选择了你的名字，表达暗恋。而你尚未下载探探，特收到本条短信通知。如果你也在探探的“暗恋表白”里选中Ta，你们将自动配对。详情请见https://d.tantanapp.com 回T退订"
+      },
+      "tantan_promotion_without_name": {
+        "en-US": "Hi, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com 回T退订",
+        "zh-CN": "你有一个通讯录好友在［探探］上将你设置为“暗恋对象”。如果你们互相“暗恋”，系统会为你们自动配对。点击https://d.tantanapp.com ，作出你的选择。回T退订"
+      },
+      "tantan_reset_password": {
+        "en-US": "Your confirmation code is: {{verification_code}} (valid for {{verification_code_ttl}} minutes)",
+        "zh-CN": "您的验证码为： {{verification_code}} （此验证码{{verification_code_ttl}}分钟内有效）"
+      },
+      "tantan_secret_crush_with_name": {
+        "en-US": "Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com 回T退订",
+        "zh-CN": "{{name}}，你有一个通讯录好友在［探探］上将你设置为“暗恋对象”。由于你尚未下载探探，特以短信通知。如果你们互相“暗恋”，系统会为你们自动配对。点击https://d.tantanapp.com ，作出你的选择。回T退订"
+      },
+      "tantan_secret_crush_without_name": {
+        "en-US": "Hi, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com 回T退订",
+        "zh-CN": "你有一个通讯录好友在［探探］上将你设置为“暗恋对象”。如果你们互相“暗恋”，系统会为你们自动配对。点击https://d.tantanapp.com ，作出你的选择。回T退订"
+      },
+      "tantan_sign_in_verification": {
+        "en-US": "Your confirmation code is: {{verification_code}} (valid for {{verification_code_ttl}} minutes)",
+        "zh-CN": "您的验证码为： {{verification_code}} （此验证码{{verification_code_ttl}}分钟内有效）"
+      },
+      "tantan_sign_up_verification": {
+        "en-US": "Your confirmation code is: {{verification_code}} (valid for {{verification_code_ttl}} minutes)",
+        "zh-CN": "您的验证码为： {{verification_code}} （此验证码{{verification_code_ttl}}分钟内有效）"
+      }
+    },
+    "yunpianTemplates": {
+      "checkmk_alert": {
+        "en-US": "923663"
+      },
+      "p1_reset_password": {
+        "en-US": "401001",
+        "zh-CN": "401003"
+      },
+      "p1_sign_up_verification": {
+        "en-US": "400999",
+        "zh-CN": "401000"
+      },
+      "street_style_notification": {
+        "en-US": "401005",
+        "zh-CN": "401006"
+      },
+      "street_style_second_notification": {
+        "en-US": "401007",
+        "zh-CN": "401008"
+      },
+      "tantan_change_phone": {
+        "en-US": "393739",
+        "zh-CN": "393738"
+      },
+      "tantan_promotion": {
+        "app_key": "ea0982ecb62adcbb072a90f7235d007b",
+        "en-US": "602685",
+        "zh-CN": "602681"
+      },
+      "tantan_promotion_with_name": {
+        "en-US": "1235187",
+        "zh-CN": "1607278"
+      },
+      "tantan_promotion_with_name_v10": {
+        "en-US": "1634552",
+        "zh-CN": "1634526"
+      },
+      "tantan_promotion_with_name_v11": {
+        "en-US": "1634552",
+        "zh-CN": "1634528"
+      },
+      "tantan_promotion_with_name_v14": {
+        "en-US": "1634552",
+        "zh-CN": "1688742"
+      },
+      "tantan_promotion_with_name_v20": {
+        "en-US": "1634552",
+        "zh-CN": "1688744"
+      },
+      "tantan_promotion_with_name_v3": {
+        "en-US": "1235187",
+        "zh-CN": "1607278"
+      },
+      "tantan_promotion_with_name_v4": {
+        "en-US": "1235187",
+        "zh-CN": "1607278"
+      },
+      "tantan_promotion_with_name_v5": {
+        "en-US": "1235187",
+        "zh-CN": "1607278"
+      },
+      "tantan_promotion_with_name_v7": {
+        "en-US": "1235187",
+        "zh-CN": "1634490"
+      },
+      "tantan_promotion_with_name_v8": {
+        "en-US": "1235187",
+        "zh-CN": "1634492"
+      },
+      "tantan_promotion_without_name": {
+        "en-US": "1235189",
+        "zh-CN": "1616200"
+      },
+      "tantan_reset_password": {
+        "en-US": "393739",
+        "zh-CN": "393738"
+      },
+      "tantan_secret_crush_with_name": {
+        "en-US": "1235187",
+        "zh-CN": "1607278"
+      },
+      "tantan_secret_crush_without_name": {
+        "en-US": "1235189",
+        "zh-CN": "1616200"
+      },
+      "tantan_sign_in_verification": {
+        "en-US": "393739",
+        "zh-CN": "393738"
+      },
+      "tantan_sign_up_verification": {
+        "en-US": "393739",
+        "zh-CN": "393738"
+      }
+    }
+  }
+}

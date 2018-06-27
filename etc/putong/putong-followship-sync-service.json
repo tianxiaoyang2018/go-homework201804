@@ -1,0 +1,24 @@
+{
+  "FollowshipSync": {
+    "ListenAddress": ":18333",
+    "BaseUrl": "http://10.9.169.163:18333",
+    "UserGroupName": "user-group-2018-06-03",
+    "UserStatusGroupName": "user-status-group-2018-06-031",
+    "PopularityGroupName": "popularity-group-2018-06-03",
+    "UserConcurrency": 1,
+    "UserStatusConcurrency": 1,
+    "PopularityConcurrency":1
+  },
+ "Log": {
+    "Output": [
+      "stderr",
+      "syslog"
+    ],
+    "Syslog": {
+      "Facility": "local6",
+      "Protocol": "udp",
+      "Address": "10.9.169.163:514"
+    }
+  }
+}
+
