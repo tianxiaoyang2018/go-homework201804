@@ -1,0 +1,3478 @@
+{
+  "IsUseMomentShard": true,
+  "Testing": false,
+  "ContactTempStore": {
+    "Enabled": false,
+    "FilePath": "/var/lib/putong/putong-core-service/tmp-contact-storage/",
+    "MaxUserId": 1000000000
+  },
+  "PoliticalWordsPath": "/etc/putong/politicalwords.txt",
+  "PoliticalCensorEnable": true,
+  "IsBuildInfoIntoKafka": "on",
+  "MacAccessToken": {
+    "AllowedTimeDiffInSeconds": 300,
+    "HmacSecrets": {
+      "ios1.7.1": "BGwe%4zMjZN7JJTc&f*GyX7L!g@8dpXuJ7!*rXR2QWc$-+Y2ZP",
+      "android1.7.1": "5tT!TQkf5fYbabw5?KL2659XgL^JgxWw8r9Y+bAvGwP-QfteQL",
+      "ios2.3.0": "&YZ!+GrX%yNW7-8GXcdeg@Z*7LjzQXw42uBRf$*p!TMJ7J2PcJ",
+      "android2.3.0": "2gr!4Yu$JW7pyMfXJXLQcdGcP7JZ7G8*&e+@w%!*TzNBZRX2jX",
+      "ios2.3.2": "ZjlhOWNiMTkxYTU2YzdjYWZhMWM3OTM1MzU3MWM2MTZkOGFjYW",
+      "android2.3.2": "p_ES5vb2HHb3QuctEmP2e2SsH54xtDNP6V66JAVoUthITpldNl",
+      "ios2.4.0": "-sudoOZtSy-InuFUwOzjXUyQ-mbyRA7ZBFSQgbO7OFjA3QDq7b",
+      "android2.4.0": "dRA1FdPwAhsRZ5ttcKs01TIuW_elZxiBGmvYIsiQM7-fuLGfsj",
+      "android2.4.2": "3X5T0!+QbxDWdcwggycO*&e+@w%NxfLcnWPRMXyFuIKuIyQZmZ",
+      "ios2.5.0": "Fos3BlAHcDjRXV3L6bp7eEE9bSvH2KJ2sYnBkkQg4GvQ80Eub9",
+      "android2.5.0": "tHo06g-dnlLxpgB7Kf8BWfVVWx66hiZ3wfIf-8RLSjHg3ZPH4w",
+      "android2.5.1": "pKMXgc_ATQdeqZ9aibtW04sZ5OYb1wjlNo43Ojweg1eiHnlHNM",
+      "ios2.5.2": "HjXkbmc5ugr93T3AnxOCwtOk931VlCoFXAOp4rVtbiluDr41iy",
+      "ios2.5.3": "aFsYLLSlxZ7k72Uq510DiTNMRCIOcmvMpT81Kbww3oU2ItDAE1",
+      "android2.5.3": "OZapluwHhJvRDExLcitGKTVTEgpZCYzvcRnS0Dd5v0yYl7Nnz1",
+      "ios2.6.0": "KS0hnF4jrbh7IcG1EqiF623CFsMLmIJyee5prVabq21pJUwHXw",
+      "android2.6.0": "ZeBjFmBI6so0FQF48R64jW8RefFRqeKmeRPxLuLwAUpeZZEmB2",
+      "ios2.6.6": "2E3O1H1fhaK55DGdlC7SIL2FGimIkajkbtT3gEKouCJ2k9nNFh",
+      "ios2.6.9": "vN-5QmwJyVceBjr6I_2lYtQxT85gg1PjcMA2WOwKRIH8eU4KYP",
+      "ios2.7.1": "WY7z-Wte4Tx6ktidLLKxvSZObe2LL1xFbA9miA_8_SSZgx3W2A",
+      "ios2.7.2": "p-aqAwEpTdL4kwKUlrqknWcuzr6wvnEicopRzWOqlGHxoe_6C6",
+      "ios2.8.3": "yybROo16-CARcwGbjIWwf6THFZHeYXd5clNlC_YYYSL0lP1Yud",
+      "android2.8.3": "HX8asOIgLCcJoHODsFus4R95XSUhXjNjRKaGqR4bQMtYEQQkab",
+      "ios2.8.5": "PAzviywZkXFqv_k3_oeKf5mgXzyHhtzMM8m4zzg7R87DbT3WH3",
+      "android2.8.5": "WeCdrzl_CYCpSTJVAzYwTT5CzHhsC1-RQEoULdV753R19Kdn7b"
+    },
+    "HMacSecretsV2": {
+        "Android": {
+            "android1.7.1": {
+                "Secret": "5tT!TQkf5fYbabw5?KL2659XgL^JgxWw8r9Y+bAvGwP-QfteQL",
+                "AppVersionRange": ["1.7.1", "2.3.0"]
+            },
+            "android2.3.0": {
+                "Secret": "2gr!4Yu$JW7pyMfXJXLQcdGcP7JZ7G8*&e+@w%!*TzNBZRX2jX",
+                "AppVersionRange": ["2.3.0", "2.3.2"]
+            },
+            "android2.3.2": {
+                "Secret": "p_ES5vb2HHb3QuctEmP2e2SsH54xtDNP6V66JAVoUthITpldNl",
+                "AppVersionRange": ["2.3.2", "2.4.0"]
+            },
+            "android2.4.0": {
+                "Secret": "dRA1FdPwAhsRZ5ttcKs01TIuW_elZxiBGmvYIsiQM7-fuLGfsj",
+                "AppVersionRange": ["2.4.0", "2.4.2"]
+            },
+            "android2.4.2": {
+                "Secret": "3X5T0!+QbxDWdcwggycO*&e+@w%NxfLcnWPRMXyFuIKuIyQZmZ",
+                "AppVersionRange": ["2.4.2", "2.5.0"]
+            },
+            "android2.5.0": {
+                "Secret": "tHo06g-dnlLxpgB7Kf8BWfVVWx66hiZ3wfIf-8RLSjHg3ZPH4w",
+                "AppVersionRange": ["2.5.0", "2.5.1"]
+            },
+            "android2.5.1": {
+                "Secret": "pKMXgc_ATQdeqZ9aibtW04sZ5OYb1wjlNo43Ojweg1eiHnlHNM",
+                "AppVersionRange": ["2.5.1", "2.5.3"]
+            },
+            "android2.5.3": {
+                "Secret": "OZapluwHhJvRDExLcitGKTVTEgpZCYzvcRnS0Dd5v0yYl7Nnz1",
+                "AppVersionRange": ["2.5.3", "2.6.0"]
+            },
+            "android2.6.0": {
+                "Secret": "ZeBjFmBI6so0FQF48R64jW8RefFRqeKmeRPxLuLwAUpeZZEmB2",
+                "AppVersionRange": ["2.6.0", "2.8.3"]
+            },
+            "android2.8.3": {
+                "Secret": "HX8asOIgLCcJoHODsFus4R95XSUhXjNjRKaGqR4bQMtYEQQkab",
+                "AppVersionRange": ["2.8.3", "2.8.5"]
+            },
+            "android2.8.5": {
+                "Secret": "WeCdrzl_CYCpSTJVAzYwTT5CzHhsC1-RQEoULdV753R19Kdn7b",
+                "AppVersionRange": ["2.8.5", "2.8.9"]
+            },
+            "android2.8.9": {
+                "Secret": "2XYPtavCMo6bjsK7yOidwcbERo4gTGKml3WuLVUCsKLjjpChu0",
+                "AppVersionRange": ["2.8.9", "4.0.0"]
+            }
+        },
+        "IOS": {
+            "ios1.7.1": {
+                "Secret": "BGwe%4zMjZN7JJTc&f*GyX7L!g@8dpXuJ7!*rXR2QWc$-+Y2ZP",
+                "AppVersionRange": ["1.7.1", "2.3.0"]
+            },
+            "ios2.3.0": {
+                "Secret": "&YZ!+GrX%yNW7-8GXcdeg@Z*7LjzQXw42uBRf$*p!TMJ7J2PcJ",
+                "AppVersionRange": ["2.3.0", "2.3.2"]
+            },
+            "ios2.3.2": {
+                "Secret": "ZjlhOWNiMTkxYTU2YzdjYWZhMWM3OTM1MzU3MWM2MTZkOGFjYW",
+                "AppVersionRange": ["2.3.2", "2.4.0"]
+            },
+            "ios2.4.0": {
+                "Secret": "-sudoOZtSy-InuFUwOzjXUyQ-mbyRA7ZBFSQgbO7OFjA3QDq7b",
+                "AppVersionRange": ["2.4.0", "2.5.0"]
+            },
+            "ios2.5.0": {
+                "Secret": "Fos3BlAHcDjRXV3L6bp7eEE9bSvH2KJ2sYnBkkQg4GvQ80Eub9",
+                "AppVersionRange": ["2.5.0", "2.5.2"]
+            },
+            "ios2.5.2": {
+                "Secret": "HjXkbmc5ugr93T3AnxOCwtOk931VlCoFXAOp4rVtbiluDr41iy",
+                "AppVersionRange": ["2.5.2", "2.5.3"]
+            },
+            "ios2.5.3": {
+                "Secret": "aFsYLLSlxZ7k72Uq510DiTNMRCIOcmvMpT81Kbww3oU2ItDAE1",
+                "AppVersionRange": ["2.5.3", "2.6.0"]
+            },
+            "ios2.6.0": {
+                "Secret": "KS0hnF4jrbh7IcG1EqiF623CFsMLmIJyee5prVabq21pJUwHXw",
+                "AppVersionRange": ["2.6.0", "2.6.6"]
+            },
+            "ios2.6.6": {
+                "Secret": "2E3O1H1fhaK55DGdlC7SIL2FGimIkajkbtT3gEKouCJ2k9nNFh",
+                "AppVersionRange": ["2.6.6", "2.6.9"]
+            },
+            "ios2.6.9": {
+                "Secret": "vN-5QmwJyVceBjr6I_2lYtQxT85gg1PjcMA2WOwKRIH8eU4KYP",
+                "AppVersionRange": ["2.6.9", "2.7.1"]
+            },
+            "ios2.7.1": {
+                "Secret": "WY7z-Wte4Tx6ktidLLKxvSZObe2LL1xFbA9miA_8_SSZgx3W2A",
+                "AppVersionRange": ["2.7.1", "2.7.2"]
+            },
+            "ios2.7.2": {
+                "Secret": "p-aqAwEpTdL4kwKUlrqknWcuzr6wvnEicopRzWOqlGHxoe_6C6",
+                "AppVersionRange": ["2.7.2", "2.8.3"]
+            },
+            "ios2.8.3": {
+                "Secret": "yybROo16-CARcwGbjIWwf6THFZHeYXd5clNlC_YYYSL0lP1Yud",
+                "AppVersionRange": ["2.8.3", "2.8.5"]
+            },
+            "ios2.8.5": {
+                "Secret": "PAzviywZkXFqv_k3_oeKf5mgXzyHhtzMM8m4zzg7R87DbT3WH3",
+                "AppVersionRange": ["2.8.5", "2.8.9"]
+            },
+            "ios2.8.9": {
+                "Secret": "Hmn2NCzpIzwvlTFCs1bTsjQOpzAEMzV8E8Ob1n8O2c7gVwfn2E",
+                "AppVersionRange": ["2.8.9", "4.0.0"]
+            }
+        }
+    },
+    "NewerSecretVersions": [
+        "android2.6.0",
+        "android2.8.3",
+        "android2.8.5",
+        "android2.8.9",
+        "ios2.6.0",
+        "ios2.6.6",
+        "ios2.6.9",
+        "ios2.7.1",
+        "ios2.7.2",
+        "ios2.8.3",
+        "ios2.8.5",
+        "ios2.8.9"
+    ]
+  },
+  "BuildInfoDecryptionKeys": {
+    "ios": "Xj2XRZBNzT*!%w@+e&*8G7ZJ7PcGdcQL",
+    "android": "Xj2XRZBNzT*!%w@+e&*8G7ZJ7PcGdcQL",
+    "ios2.5.3": "fSwUftzpVFxCbIuVx3ZhAdqdG10miLzY",
+    "android2.5.3": "GVZ22wsyyxuIFkanAnbYs1wzFVxmRUTq",
+    "ios2.6.0": "VT2840vjgKN9433W2y6KTJkRZPSFaAbP",
+    "android2.6.0": "tfA97WqnKvwKiQMoCFQQEOUgO4zP3Cwb",
+    "ios2.6.6": "yzL6jyhPzKV5VAnjQGW5Dm9MmCYQujCV",
+    "ios2.6.9": "cOK2DJEf-abfQcp9EXSHjYv0drl8gGqr",
+    "ios2.7.1": "cOK2DJEf-abfQcp9EXSHjYv0drl8gGqr",
+    "ios2.7.2": "QSEuYJ6JE6epqAfVzoZ3rY5fZh1yU9dV",
+    "ios2.8.3": "nWGga2KQZ45xjDYuGzboaNCMyw7_Mwee",
+    "android2.8.3": "wvZT8IuSrhaSRmsQnY0VWUmADf13naje",
+    "ios2.8.5": "Fvx5DXyZAASzxzwh0lMnZkkx5_yCTbn5",
+    "android2.8.5": "INWhaThueVdMBb-c1zlSUKs671IQ3NYF",
+    "ios2.8.9": "fNZYBeDsVR0I-RL1zfguFl112m0sz1O7",
+    "android2.8.9": "SFOrmGZS_zkM5uv7ACBbYKyNLxTYdVlC"
+  },
+  "PublicLink": {
+    "BaseURL": "http://tantan-pages.p1.cn",
+    "ShareBaseURL": "https://r.tantanapp.com",
+    "ListenAddress": ":18413",
+    "SuperLikeTitle": "好神奇，这个app可以找到周围喜欢你的人!",
+    "UserCardTTL": 86400,
+    "UserCardTestUsers": [
+      {
+        "TestCase": "shareCardCaseA",
+        "UserIds": [
+          "1",
+          "3",
+          "6",
+          "17",
+          "24",
+          "42",
+          "48",
+          "89",
+          "98",
+          "350",
+          "768",
+          "911",
+          "1274",
+          "1297",
+          "2231",
+          "2236",
+          "2308",
+          "2537",
+          "7284",
+          "16763",
+          "17994",
+          "19166",
+          "20778",
+          "21061",
+          "21062",
+          "21064",
+          "21656",
+          "21914",
+          "23104",
+          "49292",
+          "50799",
+          "79401",
+          "397962",
+          "744378",
+          "967751",
+          "989814",
+          "1112528",
+          "1200779",
+          "1266914",
+          "2031464",
+          "2130394",
+          "2754004",
+          "3308324",
+          "4673328",
+          "4826669",
+          "5428445",
+          "5656525",
+          "6306387",
+          "6337282",
+          "6529743",
+          "7019587",
+          "7664893",
+          "7753002",
+          "8543552",
+          "9015548",
+          "9680475",
+          "9876150",
+          "10070961",
+          "10524527",
+          "14040975",
+          "17047039",
+          "17772484",
+          "19526394",
+          "19664989",
+          "22913581",
+          "23802083",
+          "26054413",
+          "26731701",
+          "27111492",
+          "27581180",
+          "27725457",
+          "27784520",
+          "27792058",
+          "27793027",
+          "27794214",
+          "27904548",
+          "27904561",
+          "28541914",
+          "29319068",
+          "29448463",
+          "29664651",
+          "29666733",
+          "29667558",
+          "29678465",
+          "29878894",
+          "30064935",
+          "30065789",
+          "30066980",
+          "30067414",
+          "30070051",
+          "30467837",
+          "30997919",
+          "31268543",
+          "32151491",
+          "32169039",
+          "33247738",
+          "39906238",
+          "40584547",
+          "41985095",
+          "43017649",
+          "44643035",
+          "45144495",
+          "46033824",
+          "46249886",
+          "46455574",
+          "47031899",
+          "47346554",
+          "48290477",
+          "48501359",
+          "49522826",
+          "50914096",
+          "52008067",
+          "52365191",
+          "54044688",
+          "54303028",
+          "54503564",
+          "54737100",
+          "58065358",
+          "64753740",
+          "67054390",
+          "68673495",
+          "72045352",
+          "80515173",
+          "89121657"
+        ]
+      },
+      {
+        "TestCase": "shareCardCaseB",
+        "UserIds": []
+      }
+    ]
+  },
+  "Account": {
+    "ListenAddress": ":18224",
+    "HideDeleteAccount": false,
+    "AgeLimit": {
+      "Enabled": true,
+      "DeviceOS": [
+        "ios"
+      ],
+      "Versions": [
+        "3.0.5.0",
+        "3.0.5.1",
+        "3.0.5.2",
+        "3.0.5.3",
+        "3.0.5.4",
+        "3.0.5.5",
+        "3.0.5.6",
+        "3.0.5.7",
+        "3.0.5.8",
+        "3.0.5.9",
+        "3.0.6.0",
+        "3.0.6.1",
+        "3.0.6.2",
+        "3.0.6.3",
+        "3.0.6.4",
+        "3.0.6.5",
+        "3.0.6.6",
+        "3.0.6.7",
+        "3.0.6.8"
+      ]
+    },
+    "CountryCodeWhiteList": [
+      93
+    ],
+    "smsCode": {
+      "changePhone": {
+        "dailyLimit": 6,
+        "len": 6,
+        "ttl": 600,
+        "maxRetryTimes": 5
+      },
+      "resetPassword": {
+        "dailyLimit": 6,
+        "len": 6,
+        "ttl": 600,
+        "maxRetryTimes": 5
+      },
+      "resetPasswordShortCode": {
+        "dailyLimit": 6,
+        "len": 4,
+        "ttl": 600,
+        "maxRetryTimes": 5
+      },
+      "signup": {
+        "dailyLimit": 10,
+        "len": 6,
+        "ttl": 600,
+        "maxRetryTimes": 5
+      },
+      "signupShortCode": {
+        "dailyLimit": 10,
+        "len": 4,
+        "ttl": 600,
+        "maxRetryTimes": 5
+      },
+      "signin": {
+        "dailyLimit": 10,
+        "len": 6,
+        "ttl": 600,
+        "maxRetryTimes": 5
+      },
+      "signinShortCode": {
+        "dailyLimit": 10,
+        "len": 4,
+        "ttl": 600,
+        "maxRetryTimes": 5
+      }
+    },
+    "ThirdPartyValidation": {
+      "Enabled": false,
+      "Timeout": "3s",
+      "Providers": {
+        "NetEase": {
+          "Enabled": true,
+          "ValidationURL": "https://c.dun.163yun.com/api/v1/verify",
+          "CaptchaID": "5f0794cec40b4b6f81fba221ea311383",
+          "SecretID": "731c6838d0394ff2847ee060226e40ec",
+          "SecretKey": "400fad7fe324959e495034c9840d7413",
+          "Version": "v1"
+        },
+        "Geetest": {
+          "Enabled": false,
+          "RegisterURL": "https://api.geetest.com/register.php",
+          "ValidateURL": "https://api.geetest.com/validate.php",
+          "Version": "v1",
+          "CaptchaID": "83aa5e93c292d8c342dc1c15adf9f8c0",
+          "PrivateKey": "67fee0e60dc80e684cda9f662c750ba0"
+        }
+      }
+    },
+    "smsTpl": {
+      "changePhone": "tantan_change_phone",
+      "resetPassword": "tantan_reset_password",
+      "signup": "tantan_sign_up_verification",
+      "signin": "tantan_sign_in_verification"
+    },
+    "ThirdPartyAccounts": {
+      "Configs": [
+        {
+          "Enabled": true,
+          "Name": "facebook",
+          "ClientId": "350461505345910",
+          "ClientSecret": "fe2a403d007534f3911f96106eebf253"
+        }
+      ]
+    },
+    "FacebookTagsConversionRules": [
+      {
+        "ProfileTagCategory": "movies",
+        "FacebookCategories": [
+          "Actor",
+          "Film Director",
+          "Movie Character",
+          "Producer",
+          "Movie"
+        ]
+      },
+      {
+        "ProfileTagCategory": "sports",
+        "FacebookCategories": [
+          "Athlete",
+          "Coach",
+          "Amateur Sport Team",
+          "School Sports Team",
+          "Sports League",
+          "Sports Team"
+        ]
+      },
+      {
+        "ProfileTagCategory": "music",
+        "FacebookCategories": [
+          "Musician",
+          "Band",
+          "Album",
+          "Concert Tour",
+          "Music Video",
+          "Song"
+        ]
+      },
+      {
+        "ProfileTagCategory": "food",
+        "FacebookCategories": [
+          "Bar",
+          "Restaurant",
+          "Food & Beverage Company",
+          "Wine/Spirits"
+        ]
+      },
+      {
+        "ProfileTagCategory": "literature",
+        "FacebookCategories": [
+          "Author",
+          "Writer",
+          "Book",
+          "Book Series"
+        ]
+      },
+      {
+        "ProfileTagCategory": "places",
+        "FacebookCategories": [
+          "Landmark & Historical Place",
+          "Tour Agency"
+        ]
+      }
+    ]
+  },
+  "StaticAssets": {
+    "ListenAddress": ":18416",
+    "ConfPath": "/etc/putong/putong-asset-service/config.json"
+  },
+  "Affiliate": {
+    "ListenAddress": ":18440",
+    "baseUrl": "http://10.191.167.137:18440"
+  },
+  "Cloud": {
+    "ListenAddress": ":18409",
+    "BaseUrl": "https://auto.tancdn.com/v1"
+  },
+  "ClientEvent": {
+    "ListenAddress": ":18415",
+    "UcloudStorageDriver": {
+      "PublicKey": "kNrXYGnTN5T1iT3wFQ3rou6Q+e5Ht3pJhRyvshIbOhcSAFO1",
+      "PrivateKey": "710f3ac3db23feacb3ee6d633346ce1a08e8b4d9",
+      "ProxyURL": "http://www.ufile.cn-north-02.ucloud.cn",
+      "GzipBucketName": "putong-client-tracking",
+      "GzipOriginalBucketName": "putong-client-tracking"
+    },
+    "DefaultDriver": "UcloudStorageDriver",
+    "BackupDriver": "",
+    "RetryFilePath": "/tmp/applogtempretry"
+  },
+  "Quarantine": {
+    "ListenAddress": ":18442"
+  },
+  "Contest": {
+    "BackdoorEnabled": false,
+    "BaseUrl": "",
+    "ListenAddress": ":"
+  },
+  "Core": {
+    "BrandAccountMomentLimit":100,
+    "PublishNormalPushToDCLRatio":100,
+    "MessageDebugPrintRatio":0.3,
+    "SuggestSearchLevels": [
+      2200000
+    ],
+    "BackdoorEnabled": false,
+    "ListenAddress": ":18223",
+    "BaseUrl": "https://core.tantanapp.com/v1",
+    "MaxSearchDistance": 100000,
+    "BrandAccountMomentCacheTimeout": 300,
+    "GEO": {
+      "AgeLimited": "/usr/share/putong/usa-and-korea-coordinates.json"
+    },
+    "AbroadLocations": {
+      "ByCountry": {
+        "澳大利亚": [-37.813611, 144.963056],
+        "孟加拉国": [22.366667, 91.8],
+        "文莱": [4.890278, 114.942222],
+        "缅甸": [21.975, 96.083333],
+        "加利福尼亚": [34.05, -118.25],
+        "香港": [22.3, 114.2],
+        "印度": [28.61, 77.23],
+        "印度尼西亚": [-7.265278, 112.7425],
+        "日本": [35.444167, 139.638056],
+        "澳门": [22.166667, 113.55],
+        "马来西亚": [5.4, 100.238889],
+        "摩洛哥": [34.020882, -6.84165],
+        "菲律宾": [7.07, 125.6],
+        "沙特阿拉伯": [21.543333, 39.172778],
+        "新加坡": [1.3, 103.8],
+        "西班牙": [39.466667, -0.375],
+        "斯里兰卡": [6.934444, 79.842778],
+        "台湾": [24.15, 120.666667],
+        "泰国": [13.599444, 100.596667],
+        "韩国": [35.166667, 129.066667],
+        "土耳其": [39.933333, 32.866667],
+        "英国": [52.483056, -1.893611],
+        "美国": [41.836944, -87.684722],
+        "越南": [21.028472, 105.854167]
+      }
+    },
+    "ExtendedSearchDistance": 2200000,
+    "ThirdPartySticker": {
+      "Timeout": "2s",
+      "MaxSize": {
+        "Width": 1000,
+        "Height": 1000
+      },
+      "MinSize": {
+        "Width": 1,
+        "Height": 1
+      },
+      "Provider": {
+        "Biaoqingyun": {
+          "TrendingURI": "https://open-api.biaoqingmm.com/open-api/trending",
+          "SearchURI": "https://open-api.biaoqingmm.com/open-api/stickers/search",
+          "Partner": "tantan",
+          "APPID": "b19657b521f34b52bbc94d5f84995f64",
+          "SSLRES": "true",
+          "PageNumber": 1,
+          "PageSize": 50,
+          "FileSize": "large"
+        },
+        "Shanmeng": {
+          "TrendingURI": "https://api.tantan.weshine.im/1.0/hot",
+          "SearchURI": "https://api.tantan.weshine.im/1.0/search",
+          "OpenID": "1504842803",
+          "Secret": "22f6577eeb42ac01381039bcd968ee54",
+          "Offset": 0,
+          "Limit": 50
+        },
+        "Soogif": {
+          "TrendingURI": "https://sapi.soogif.com/oapi/backend/column/image/list",
+          "SearchURI": "https://sapi.soogif.com/oapi/backend/image/search",
+          "Salt": "2babqefc1ec93e34fdaa7a11ba3",
+          "Scope": "tantan",
+          "Type": "S_2M",
+          "TrendingCode": "641",
+          "PageNumber": 1,
+          "PageSize": 50
+        }
+      }
+    },
+    "RecallMessage": {
+      "en": "[This message was recalled]",
+      "zh": "[本条消息已被撤回]"
+    },
+    "MediaMessage": {
+      "image": {
+        "MinIOSVersion": "1.4.0",
+        "MinAndroidVersion": "1.4.0",
+        "PreviewValues": {
+          "zh": "[图片]",
+          "en": "[Picture]"
+        },
+        "UpgradeValues": {
+          "zh": "您收到的是[图片]消息，请更新探探后查看",
+          "en": "[Picture] received, please update Tantan to see it"
+        }
+      },
+      "audio": {
+        "MinIOSVersion": "1.4.0",
+        "MinAndroidVersion": "1.4.0",
+        "PreviewValues": {
+          "zh": "[语音]",
+          "en": "[Audio]"
+        },
+        "UpgradeValues": {
+          "zh": "您收到的是[语音]消息，请更新探探后查看",
+          "en": "[Audio] received, please update Tantan to listen to it"
+        }
+      },
+      "video": {
+        "MinIOSVersion": "1.4.0",
+        "MinAndroidVersion": "1.4.0",
+        "PreviewValues": {
+          "zh": "[视频]",
+          "en": "[Video]"
+        },
+        "UpgradeValues": {
+          "zh": "您收到的是[视频]消息，请更新探探后查看",
+          "en": "[Video] received, please update Tantan to see it"
+        }
+      },
+      "sticker": {
+        "MinIOSVersion": "1.5.0",
+        "MinAndroidVersion": "1.5.0",
+        "PreviewValues": {
+          "zh": "[贴纸表情]",
+          "en": "[Sticker]"
+        },
+        "UpgradeValues": {
+          "zh": "您收到的是[贴纸表情]消息，请更新探探后查看",
+          "en": "[Sticker] received, please update Tantan to see it"
+        }
+      },
+      "animatedSticker": {
+        "MinIOSVersion": "2.6.5",
+        "MinAndroidVersion": "2.6.5",
+        "PreviewValues": {
+          "zh": "[动态表情]",
+          "en": "[Animated Sticker]"
+        },
+        "UpgradeValues": {
+          "zh": "您收到的是[动态表情]消息，请更新探探后查看",
+          "en": "[Animated Sticker] received, please update Tantan to see it"
+        }
+      },
+      "stickerProviderSoogifAndShanmeng": {
+        "MinAndroidVersion": "2.7.0.2",
+        "PreviewValues": {
+          "zh": "[动画表情]",
+          "en": "[Animated Sticker]"
+        },
+        "UpgradeValues": {
+          "zh": "您收到的是[动态表情]消息，请更新探探后查看",
+          "en": "[Animated Sticker] received, please update Tantan to see it"
+        }
+      },
+      "question": {
+        "UpgradeValues": {
+          "en": "[Question Game] message received, please update Tantan to see the question options",
+          "zh": "您收到的是[真心话问题]消息，请更新探探后查看回答选项"
+        },
+        "MinAndroidVersion": "1.7.0",
+        "PreviewValues": {
+          "en": "",
+          "zh": ""
+        },
+        "MinIOSVersion": "1.7.0"
+      },
+      "location": {
+        "MinIOSVersion": "1.8.0",
+        "MinAndroidVersion": "1.8.0",
+        "PreviewValues": {
+          "zh": "[地理位置]",
+          "en": "[Location]"
+        },
+        "UpgradeValues": {
+          "zh": "您收到的是[地理位置]消息，请更新探探后查看",
+          "en": "[Location] received, please update Tantan to see it"
+        }
+      },
+      "momentLike": {
+        "MinIOSVersion": "2.3.0",
+        "MinAndroidVersion": "2.3.0",
+        "PreviewValues": {
+          "zh": "",
+          "en": ""
+        },
+        "UpgradeValues": {
+          "zh": "❤",
+          "en": "❤"
+        }
+      }
+    },
+    "TeamAccountMessages": {
+      "FakeProfilePicture": {
+        "en": "Attention! You did not use a picture that clearly shows your face for your main profile image. You have been temporarily blocked by the system and cannot get matched[失望]. Please update your picture to get more likes!",
+        "zh": "注意！由于没有使用可看清脸的真实照片作为头像，你被系统暂时屏蔽了，无法得到配对[失望]。请尽快更新照片，得到更多人的喜欢吧！"
+      },
+      "PokeReply": {
+        "en": "This is Tantan team account. We greatly value and would love to hear your feedback. We will try our best to solve any problems asap and get back to you!",
+        "zh": "遇到什么不爽的事么，快跟探探说说，探探一定为你解决！"
+      },
+      "ReportedUserBanned": {
+        "en": "The user {{name}} that you reported has been banned from Tantan and has been removed from your match list. Thanks a lot for helping us improving the atmosphere of Tantan!",
+        "zh": "亲，你举报的用户{{name}}已经被探探封号，且从你的聊天列表永远消失啦，握爪感谢！"
+      },
+      "Welcome": {
+        "en": "Hello {{name}}, welcome to Tantan! Swipe right to like and left to dislike. If someone you liked also likes you back you will be matched! Only matched users can chat with each other. This is our team account. Ask us any questions and we will try our best to get back to you asap!",
+        "zh": "{{name}}，你好，我是探探小助手，探探特别开心又多了一个小伙伴。看照片点赞，互赞就可以聊天。祝愿大家能找到聊得来的朋友，开启心动的约会。遇到的不爽也可以跟我吐槽～也欢迎你对探探的建议哦！"
+      },
+      "WrongGender": {
+        "en": "We have noticed that the gender you selected does not match your profile pictures. You have therefore been hidden from other users. Please adjust to your correct gender in settings and you will become visible again.",
+        "zh": "注意！你的性别填写错了，系统已经暂时屏蔽了你[失望]。请尽快更改，不然无法得到配对哦。"
+      }
+    },
+    "QuestionMessage": {
+      "NegativeAnswers": [
+        "no",
+        "不同意"
+      ],
+      "headers": {
+        "classic": {
+          "en": "Let’s play a question game:\n",
+          "zh": "我们一起玩经典真心话吧：\n"
+        },
+        "intimate": {
+          "en": "Let’s play an intimate question game:\n",
+          "zh": "我们一起玩私密真心话吧：\n"
+        }
+      },
+      "footers": {
+        "classic": {
+          "en": "\nI’ll answer first",
+          "zh": "\n我先回答"
+        },
+        "intimate": {
+          "en": "\nI’ll answer first",
+          "zh": "\n我先回答"
+        }
+      }
+    },
+    "smsTpl": {
+      "secretCrushWithName": "tantan_secret_crush_with_name",
+      "secretCrushWithoutName": "tantan_secret_crush_without_name",
+      "promotionWithName": {
+        "14": "tantan_promotion_with_name_v14",
+        "20": "tantan_promotion_with_name_v20"
+      }
+    },
+    "UsersWithoutBuildInfoRetryFilePath": "/var/lib/putong/putong-core-service/users-without-buildinfo/",
+    "BrandAccountVisiblePercent": 100,
+    "RecommendationUrl": "http://127.0.0.1:18438/users",
+    "RecommendationTimeoutMillisecond": 10000,
+    "RecommendationFailedRetryEnabled": true,
+    "BrandAccountMomentMaxLikeCountLimit": 10,
+    "BrandAccountMomentLikeCountIncrement": 500,
+    "PassbyOutsideOfChina": {
+      "IOSDisabled": true,
+      "IOSDisabledMinVersion": "3.0.5.0",
+      "IOSDisabledMaxVersion": "3.9.9.5"
+    },
+    "SchoolVerificationConditions": {
+      "Student": false,
+      "AgeRange": {
+        "MinAge": 16,
+        "MaxAge": 22
+      }
+    }
+  },
+  "Abuse": {
+    "Enabled": false,
+    "BaseURL": "http://127.0.0.1:18426",
+    "TimeoutSeconds": 1
+  },
+  "Autoupdate": {
+    "ABTest": [
+      {
+        "DeviceIDRegExp": "^0[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.7.1"
+      },
+      {
+        "DeviceIDRegExp": "^1[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.7.1"
+      },
+      {
+        "DeviceIDRegExp": "^2[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.7.1"
+      },
+      {
+        "DeviceIDRegExp": "^3[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.7.1"
+      },
+      {
+        "DeviceIDRegExp": "^4[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.7.1"
+      },
+      {
+        "DeviceIDRegExp": "^5[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.7.1"
+      },
+      {
+        "DeviceIDRegExp": "^6[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.7.1"
+      },
+      {
+        "DeviceIDRegExp": "^7[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.7.1"
+      },
+      {
+        "DeviceIDRegExp": "^8[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.8.2"
+      },
+      {
+        "DeviceIDRegExp": "^9[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.8.2"
+      },
+      {
+        "DeviceIDRegExp": "^a[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.8.2"
+      },
+      {
+        "DeviceIDRegExp": "^b[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.8.2"
+      },
+      {
+        "DeviceIDRegExp": "^c[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.8.3"
+      },
+      {
+        "DeviceIDRegExp": "^d[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.8.3"
+      },
+      {
+        "DeviceIDRegExp": "^e[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.8.3"
+      },
+      {
+        "DeviceIDRegExp": "^f[0-9a-z]{7}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$",
+        "Version": "2.7.8.3"
+      }
+    ],
+    "ListenAddress": ":18427",
+    "ExpireInSeconds": 900
+  },
+  "Log": {
+    "Output": [
+      "syslog"
+    ],
+    "Syslog": {
+      "Facility": "local6",
+      "Protocol": "udp",
+      "Address": "127.0.0.1:514"
+    }
+  },
+  "Push": {
+    "ListenAddress": ":18226",
+    "BaseUrl": "10.191.167.137:18226",
+    "Apns": {
+      "poolSize": 40,
+      "CertificateFile": "/etc/putong/putong-push-service/apns-cert.pem",
+      "KeyFile": "/etc/putong/putong-push-service/apns-key.pem",
+      "ServerAddress": "gateway.push.apple.com:2195"
+    },
+    "umeng": {
+      "appKey": "534e662c56240b8f2f0048e4",
+      "appSecret": "x27h8ssavlz03qeq9vguu9eewfywlk3x",
+      "urlBase": "http://msg.umeng.com"
+    },
+    "jpush": {
+      "poolSize": 100,
+      "urlBase": "https://bjapi.push.jiguang.cn",
+      "appKey": "8e5cf4ca06728a452207f701",
+      "appSecret": "8d904103459d06cafde9f416"
+    },
+    "mipush": {
+      "poolSize": 40,
+      "appSecret": "nFdaYNnTrWbnhN7cflpovA=="
+    },
+    "hwpush": {
+      "poolSize": 40,
+      "appSecret": ""
+    },
+    "gtpush": {
+      "appID": "IUPFMiVivN9DOPaBJ97fP6",
+      "appKey": "rz2zFLbitP6ZMMOGj1uqx",
+      "appSecret": "vCmH9CoHST9LFQqFyyaFI2",
+      "masterSecret": "UnbZentn6DAqSIQJvtYpX1"
+    },
+    "oppopush": {
+        "appKey": "L3BJpyKWYvC4wQ0DqYiFQh3X",
+        "appSecret": "T8FT4Ey7vM9lprT0MqcEeGDa",
+        "masterSecret": "3W7Lvue4yW301Gg7nAv9y5AY",
+        "hostURL": "https://api.push.oppomobile.com"
+    }
+  },
+  "WhiteListedIpAddresses": [
+    "106.38.111.194"
+  ],
+  "RateLimit": {
+    "SimultaneousNearbyQueries": 20,
+    "SigninBadRequest": {
+      "Count": 5,
+      "IntervalInSeconds": 7200,
+      "IpBlockedTTL": 3600
+    },
+    "SigninAuthError": {
+      "Count": 5,
+      "IntervalInSeconds": 7200,
+      "IpBlockedTTL": 3600
+    },
+    "PhoneCodeSendRequest": {
+      "Count": 10,
+      "IntervalInSeconds": 600,
+      "IpBlockedTTL": 3600
+    },
+    "ForgotPasswordRequest": {
+      "Count": 10,
+      "IntervalInSeconds": 600,
+      "IpBlockedTTL": 3600
+    }
+  },
+  "Sms": {
+    "baseUrl": "http://10.191.167.136:18428/"
+  },
+  "MinClientVersion": {
+    "General": {
+      "android": {
+        "MinVersion": "1.7.1",
+        "UpgradeUrl": "https://tantanapp.com/"
+      },
+      "ios": {
+        "MinVersion": "1.7.1",
+        "UpgradeUrl": "https://itunes.apple.com/cn/app/tantan/id861891048?mt=8"
+      }
+    },
+    "Signup": {
+      "android": {
+        "MinVersion": "2.8.4",
+        "UpgradeUrl": "https://tantanapp.com/"
+      },
+      "ios": {
+        "MinVersion": "2.8.3",
+        "UpgradeUrl": "https://itunes.apple.com/cn/app/tantan/id861891048?mt=8"
+      }
+    },
+    "Signin": {
+      "android": {
+        "MinVersion": "2.3.0",
+        "UpgradeUrl": "https://tantanapp.com/"
+      },
+      "ios": {
+        "MinVersion": "2.3.0",
+        "UpgradeUrl": "https://itunes.apple.com/cn/app/tantan/id861891048?mt=8"
+      }
+    }
+  },
+  "CurrentClientVersion": {
+    "ios": "2.8.3",
+    "android": "2.8.4"
+  },
+  "LikeLimits": {
+    "ResetTime": "6:00AM",
+    "LimitMale": 120,
+    "LimitFemale": 120,
+    "MinIOSVersion": "1.8.5",
+    "MinAndroidVersion": "1.8.5",
+    "WhiteListedUserIds": []
+  },
+  "SuperLikeLimits": {
+    "LimitPerDay": 500000,
+    "Quota": 0,
+    "RewardForInvite": 2,
+    "RewardForShare": 2,
+    "ShareResetDays": 7
+  },
+  "UndoLimits": {
+    "LimitPerDay": 500000,
+    "Quota": 0,
+    "RewardForInvite": 0,
+    "RewardForShare": 1000,
+    "ShareResetDays": 7
+  },
+  "ABTest": {
+    "RemindLowPopularityMaleUserByPopUp": {
+      "CityIDs": [
+        "2745"
+      ]
+    },
+    "RemindLowPopularityMaleUserByProfile": {
+      "CityIDs": [
+        "2741"
+      ]
+    },
+    "RemindLowPopularityMaleUserByBoth": {
+      "CityIDs": [
+        "3026"
+      ]
+    },
+    "SuggestSearchRadius": {
+      "ProvinceIDs": [
+        "3106",
+        "3111"
+      ]
+    },
+    "FacebookEntry": [
+      "googleplay"
+    ],
+    "FacebookEntryV2": {
+      "Platforms": [
+        "ios",
+        "android"
+      ],
+      "Channel": [
+        "googleplay"
+      ],
+      "ExcludingMCC": [
+        "460"
+      ]
+    },
+    "Tbh": {
+      "Cases": {
+        "1": {
+          "UserIDs": [],
+          "Platforms": [
+            "android",
+            "ios"
+          ],
+          "AndroidVersionRange": ["2.8.5", "4.0.0"],
+          "AndroidVersions": [
+            "2.8.5",
+            "2.8.5.1",
+            "2.8.5.2",
+            "2.8.5.3",
+            "2.8.5.4",
+            "2.8.6",
+            "2.8.6.1",
+            "2.8.6.2",
+            "2.8.6.3",
+            "2.8.6.4",
+            "2.8.7",
+            "2.8.7.1",
+            "2.8.7.2",
+            "2.8.7.3",
+            "2.8.7.4",
+            "2.8.8",
+            "2.8.8.1",
+            "2.8.8.2",
+            "2.8.8.3",
+            "2.8.8.4"
+          ],
+          "IOSVersionRange": ["2.8.5.0", "4.0.0"],
+          "IOSVersions": [
+            "2.8.5.0",
+            "2.8.5.1",
+            "2.8.5.2",
+            "2.8.5.3",
+            "2.8.5.4",
+            "2.8.5.5",
+            "2.8.5.6",
+            "2.8.5.7",
+            "2.8.5.8",
+            "2.8.5.9",
+            "2.8.6.0",
+            "2.8.6.1",
+            "2.8.6.2",
+            "2.8.6.3",
+            "2.8.6.4",
+            "2.8.7.0",
+            "2.8.7.1",
+            "2.8.7.2",
+            "2.8.7.3",
+            "2.8.7.4",
+            "2.8.8.0",
+            "2.8.8.1",
+            "2.8.8.2",
+            "2.8.8.3",
+            "2.8.8.4"
+          ],
+          "CityIDs": [
+            "3098"
+          ],
+          "DistrictIDs":[
+            "2236"
+          ],
+          "Age": [
+            0,
+            19
+          ]
+        }
+      }
+    },
+    "ConversationsTab": {
+      "Cases": {
+        "1": {
+          "UserIDs": [
+            "26054413",
+            "23802083",
+            "94897120",
+            "115700360",
+            "115700588"
+          ],
+          "Platforms": ["android"],
+          "AndroidVersionRange": ["2.9.0", "4.0.0"],
+          "CityIDs": ["2870"]
+        }
+      }
+    },
+    "VIP": {
+      "Cases": {
+        "20170517": {
+          "UserIDs": []
+        },
+        "20170823": {
+          "UserIDs": []
+        },
+        "20170918a": {
+          "UserIDs": []
+        },
+        "20170918b": {
+          "UserIDs": ["131771084"]
+        },
+        "20170918c": {
+          "UserIDs": []
+        },
+        "20171109c": {
+          "UserIDs": []
+        },
+        "20171109d": {
+          "UserIDs": []
+        },
+        "20171109e": {
+          "UserIDs": []
+        },
+        "20171109f": {
+          "UserIDs": []
+        },
+        "20171109g": {
+          "UserIDs": []
+        },
+        "20171121a": {
+          "UserIDs": []
+        },
+        "20171121b": {
+          "UserIDs": []
+        },
+        "20171121c": {
+          "UserIDs": []
+        },
+        "20171121d": {
+          "UserIDs": []
+        },
+        "20171130a": {
+            "UserIDs": []
+        },
+        "20171130b": {
+            "UserIDs": []
+        },
+        "20171130c": {
+            "UserIDs": []
+        },
+        "20171130d": {
+            "UserIDs": []
+        },
+        "20171130e": {
+            "UserIDs": []
+        },
+        "20171130f": {
+            "UserIDs": []
+        },
+        "20171130g": {
+            "UserIDs": []
+        },
+        "20171130h": {
+            "UserIDs": []
+        },
+        "20171130i": {
+            "UserIDs": []
+        },
+        "20171130j": {
+            "UserIDs": []
+        },
+        "20171130k": {
+            "UserIDs": []
+        },
+        "20171130l": {
+            "UserIDs": []
+        },
+        "20171130m": {
+            "UserIDs": []
+        },
+        "20171130n": {
+            "UserIDs": []
+        },
+        "20171130o": {
+            "UserIDs": []
+        },
+        "20171205a": {
+            "UserIDs": []
+        },
+        "20171205b": {
+            "UserIDs": []
+        },
+        "20171205c": {
+            "UserIDs": []
+        },
+        "20171205d": {
+            "UserIDs": []
+        },
+        "20171205e": {
+            "UserIDs": []
+        },
+        "20171207c": {
+            "UserIDs": []
+        },
+        "20171207d": {
+            "UserIDs": []
+        },
+        "20171207e": {
+            "UserIDs": []
+        },
+        "20171207f": {
+            "UserIDs": []
+        },
+        "20171207g": {
+            "UserIDs": []
+        },
+        "20171207h": {
+            "UserIDs": []
+        },
+        "20171207i": {
+            "UserIDs": []
+        },
+        "20171207j": {
+            "UserIDs": []
+        },
+        "20171207k": {
+            "UserIDs": []
+        },
+        "20171207l": {
+            "UserIDs": []
+        },
+        "20171219a": {
+          "UserIDs": []
+        },
+        "20171219b": {
+          "UserIDs": []
+        },
+        "20171219c": {
+          "UserIDs": []
+        },
+        "20171219d": {
+          "UserIDs": []
+        },
+        "20171219e": {
+          "UserIDs": []
+        },
+        "20171219f": {
+          "UserIDs": []
+        },
+        "20171219g": {
+          "UserIDs": []
+        },
+        "20171219h": {
+          "UserIDs": []
+        },
+        "2018a": {
+            "UserIDs": []
+        },
+        "20180101a" : {
+          "Platforms": ["android", "ios"],
+          "AndroidVersionRange": ["2.9.1.0", "4.0.0"],
+          "IOSVersionRange": ["2.9.1", "4.0.0"],
+          "UserIDs": [],
+          "UserIdRemainder": {
+            "OP": "or",
+            "Divisor": 2,
+            "Remainders": ["0", "1"]
+          }
+        }
+      }
+    },
+    "SuperLikeAndUndoCampaign": {
+      "Cases": {
+        "20170727a": {
+          "UserIDs": [
+            "98789504"
+          ]
+        },
+        "20170727b": {
+          "UserIDs": []
+        },
+        "20170727c": {
+          "UserIDs": []
+        }
+      }
+    },
+    "Recommendations": [
+        {
+            "CityIDs": [
+            ],
+            "RecommandationURL": "http://10.191.167.132:7215/users"
+        },
+        {
+            "ProvinceIDs": [
+            ],
+            "RecommandationURL": "http://10.191.167.132:7216/users"
+        },
+        {
+            "ProvinceIDs": [
+            ],
+            "UserIdRemainder": {
+                "Divisor": 100,
+                "Remainders": [
+                ]
+            },
+            "RecommandationURL": "http://10.191.167.132:7218/users"
+        },
+        {
+            "CityIDs": [
+            ],
+            "RecommandationURL": "http://10.191.167.132:7217/users"
+        },
+        {
+            "UserIdRemainder": {
+                "Divisor": 100,
+                "Remainders": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15",
+                    "16",
+                    "17",
+                    "18",
+                    "19",
+                    "20",
+                    "21",
+                    "22",
+                    "23",
+                    "24",
+                    "25",
+                    "26",
+                    "27",
+                    "28",
+                    "29",
+                    "30",
+                    "31",
+                    "32",
+                    "33",
+                    "34",
+                    "35",
+                    "36",
+                    "37",
+                    "38",
+                    "39",
+                    "40",
+                    "41",
+                    "42",
+                    "43",
+                    "44",
+                    "45",
+                    "46",
+                    "47",
+                    "48",
+                    "49",
+                    "50",
+                    "51",
+                    "52",
+                    "53",
+                    "54",
+                    "55",
+                    "56",
+                    "57",
+                    "58",
+                    "59",
+                    "60",
+                    "61",
+                    "62",
+                    "63",
+                    "64",
+                    "65",
+                    "66",
+                    "67",
+                    "68",
+                    "69",
+                    "70",
+                    "71",
+                    "72",
+                    "73",
+                    "74",
+                    "75",
+                    "76",
+                    "77",
+                    "78",
+                    "79",
+                    "80",
+                    "81",
+                    "82",
+                    "83",
+                    "84",
+                    "85",
+                    "86",
+                    "87",
+                    "88",
+                    "89",
+                    "90",
+                    "91",
+                    "92",
+                    "93",
+                    "94",
+                    "95",
+                    "96",
+                    "97",
+                    "98",
+                    "99"
+                ]
+            },
+            "RecommandationURL": "http://10.191.167.132:3215/users"
+        }
+    ],
+    "AnimatedSticker": {
+      "CountryIDs": [],
+      "ProvinceIDs": [],
+      "CityIDs": [
+        "2717",
+        "2718",
+        "2719",
+        "2720",
+        "2721",
+        "2722",
+        "2723",
+        "2724",
+        "2725",
+        "2726",
+        "2727",
+        "2728",
+        "2729",
+        "2730",
+        "2731",
+        "2732",
+        "2733",
+        "2734",
+        "2735",
+        "2736",
+        "2737",
+        "2738",
+        "2739",
+        "2740",
+        "2741",
+        "2743",
+        "2744",
+        "2745",
+        "2746",
+        "2747",
+        "2748",
+        "2749",
+        "2750",
+        "2751",
+        "2752",
+        "2753",
+        "2754",
+        "2755",
+        "2756",
+        "2757",
+        "2758",
+        "2759",
+        "2760",
+        "2761",
+        "2762",
+        "2763",
+        "2764",
+        "2765",
+        "2766",
+        "2767",
+        "2768",
+        "2769",
+        "2770",
+        "2771",
+        "2772",
+        "2773",
+        "2775",
+        "2776",
+        "2777",
+        "2778",
+        "2779",
+        "2780",
+        "2781",
+        "2782",
+        "2783",
+        "2784",
+        "2785",
+        "2786",
+        "2787",
+        "2788",
+        "2789",
+        "2790",
+        "2791",
+        "2792",
+        "2793",
+        "2794",
+        "2795",
+        "2796",
+        "2797",
+        "2798",
+        "2799",
+        "2800",
+        "2801",
+        "2802",
+        "2803",
+        "2804",
+        "2805",
+        "2806",
+        "2808",
+        "2809",
+        "2810",
+        "2811",
+        "2815",
+        "2816",
+        "2817",
+        "2818",
+        "2819",
+        "2820",
+        "2821",
+        "2822",
+        "2823",
+        "2824",
+        "2825",
+        "2826",
+        "2827",
+        "2828",
+        "2830",
+        "2831",
+        "2832",
+        "2833",
+        "2834",
+        "2835",
+        "2836",
+        "2837",
+        "2838",
+        "2839",
+        "2840",
+        "2841",
+        "2842",
+        "2843",
+        "2844",
+        "2845",
+        "2846",
+        "2847",
+        "2848",
+        "2849",
+        "2850",
+        "2851",
+        "2852",
+        "2853",
+        "2854",
+        "2855",
+        "2856",
+        "2857",
+        "2858",
+        "2859",
+        "2860",
+        "2870",
+        "2872",
+        "2873",
+        "2874",
+        "2875",
+        "2876",
+        "2877",
+        "2878",
+        "2879",
+        "2880",
+        "2881",
+        "2882",
+        "2883",
+        "2884",
+        "2885",
+        "2886",
+        "2887",
+        "2888",
+        "2889",
+        "2890",
+        "2891",
+        "2892",
+        "2893",
+        "2903",
+        "2904",
+        "2907",
+        "2908",
+        "2909",
+        "2910",
+        "2911",
+        "2912",
+        "2913",
+        "2914",
+        "2915",
+        "2916",
+        "2917",
+        "2918",
+        "2919",
+        "2920",
+        "2921",
+        "2922",
+        "2923",
+        "2924",
+        "2925",
+        "2926",
+        "2927",
+        "2928",
+        "2929",
+        "2930",
+        "2931",
+        "2932",
+        "2933",
+        "2934",
+        "2935",
+        "2936",
+        "2937",
+        "2938",
+        "2939",
+        "2941",
+        "2942",
+        "2943",
+        "2944",
+        "2945",
+        "2946",
+        "2947",
+        "2948",
+        "2949",
+        "2950",
+        "2951",
+        "2952",
+        "2953",
+        "2954",
+        "2955",
+        "2956",
+        "2957",
+        "2958",
+        "2959",
+        "2960",
+        "2961",
+        "2962",
+        "2963",
+        "2964",
+        "2965",
+        "2966",
+        "2967",
+        "2968",
+        "2969",
+        "2970",
+        "2971",
+        "2972",
+        "2973",
+        "2974",
+        "2975",
+        "2976",
+        "2977",
+        "2978",
+        "2979",
+        "2980",
+        "2981",
+        "2982",
+        "2983",
+        "2984",
+        "2985",
+        "2986",
+        "2987",
+        "2988",
+        "2989",
+        "2990",
+        "2991",
+        "2992",
+        "2993",
+        "2994",
+        "2995",
+        "2996",
+        "2997",
+        "2998",
+        "2999",
+        "3000",
+        "3001",
+        "3002",
+        "3003",
+        "3004",
+        "3005",
+        "3006",
+        "3007",
+        "3008",
+        "3009",
+        "3010",
+        "3011",
+        "3012",
+        "3013",
+        "3014",
+        "3015",
+        "3016",
+        "3017",
+        "3018",
+        "3019",
+        "3020",
+        "3021",
+        "3022",
+        "3023",
+        "3024",
+        "3025",
+        "3026",
+        "3027",
+        "3028",
+        "3029",
+        "3030",
+        "3031",
+        "3032",
+        "3033",
+        "3034",
+        "3035",
+        "3036",
+        "3037",
+        "3038",
+        "3039",
+        "3040",
+        "3041",
+        "3042",
+        "3043",
+        "3044",
+        "3045",
+        "3046",
+        "3047",
+        "3048",
+        "3049",
+        "3050",
+        "3051",
+        "3052",
+        "3053",
+        "3054",
+        "3055",
+        "3057",
+        "3058",
+        "3059",
+        "3060",
+        "3061",
+        "3062",
+        "3063",
+        "3064",
+        "3065",
+        "3066",
+        "3067",
+        "3068",
+        "3069",
+        "3070",
+        "3071",
+        "3072",
+        "3073",
+        "3074",
+        "3075",
+        "3076",
+        "3077",
+        "3078",
+        "3079",
+        "3080",
+        "3081",
+        "3082",
+        "3083",
+        "3084",
+        "3085",
+        "3086",
+        "3087",
+        "3088",
+        "3089",
+        "3090",
+        "3091",
+        "3092",
+        "3093",
+        "3094",
+        "3095",
+        "3096",
+        "3097",
+        "3098",
+        "3099",
+        "3100",
+        "3101",
+        "3102",
+        "3103",
+        "3143",
+        "3144",
+        "3145",
+        "3146",
+        "3147",
+        "3166",
+        "3167",
+        "3168",
+        "3169",
+        "3170",
+        "3171",
+        "3172",
+        "3173",
+        "3174",
+        "3175",
+        "3176",
+        "3177",
+        "3178",
+        "3179",
+        "3180",
+        "3181",
+        "3182",
+        "3231",
+        "3232",
+        "3233",
+        "3234",
+        "3235",
+        "3236",
+        "3237",
+        "3238",
+        "3239",
+        "3240",
+        "3241",
+        "3242",
+        "3243",
+        "3244",
+        "3245",
+        "3246",
+        "3247",
+        "3248",
+        "3249",
+        "3250",
+        "3251",
+        "3252",
+        "3253",
+        "3254",
+        "3255",
+        "3256",
+        "3257",
+        "3258",
+        "3259",
+        "3260",
+        "3261",
+        "3262",
+        "3263",
+        "3264",
+        "3265",
+        "3266",
+        "3267",
+        "3268",
+        "3269",
+        "3270",
+        "3271",
+        "3272",
+        "3273",
+        "3274",
+        "3275",
+        "3276",
+        "3277"
+      ],
+      "UserIDs": [
+        "1",
+        "3",
+        "6",
+        "17",
+        "24",
+        "42",
+        "48",
+        "89",
+        "98",
+        "350",
+        "768",
+        "911",
+        "1274",
+        "1297",
+        "2231",
+        "2236",
+        "2308",
+        "2537",
+        "7284",
+        "16763",
+        "17994",
+        "19166",
+        "20778",
+        "21061",
+        "21062",
+        "21064",
+        "21656",
+        "21914",
+        "23104",
+        "49292",
+        "50799",
+        "79401",
+        "397962",
+        "744378",
+        "967751",
+        "989814",
+        "1112528",
+        "1200779",
+        "1266914",
+        "2031464",
+        "2130394",
+        "2754004",
+        "3308324",
+        "4673328",
+        "4826669",
+        "5428445",
+        "5656525",
+        "6306387",
+        "6337282",
+        "6529743",
+        "7019587",
+        "7664893",
+        "7753002",
+        "8543552",
+        "9015548",
+        "9680475",
+        "9876150",
+        "10070961",
+        "10524527",
+        "14040975",
+        "17047039",
+        "17772484",
+        "19526394",
+        "19664989",
+        "22913581",
+        "23802083",
+        "26054413",
+        "26731701",
+        "27111492",
+        "27581180",
+        "27725457",
+        "27784520",
+        "27792058",
+        "27793027",
+        "27794214",
+        "27904548",
+        "27904561",
+        "28541914",
+        "29319068",
+        "29448463",
+        "29664651",
+        "29666733",
+        "29667558",
+        "29678465",
+        "29878894",
+        "30064935",
+        "30065789",
+        "30066980",
+        "30067414",
+        "30070051",
+        "30467837",
+        "30997919",
+        "31268543",
+        "32151491",
+        "32169039",
+        "33247738",
+        "39906238",
+        "40584547",
+        "41985095",
+        "43017649",
+        "44643035",
+        "45144495",
+        "46033824",
+        "46249886",
+        "46455574",
+        "47031899",
+        "47346554",
+        "48290477",
+        "48501359",
+        "49522826",
+        "50914096",
+        "52008067",
+        "52365191",
+        "54044688",
+        "54303028",
+        "54503564",
+        "54737100",
+        "58065358",
+        "64753740",
+        "67054390",
+        "68673495",
+        "72045352",
+        "80515173",
+        "89121657"
+      ]
+    },
+    "IceBreaker": {
+      "CountryIDs": [],
+      "ProvinceIDs": [],
+      "CityIDs": [
+        "2723",
+        "2847"
+      ],
+      "UserIDs": [
+        "1",
+        "3",
+        "6",
+        "17",
+        "24",
+        "42",
+        "48",
+        "89",
+        "98",
+        "350",
+        "768",
+        "911",
+        "1274",
+        "1297",
+        "2231",
+        "2236",
+        "2308",
+        "2537",
+        "7284",
+        "16763",
+        "17994",
+        "19166",
+        "20778",
+        "21061",
+        "21062",
+        "21064",
+        "21656",
+        "21914",
+        "23104",
+        "49292",
+        "50799",
+        "79401",
+        "397962",
+        "744378",
+        "967751",
+        "989814",
+        "1112528",
+        "1200779",
+        "1266914",
+        "2031464",
+        "2130394",
+        "2754004",
+        "3308324",
+        "4673328",
+        "4826669",
+        "5428445",
+        "5656525",
+        "6306387",
+        "6337282",
+        "6529743",
+        "7019587",
+        "7664893",
+        "7753002",
+        "8543552",
+        "9015548",
+        "9680475",
+        "9876150",
+        "10070961",
+        "10524527",
+        "14040975",
+        "17047039",
+        "17772484",
+        "19526394",
+        "19664989",
+        "22913581",
+        "23802083",
+        "26054413",
+        "26731701",
+        "27111492",
+        "27581180",
+        "27725457",
+        "27784520",
+        "27792058",
+        "27793027",
+        "27794214",
+        "27904548",
+        "27904561",
+        "28541914",
+        "29319068",
+        "29448463",
+        "29664651",
+        "29666733",
+        "29667558",
+        "29678465",
+        "29878894",
+        "30064935",
+        "30065789",
+        "30066980",
+        "30067414",
+        "30070051",
+        "30467837",
+        "30997919",
+        "31268543",
+        "32151491",
+        "32169039",
+        "33247738",
+        "39906238",
+        "40584547",
+        "41985095",
+        "43017649",
+        "44643035",
+        "45144495",
+        "46033824",
+        "46249886",
+        "46455574",
+        "47031899",
+        "47346554",
+        "48290477",
+        "48501359",
+        "49522826",
+        "50914096",
+        "52008067",
+        "52365191",
+        "54044688",
+        "54303028",
+        "54503564",
+        "54737100",
+        "58065358",
+        "64753740",
+        "67054390",
+        "68673495",
+        "72045352",
+        "80515173",
+        "89121657"
+      ]
+    },
+    "HideWeChatInProfile": {
+      "CountryIDs": [],
+      "ProvinceIDs": [],
+      "CityIDs": [
+        "2723",
+        "2879"
+      ],
+      "UserIDs": [
+        "1",
+        "3",
+        "6",
+        "17",
+        "24",
+        "42",
+        "48",
+        "89",
+        "98",
+        "350",
+        "768",
+        "911",
+        "1274",
+        "1297",
+        "2231",
+        "2236",
+        "2308",
+        "2537",
+        "7284",
+        "16763",
+        "17994",
+        "19166",
+        "20778",
+        "21061",
+        "21062",
+        "21064",
+        "21656",
+        "21914",
+        "23104",
+        "49292",
+        "50799",
+        "79401",
+        "397962",
+        "744378",
+        "967751",
+        "989814",
+        "1112528",
+        "1200779",
+        "1266914",
+        "2031464",
+        "2130394",
+        "2754004",
+        "3308324",
+        "4673328",
+        "4826669",
+        "5428445",
+        "5656525",
+        "6306387",
+        "6337282",
+        "6529743",
+        "7019587",
+        "7664893",
+        "7753002",
+        "8543552",
+        "9015548",
+        "9680475",
+        "9876150",
+        "10070961",
+        "10524527",
+        "14040975",
+        "17047039",
+        "17772484",
+        "19526394",
+        "19664989",
+        "22913581",
+        "23802083",
+        "26054413",
+        "26731701",
+        "27111492",
+        "27581180",
+        "27725457",
+        "27784520",
+        "27792058",
+        "27793027",
+        "27794214",
+        "27904548",
+        "27904561",
+        "28541914",
+        "29319068",
+        "29448463",
+        "29664651",
+        "29666733",
+        "29667558",
+        "29678465",
+        "29878894",
+        "30064935",
+        "30065789",
+        "30066980",
+        "30067414",
+        "30070051",
+        "30467837",
+        "30997919",
+        "31268543",
+        "32151491",
+        "32169039",
+        "33247738",
+        "39906238",
+        "40584547",
+        "41985095",
+        "43017649",
+        "44643035",
+        "45144495",
+        "46033824",
+        "46249886",
+        "46455574",
+        "47031899",
+        "47346554",
+        "48290477",
+        "48501359",
+        "49522826",
+        "50914096",
+        "52008067",
+        "52365191",
+        "54044688",
+        "54303028",
+        "54503564",
+        "54737100",
+        "58065358",
+        "64753740",
+        "67054390",
+        "68673495",
+        "72045352",
+        "80515173",
+        "89121657"
+      ]
+    },
+    "ReportWeChat": {
+      "CountryIDs": [],
+      "ProvinceIDs": [],
+      "CityIDs": [
+        "3031",
+        "2879"
+      ],
+      "UserIDs": [
+        "1",
+        "3",
+        "6",
+        "17",
+        "24",
+        "42",
+        "48",
+        "89",
+        "98",
+        "350",
+        "768",
+        "911",
+        "1274",
+        "1297",
+        "2231",
+        "2236",
+        "2308",
+        "2537",
+        "7284",
+        "16763",
+        "17994",
+        "19166",
+        "20778",
+        "21061",
+        "21062",
+        "21064",
+        "21656",
+        "21914",
+        "23104",
+        "49292",
+        "50799",
+        "79401",
+        "397962",
+        "744378",
+        "967751",
+        "989814",
+        "1112528",
+        "1200779",
+        "1266914",
+        "2031464",
+        "2130394",
+        "2754004",
+        "3308324",
+        "4673328",
+        "4826669",
+        "5428445",
+        "5656525",
+        "6306387",
+        "6337282",
+        "6529743",
+        "7019587",
+        "7664893",
+        "7753002",
+        "8543552",
+        "9015548",
+        "9680475",
+        "9876150",
+        "10070961",
+        "10524527",
+        "14040975",
+        "17047039",
+        "17772484",
+        "19526394",
+        "19664989",
+        "22913581",
+        "23802083",
+        "26054413",
+        "26731701",
+        "27111492",
+        "27581180",
+        "27725457",
+        "27784520",
+        "27792058",
+        "27793027",
+        "27794214",
+        "27904548",
+        "27904561",
+        "28541914",
+        "29319068",
+        "29448463",
+        "29664651",
+        "29666733",
+        "29667558",
+        "29678465",
+        "29878894",
+        "30064935",
+        "30065789",
+        "30066980",
+        "30067414",
+        "30070051",
+        "30467837",
+        "30997919",
+        "31268543",
+        "32151491",
+        "32169039",
+        "33247738",
+        "39906238",
+        "40584547",
+        "41985095",
+        "43017649",
+        "44643035",
+        "45144495",
+        "46033824",
+        "46249886",
+        "46455574",
+        "47031899",
+        "47346554",
+        "48290477",
+        "48501359",
+        "49522826",
+        "50914096",
+        "52008067",
+        "52365191",
+        "54044688",
+        "54303028",
+        "54503564",
+        "54737100",
+        "58065358",
+        "64753740",
+        "67054390",
+        "68673495",
+        "72045352",
+        "80515173",
+        "89121657"
+      ]
+    },
+    "ProviderSoogif": {
+      "CountryIDs": [],
+      "ProvinceIDs": [],
+      "CityIDs": [
+        "3100",
+        "2975",
+        "2734",
+        "2874",
+        "3059",
+        "2904",
+        "2983",
+        "3012",
+        "3064",
+        "3095",
+        "2857",
+        "2739",
+        "2953",
+        "2965",
+        "2977",
+        "2799",
+        "2879",
+        "3039",
+        "3080",
+        "2923",
+        "3096",
+        "2928",
+        "2806",
+        "2917"
+      ],
+      "UserIDs": [
+        "1112375",
+        "27814216",
+        "63569378",
+        "30835131",
+        "71315358",
+        "61217860"
+      ]
+    },
+    "ProviderShanmeng": {
+      "CountryIDs": [],
+      "ProvinceIDs": [],
+      "CityIDs": [
+        "2717",
+        "2718",
+        "2719",
+        "2720",
+        "2721",
+        "2722",
+        "2723",
+        "2724",
+        "2725",
+        "2726",
+        "2727",
+        "2728",
+        "2729",
+        "2730",
+        "2731",
+        "2732",
+        "2733",
+        "2735",
+        "2736",
+        "2737",
+        "2738",
+        "2740",
+        "2741",
+        "2743",
+        "2744",
+        "2745",
+        "2746",
+        "2747",
+        "2748",
+        "2749",
+        "2750",
+        "2751",
+        "2752",
+        "2753",
+        "2754",
+        "2755",
+        "2756",
+        "2757",
+        "2758",
+        "2759",
+        "2760",
+        "2761",
+        "2762",
+        "2763",
+        "2764",
+        "2765",
+        "2766",
+        "2767",
+        "2768",
+        "2769",
+        "2770",
+        "2771",
+        "2772",
+        "2773",
+        "2775",
+        "2776",
+        "2777",
+        "2778",
+        "2779",
+        "2780",
+        "2781",
+        "2782",
+        "2783",
+        "2784",
+        "2785",
+        "2786",
+        "2787",
+        "2788",
+        "2789",
+        "2790",
+        "2791",
+        "2792",
+        "2793",
+        "2794",
+        "2795",
+        "2796",
+        "2797",
+        "2798",
+        "2800",
+        "2801",
+        "2802",
+        "2803",
+        "2804",
+        "2805",
+        "2808",
+        "2809",
+        "2810",
+        "2811",
+        "2815",
+        "2816",
+        "2817",
+        "2818",
+        "2819",
+        "2820",
+        "2821",
+        "2822",
+        "2823",
+        "2824",
+        "2825",
+        "2826",
+        "2827",
+        "2828",
+        "2830",
+        "2831",
+        "2832",
+        "2833",
+        "2834",
+        "2835",
+        "2836",
+        "2837",
+        "2838",
+        "2839",
+        "2840",
+        "2841",
+        "2842",
+        "2843",
+        "2844",
+        "2845",
+        "2846",
+        "2847",
+        "2848",
+        "2849",
+        "2850",
+        "2851",
+        "2852",
+        "2853",
+        "2854",
+        "2855",
+        "2856",
+        "2858",
+        "2859",
+        "2860",
+        "2870",
+        "2872",
+        "2873",
+        "2875",
+        "2876",
+        "2877",
+        "2878",
+        "2880",
+        "2881",
+        "2882",
+        "2883",
+        "2884",
+        "2885",
+        "2886",
+        "2887",
+        "2888",
+        "2889",
+        "2890",
+        "2891",
+        "2892",
+        "2903",
+        "2907",
+        "2908",
+        "2909",
+        "2910",
+        "2911",
+        "2912",
+        "2913",
+        "2914",
+        "2915",
+        "2916",
+        "2918",
+        "2919",
+        "2920",
+        "2921",
+        "2922",
+        "2924",
+        "2925",
+        "2926",
+        "2927",
+        "2929",
+        "2930",
+        "2931",
+        "2932",
+        "2933",
+        "2934",
+        "2935",
+        "2936",
+        "2937",
+        "2938",
+        "2939",
+        "2941",
+        "2942",
+        "2943",
+        "2944",
+        "2945",
+        "2946",
+        "2947",
+        "2948",
+        "2949",
+        "2950",
+        "2951",
+        "2952",
+        "2954",
+        "2955",
+        "2956",
+        "2957",
+        "2958",
+        "2959",
+        "2960",
+        "2961",
+        "2962",
+        "2963",
+        "2964",
+        "2966",
+        "2967",
+        "2968",
+        "2969",
+        "2970",
+        "2971",
+        "2972",
+        "2973",
+        "2974",
+        "2976",
+        "2978",
+        "2979",
+        "2980",
+        "2981",
+        "2982",
+        "2983",
+        "2984",
+        "2985",
+        "2986",
+        "2987",
+        "2988",
+        "2989",
+        "2990",
+        "2991",
+        "2992",
+        "2993",
+        "2994",
+        "2995",
+        "2996",
+        "2997",
+        "2998",
+        "2999",
+        "3000",
+        "3001",
+        "3002",
+        "3003",
+        "3004",
+        "3005",
+        "3006",
+        "3007",
+        "3008",
+        "3009",
+        "3010",
+        "3011",
+        "3013",
+        "3014",
+        "3015",
+        "3016",
+        "3017",
+        "3018",
+        "3019",
+        "3020",
+        "3021",
+        "3022",
+        "3023",
+        "3024",
+        "3025",
+        "3026",
+        "3027",
+        "3028",
+        "3029",
+        "3030",
+        "3031",
+        "3032",
+        "3033",
+        "3034",
+        "3035",
+        "3036",
+        "3037",
+        "3038",
+        "3040",
+        "3041",
+        "3042",
+        "3043",
+        "3044",
+        "3045",
+        "3046",
+        "3047",
+        "3048",
+        "3049",
+        "3050",
+        "3051",
+        "3052",
+        "3053",
+        "3054",
+        "3055",
+        "3057",
+        "3058",
+        "3060",
+        "3061",
+        "3062",
+        "3063",
+        "3065",
+        "3066",
+        "3067",
+        "3068",
+        "3069",
+        "3070",
+        "3071",
+        "3072",
+        "3073",
+        "3074",
+        "3075",
+        "3076",
+        "3077",
+        "3078",
+        "3079",
+        "3081",
+        "3082",
+        "3083",
+        "3084",
+        "3085",
+        "3086",
+        "3087",
+        "3088",
+        "3089",
+        "3090",
+        "3091",
+        "3092",
+        "3093",
+        "3094",
+        "3097",
+        "3098",
+        "3099",
+        "3101",
+        "3102",
+        "3103",
+        "3143",
+        "3144",
+        "3145",
+        "3146",
+        "3147",
+        "3166",
+        "3167",
+        "3168",
+        "3169",
+        "3170",
+        "3171",
+        "3172",
+        "3173",
+        "3174",
+        "3175",
+        "3176",
+        "3177",
+        "3178",
+        "3179",
+        "3180",
+        "3181",
+        "3182",
+        "3231",
+        "3232",
+        "3233",
+        "3234",
+        "3235",
+        "3236",
+        "3237",
+        "3238",
+        "3239",
+        "3240",
+        "3241",
+        "3242",
+        "3243",
+        "3244",
+        "3245",
+        "3246",
+        "3247",
+        "3248",
+        "3249",
+        "3250",
+        "3251",
+        "3252",
+        "3253",
+        "3254",
+        "3255",
+        "3256",
+        "3257",
+        "3258",
+        "3259",
+        "3260",
+        "3261",
+        "3262",
+        "3263",
+        "3264",
+        "3265",
+        "3266",
+        "3267",
+        "3268",
+        "3269",
+        "3270",
+        "3271",
+        "3272",
+        "3273",
+        "3274",
+        "3275",
+        "3276",
+        "3277"
+      ],
+      "UserIDs": [
+        "67319449",
+        "61258497",
+        "49552644",
+        "51291304",
+        "71734874",
+        "71023840",
+        "2130394",
+        "2754004",
+        "3308324",
+        "4673328",
+        "4826669",
+        "5428445",
+        "5656525",
+        "6306387",
+        "6337282",
+        "6529743",
+        "7019587",
+        "7664893",
+        "7753002",
+        "8543552",
+        "9015548",
+        "9680475",
+        "9876150",
+        "10070961",
+        "10524527",
+        "14040975",
+        "17047039",
+        "17772484",
+        "19526394",
+        "19664989",
+        "22913581",
+        "23802083",
+        "26054413",
+        "26731701",
+        "27111492",
+        "27581180",
+        "27725457",
+        "27784520",
+        "27792058",
+        "27793027",
+        "27794214",
+        "27904548",
+        "27904561",
+        "28541914",
+        "29319068",
+        "29448463",
+        "29664651"
+      ]
+    },
+    "ChatBackgroundWhite": {
+      "CountryIDs": [],
+      "ProvinceIDs": [],
+      "CityIDs": [],
+      "UserIDs": [
+        "51291744",
+        "71734876",
+        "71240979"
+      ]
+    },
+    "OpenMoment": {
+      "CityIDs": [
+        "3093",
+        "2971"
+      ]
+    },
+    "ThirdPartyValidation": {
+      "geetest": {
+        "Mobile": [
+          0,
+          5
+        ],
+        "DeviceOS": [
+          "ios"
+        ],
+        "Gender": []
+      },
+      "netease": {
+        "Mobile": [
+          0,
+          100
+        ],
+        "DeviceOS": [
+          "ios"
+        ],
+        "Gender": [
+          "female"
+        ]
+      }
+    },
+    "SuperLikeAndUndo": {
+      "TestGroup": [
+        {
+          "TestCase": "superLikeCaseA",
+          "UserIds": [
+            "3",
+            "6",
+            "17",
+            "24",
+            "42",
+            "48",
+            "98",
+            "350",
+            "768",
+            "911",
+            "1274",
+            "1297",
+            "2231",
+            "2236",
+            "2308",
+            "2537",
+            "7284",
+            "16763",
+            "17994",
+            "19166",
+            "20778",
+            "21061",
+            "21062",
+            "21064",
+            "21656",
+            "21914",
+            "23104",
+            "49292",
+            "50799",
+            "79401",
+            "397962",
+            "744378",
+            "967751",
+            "989814",
+            "1112528",
+            "1200779",
+            "1266914",
+            "2031464",
+            "2130394",
+            "2754004",
+            "3308324",
+            "4673328",
+            "4826669",
+            "5428445",
+            "5656525",
+            "6306387",
+            "6337282",
+            "6529743",
+            "7019587",
+            "7664893",
+            "7753002",
+            "8543552",
+            "9015548",
+            "9680475",
+            "9876150",
+            "10070961",
+            "10524527",
+            "14040975",
+            "17047039",
+            "17772484",
+            "19526394",
+            "19664989",
+            "22913581",
+            "23802083",
+            "26054413",
+            "26731701",
+            "27111492",
+            "27581180",
+            "27725457",
+            "27784520",
+            "27792058",
+            "27793027",
+            "27794214",
+            "27904548",
+            "27904561",
+            "28541914",
+            "29319068",
+            "29448463",
+            "29664651",
+            "29666733",
+            "29667558",
+            "29678465",
+            "29878894",
+            "30064935",
+            "30065789",
+            "30066980",
+            "30067414",
+            "30070051",
+            "30467837",
+            "30997919",
+            "31268543",
+            "32151491",
+            "32169039",
+            "33247738",
+            "39906238",
+            "40584547",
+            "41985095",
+            "43017649",
+            "44643035",
+            "45144495",
+            "46033824",
+            "46249886",
+            "46455574",
+            "47031899",
+            "47346554",
+            "48290477",
+            "48501359",
+            "49522826",
+            "50914096",
+            "52008067",
+            "52365191",
+            "54044688",
+            "54303028",
+            "54503564",
+            "54737100",
+            "58065358",
+            "64753740",
+            "67054390",
+            "68673495",
+            "72045352",
+            "80515173",
+            "89121657"
+          ],
+          "CityIds": []
+        },
+        {
+          "TestCase": "superLikeCaseB",
+          "UserIds": [],
+          "CityIds": []
+        }
+      ]
+    },
+    "NewUI": {
+      "DeviceOS": [
+        "ios"
+      ],
+      "CountryIDs": [],
+      "ProvinceIDs": [],
+      "CityIDs": [
+        "2940",
+        "2859"
+      ],
+      "UserIDs": [
+        "1",
+        "43",
+        "89",
+        "87114192",
+        "86767261",
+        "109009550",
+        "103548536",
+        "109010031",
+        "104545788",
+        "9267188",
+        "31393550",
+        "51840772",
+        "53805514",
+        "16752289"
+      ]
+    },
+    "Verification": {
+      "UserIDs": [
+        "48",
+        "31393550",
+        "2878473",
+        "82951590",
+        "82952226",
+        "83749538",
+        "84311306",
+        "84311423",
+        "84312550",
+        "84312871",
+        "84314033",
+        "84313393",
+        "85436623",
+        "60607367",
+        "85934653",
+        "23802083",
+        "27581180",
+        "27784520",
+        "27792058",
+        "27793027",
+        "27794214",
+        "27904548",
+        "27904561",
+        "28541914",
+        "29664651",
+        "29666733",
+        "29667558",
+        "29678465",
+        "29878894",
+        "30064935",
+        "30065789",
+        "30066980",
+        "30067414",
+        "30070051",
+        "30997919",
+        "33247738",
+        "69408092",
+        "69408501",
+        "69408870",
+        "77232464",
+        "77232659",
+        "77232836",
+        "77232962",
+        "90899276",
+        "90900984",
+        "90901581",
+        "90904844",
+        "90924413",
+        "90927212",
+        "90929141",
+        "68915377",
+        "38019514",
+        "37850450",
+        "78012488",
+        "96338039",
+        "96357215",
+        "96365247",
+        "96375539",
+        "96777964",
+        "96778822",
+        "95935583",
+        "95937247",
+        "57682666",
+        "1956345"
+      ],
+      "CityIDs": [
+        "3059",
+        "2893",
+        "3047",
+        "2989",
+        "3093"
+      ],
+      "UserIdRemainder": {
+        "Divisor": 100,
+        "Remainders": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      }
+    }
+  },
+  "DecimalPrecision": {
+    "MinIOSVersion": "1.8.9",
+    "MinAndroidVersion": "1.8.9"
+  },
+  "DeviceVerification": {
+    "MinIOSVersion": "2.3.0",
+    "MinAndroidVersion": "2.3.0",
+    "WhiteListedUserIds": [
+      "50577",
+      "-1",
+      "98789504",
+      "107798195"
+    ]
+  },
+  "AntiSpam": {
+    "MinSignupDurationInSeconds": 35
+  },
+  "IdlePush": {
+    "StartTime": "11:30AM",
+    "StopTime": "6:30PM"
+  },
+  "IdlePushNew": [
+    {
+      "StartTime": "11:30AM",
+      "StopTime": "06:30PM",
+      "RedisSetName": "putong-idle-user-push-set-a"
+    }
+  ],
+  "Scenarios": {
+    "Food": {
+      "Duration": 82800,
+      "MatchLimit": {
+        "ResetTime": "5:00AM",
+        "Limit": 10000
+      }
+    },
+    "Sport": {
+      "Duration": 82800,
+      "MatchLimit": {
+        "ResetTime": "5:00AM",
+        "Limit": 10000
+      }
+    },
+    "Movie": {
+      "Duration": 82800,
+      "MatchLimit": {
+        "ResetTime": "5:00AM",
+        "Limit": 10000
+      }
+    },
+    "Misc": {
+      "Duration": 1576800000,
+      "MatchLimit": {
+        "ResetTime": "5:00AM",
+        "Limit": 10000
+      }
+    }
+  },
+  "ScenarioActiveUsers": {
+    "RefreshIntervalInSeconds": 1800
+  },
+  "EventLogClient": {
+    "Enable": true,
+    "Addresses": [
+      "127.0.0.1:18437"
+    ],
+    "Type" : "kafka"
+  },
+  "ShareWeb": {
+    "BaseUrl": "https://share.tantanapp.com"
+  },
+  "Payment": {
+    "ListenAddress": ":18443",
+    "CallbackListenAddress": ":18444",
+    "ConfigPath": "/etc/putong/putong-payment-service/config.json"
+  },
+  "Marketing": {
+    "RetryTimes": 1,
+    "FbUrl": "https://graph.facebook.com/v2.8/350461505345910/activities",
+    "AppsFlyerAndroidUrl": "https://api2.appsflyer.com/inappevent/com.p1.mobile.putong",
+    "AppsFlyerIosUrl": "https://api2.appsflyer.com/inappevent/id861891048",
+    "AppsFlyerAuthenticationHeader": "dmfeSDkpVxP8m6Ys6yJCpn",
+    "FbTimeout": 1,
+    "AppsflyerTimeout": 1
+  },
+  "PushClient": {
+    "Mode": "rpc"
+  },
+  "UserBonus": {
+    "ABGroupMapping": [
+      {
+        "GroupNames": [
+          "boost:20180423a"
+        ],
+        "ItemID": "551",
+          "Message": "恭喜你获得『超级曝光』体验资格，快去试用吧！"
+        }, 
+        {
+          "GroupNames": [
+          "boost:20180423"
+          ],
+        "ItemID": "548",
+          "Message": "恭喜你获得『超级曝光』体验资格，快去试用吧！"
+        }, 
+        {
+          "GroupNames": [
+          "boostMembership:20180425i"
+          ],
+          "ItemID": "564",
+          "Message": "恭喜你获得一次【超级曝光】免费体验的机会！你将在30分钟内获得超过平时10倍的曝光， 会有更多的人喜欢你！你也可以购买【超级曝光会员】， 一个月每天1次【超级曝光】，不断获得更多配对！"
+        }, 
+        {
+          "GroupNames": [
+          "boostMembership:20180425"
+          ],
+          "ItemID": "563",
+          "Message": "恭喜你获得一次【超级曝光】免费体验的机会！你将在30分钟内获得超过平时10倍的曝光， 会有更多的人喜欢你！你可以购买【超级曝光会员】， 一个月每天1次【超级曝光】，不断获得更多配对！"
+        }, 
+        {
+          "GroupNames": [
+          "boost:20180507a"
+          ],
+          "ItemID": "554",
+          "Message": "恭喜你获得“超级曝光“体验资格，快去试用吧!"
+        }, 
+        {
+          "GroupNames": [
+          "boost:20180507b"
+          ],
+            "ItemID": "557",
+            "Message": "恭喜你获得“超级曝光“体验资格，快去试用吧!"
+        },
+      {
+        "GroupNames": [
+          "boost:20180301"
+        ],
+        "ItemID": "475",
+        "Message": "恭喜你获得“超级曝光”体验资格，快去试用吧！"
+      },
+      {
+        "GroupNames": [
+          "boost:20180327a"
+        ],
+        "ItemID": "477",
+        "Message": "恭喜你获得“超级曝光”体验资格，快去试用吧！"
+      },
+      {
+        "GroupNames": [
+          "boost:20180327b"
+        ],
+        "ItemID": "480",
+        "Message": "恭喜你获得“超级曝光”体验资格，快去试用吧！"
+      },
+      {
+        "GroupNames": [
+          "boost:20180327c"
+        ],
+        "ItemID": "483",
+        "Message": "恭喜你获得“超级曝光”体验资格，快去试用吧！"
+      },
+      {
+        "GroupNames": [
+          "boost:20180327d"
+        ],
+        "ItemID": "489",
+        "Message": "恭喜你获得“超级曝光”体验资格，快去试用吧！"
+      },
+      {
+        "GroupNames": [
+          "boost:20180327e"
+        ],
+        "ItemID": "489",
+        "Message": "恭喜你获得“超级曝光”体验资格，快去试用吧！"
+      },
+      {
+        "GroupNames": [
+          "boost:20180327f"
+        ],
+        "ItemID": "492",
+        "Message": "恭喜你获得“超级曝光”体验资格，快去试用吧！"
+      },
+      {
+        "GroupNames": [
+          "boost:20180327g"
+        ],
+        "ItemID": "495",
+        "Message": "恭喜你获得“超级曝光”体验资格，快去试用吧！"
+      },
+      {
+        "GroupNames": [
+          "boost:20180327h"
+        ],
+        "ItemID": "498",
+        "Message": "恭喜你获得“超级曝光”体验资格，快去试用吧！"
+      },
+      {
+        "GroupNames": [
+          "boost:20180327i"
+        ],
+        "ItemID": "501",
+        "Message": "恭喜你获得“超级曝光”体验资格，快去试用吧！"
+      }, 
+      {
+        "GroupNames": [
+          "mixedBoost:20180409m"
+        ],
+        "ItemID": "468",
+        "Message": "恭喜你获得一次『超级曝光』 免费体验的机会！你将获得超过平时10倍的曝光， 会有更多的人喜欢你！"
+      }, {
+        "GroupNames": [
+          "longTermBoost:20180409"
+        ],
+        "ItemID": "536",
+        "Message": "恭喜你获得一天『包月加速曝光』免费体验的机会！你将获得超过平时3倍的曝光， 会有更多的人喜欢你！"
+      }, {
+        "GroupNames": [
+            "boost:20180423a"
+        ],
+        "ItemID": "551",
+        "Message": "恭喜你获得『超级曝光』体验资格，快去试用吧！"
+    }, {
+        "GroupNames": [
+            "boost:20180423"
+        ],
+        "ItemID": "548",
+        "Message": "恭喜你获得『超级曝光』体验资格，快去试用吧！"
+    }
+    ]
+  },
+  "Proxy": {
+    "Enabled": true,
+    "URL": "http://proxy.p1staff.com:1337"
+  },
+  "CircuitBreaker": {
+    "Name": "moment-redis",
+    "RetryDuration": 30,
+    "TotalFailureThreshold": 30,
+    "MaxRequestsOnHalfOpenStatus": 30,
+    "ClearCountInterval": 30
+  },
+  "DCL":{
+    "KafkaName":"dcl"
+  },
+  "WechatOfficialAccountPromotion":{
+    "Enable":true,
+    "List":[
+        {
+            "Keywords": ["连云港","连云岗","大港城","连云港大港城","连云港吃喝玩乐","lianyungang","LIANYUNGANG","联运港","连云钢","联云岗","联云刚","Lianyungang"],
+            "ImageURL": "https://auto.tancdn.com/v1/images/eyJpZCI6Ik1STTQ1Sk5QM1VFV0NJSlgzRUxPQURGTjRHUUE0WiIsInciOjY0MCwiaCI6MTAwOCwiZCI6MCwibXQiOiJpbWFnZS9qcGVnIiwiZGgiOjEyMDg0OTEyMTgwMTQ1MTE1MzQ3fQ"
+        }
+    ]
+  },
+  "RelationshipFilterReceivedLike": {
+    "TotalMaxLimit": 1000
+  },
+  "UserWhoLikeMe": {
+    "RecommandationURL": "http://10.191.167.132:3215/users",
+    "RequestTimeout": 1
+  }
+}
