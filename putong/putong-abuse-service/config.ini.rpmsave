@@ -1,0 +1,5 @@
+STDERR_ENABLE = false
+SYSLOG_ENABLE = true
+SYSLOG_FACILITY = local6
+PREDICTOR = /var/lib/putong/putong-abuse-service/predictors/fourth_predictor_3.4.pkl
+TEST_CASE = /var/lib/putong/putong-abuse-service/predictors/test.json

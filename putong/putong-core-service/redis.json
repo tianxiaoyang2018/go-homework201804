@@ -1,0 +1,27 @@
+{
+    "Addr": "127.0.0.1:6379",
+    "ConversationCounter": {
+        "Enable": true,
+        "RedisConfig": {
+            "MasterName": "sentinel-10.191.160.47-6392",
+            "Sentinels": [
+                "10.191.160.47:6393",
+                "10.191.160.48:6392",
+                "10.9.160.116:6380"
+            ]
+        }
+    },
+    "Moment": {
+        "MasterName": "sentinel-10.191.160.47-6390",
+        "PoolSize": 100,
+        "PoolTimeout": "1s",
+        "ReadOnly": false,
+        "ReadTimeout": "50ms",
+        "Sentinels": [
+            "10.9.160.116:6379",
+            "10.191.160.47:6391",
+            "10.191.160.48:6390"
+        ],
+        "WriteTimeout": "1s"
+    }
+}

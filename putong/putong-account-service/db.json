@@ -1,0 +1,1948 @@
+{
+  "Mod": 8192,
+  "FollowshipMod": 8192,
+  "MomentMod": 8192,
+  "PostgreSqlLocations": {
+    "Address": "master.locationdb1.tt.bjs.p1staff.com",
+    "Port": "6432",
+    "Database": "putong-location",
+    "Password": "WTAujX42Hp",
+    "Settings": "sslmode-disable",
+    "PoolSize": 20,
+    "User": "putong"
+  },
+  "PostgreSqlAffiliates": {
+    "Address": "master.affiliatedb1.tt.bjs.p1staff.com",
+    "Port": "6432",
+    "Database": "putong-affiliate",
+    "Password": "iaTh4iph",
+    "Settings": "sslmode-disable",
+    "PoolSize": 20,
+    "User": "putong"
+  },
+  "PostgreSqlAntiSpam": {
+    "Address": "master.antispamdb1.tt.bjs.p1staff.com",
+    "Port": "6432",
+    "Database": "putong-antispam",
+    "Password": "a606c649-dfdb-4c16-bb12-f1e262e03d14",
+    "Settings": "sslmode-disable",
+    "PoolSize": 40,
+    "User": "putong"
+  },
+  "PostgreSqlModeration": {
+    "Address": "master.moderationdb1.tt.bjs.p1staff.com",
+    "Port": "6432",
+    "Database": "putong-moderation",
+    "Password": "@mrCF6!d=0M1",
+    "Settings": "sslmode-disable",
+    "PoolSize": 20,
+    "User": "putong"
+  },
+  "PostgreSqlDeviceNew": {
+    "Address": "master.devicedb2.tt.bjs.p1staff.com",
+    "Database": "putong-device",
+    "Password": "WTAujX42Hp",
+    "PoolSize": 40,
+    "Port": "6432",
+    "Settings": "sslmode-disable",
+    "User": "putong"
+  },
+  "PostgreSqlChat": {
+    "Address": "master.chatdb1.tt.bjs.p1staff.com",
+    "Port": "6432",
+    "Database": "putong-chat",
+    "Password": "iaTh4iph",
+    "Settings": "sslmode-disable",
+    "PoolSize": 20,
+    "User": "putong"
+  },
+  "PostgreSqlChatReadOnly": [
+    {
+      "Address": "slave.chatdb1.tt.bjs.p1staff.com",
+      "Port": "6432",
+      "User": "putong",
+      "Database": "putong-chat",
+      "Password": "iaTh4iph",
+      "Settings": "sslmode-disable",
+      "PoolSize": 20
+    }
+  ],
+  "PostgreSqlPayment": {
+    "Address": "master.paymentdb1.tt.bjs.p1staff.com",
+    "Port": "6432",
+    "User": "putong",
+    "Database": "putong-payment",
+    "Password": "iaTh4iph",
+    "Settings": "sslmode-disable",
+    "PoolSize": 20
+  },
+  "PostgreSqlPaymentReadOnly": [
+    {
+      "Address": "slave.paymentdb1.tt.bjs.p1staff.com",
+      "Port": "6432",
+      "User": "putong",
+      "Database": "putong-payment",
+      "Password": "iaTh4iph",
+      "Settings": "sslmode-disable",
+      "PoolSize": 20
+    }
+  ],
+  "PostgreSqlDevice": {
+    "Address": "master.devicedb1.tt.bjs.p1staff.com",
+    "Port": "6432",
+    "User": "putong",
+    "Database": "putong-device",
+    "Password": "WTAujX42Hp",
+    "Settings": "sslmode-disable",
+    "PoolSize": 20
+  },
+  "PostgreSqlDeviceReadOnly": [
+    {
+      "Address": "slave.devicedb1.tt.bjs.p1staff.com",
+      "Port": "6432",
+      "User": "putong",
+      "Database": "putong-device",
+      "Password": "WTAujX42Hp",
+      "Settings": "sslmode-disable",
+      "PoolSize": 20
+    }
+  ],
+  "PostgreSqlContacts": {
+    "Address": "1.coordinator.contacts.tt.bjs.p1staff.com",
+    "Port": "6432",
+    "Database": "putong-contact",
+    "Password": "iaTh4iph",
+    "Settings": "sslmode-disable",
+    "PoolSize": 20,
+    "User": "putong"
+  },
+  "PostgreSqlSMS": {
+    "Address": "master.smsdb1.tt.bjs.p1staff.com",
+    "Port": "6432",
+    "Database": "putong-sms",
+    "Password": "iaTh4iph",
+    "Settings": "sslmode-disable",
+    "PoolSize": 20,
+    "User": "putong",
+    "IdleTimeout": 10,
+    "PoolTimeout": 5,
+    "IdleCheckFrequency": 60
+  },
+  "PostgreSqlSMSReadOnly": [
+    {
+      "Address": "slave.smsdb1.tt.bjs.p1staff.com",
+      "Port": "6432",
+      "User": "putong",
+      "Database": "putong-sms",
+      "Password": "iaTh4iph",
+      "Settings": "sslmode-disable",
+      "PoolSize": 20,
+      "IdleTimeout": 10,
+      "PoolTimeout": 5,
+      "IdleCheckFrequency": 60
+    }
+  ],
+  "PostgreSqlProfile": {
+    "Address": "master.profiledb1.tt.bjs.p1staff.com",
+    "Database": "putong-profile",
+    "Password": "iaTh4iph",
+    "PoolSize": 40,
+    "Port": "6432",
+    "Settings": "sslmode-disable",
+    "User": "putong"
+  },
+  "PostgreSqlProfileReadOnly": [
+    {
+      "Address": "slave.profiledb1.tt.bjs.p1staff.com",
+      "Database": "putong-profile",
+      "Password": "iaTh4iph",
+      "PoolSize": 40,
+      "Port": "6432",
+      "Settings": "sslmode-disable",
+      "User": "putong"
+    }
+  ],
+  "PostgreSqlNonSharded": {
+    "Address": "master.coredb1.tt.bjs.p1staff.com",
+    "Port": "6432",
+    "User": "putong",
+    "Database": "putong",
+    "Password": "iaTh4iph",
+    "Settings": "sslmode-disable",
+    "PoolSize": 20
+  },
+  "PostgreSqlSharded": [
+    {
+      "FromLogicalShardMod": 0,
+      "ToLogicalShardMod": 127,
+      "PostgreSql": {
+        "Address": "master.sharddb1.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 128,
+      "ToLogicalShardMod": 255,
+      "PostgreSql": {
+        "Address": "master.sharddb2.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 256,
+      "ToLogicalShardMod": 383,
+      "PostgreSql": {
+        "Address": "master.sharddb3.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 384,
+      "ToLogicalShardMod": 511,
+      "PostgreSql": {
+        "Address": "master.sharddb4.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 512,
+      "ToLogicalShardMod": 639,
+      "PostgreSql": {
+        "Address": "master.sharddb5.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 640,
+      "ToLogicalShardMod": 767,
+      "PostgreSql": {
+        "Address": "master.sharddb6.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 768,
+      "ToLogicalShardMod": 895,
+      "PostgreSql": {
+        "Address": "master.sharddb7.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 896,
+      "ToLogicalShardMod": 1023,
+      "PostgreSql": {
+        "Address": "master.sharddb8.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 1024,
+      "ToLogicalShardMod": 1151,
+      "PostgreSql": {
+        "Address": "master.sharddb9.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 1152,
+      "ToLogicalShardMod": 1279,
+      "PostgreSql": {
+        "Address": "master.sharddb10.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 1280,
+      "ToLogicalShardMod": 1407,
+      "PostgreSql": {
+        "Address": "master.sharddb11.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 1408,
+      "ToLogicalShardMod": 1535,
+      "PostgreSql": {
+        "Address": "master.sharddb12.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 1536,
+      "ToLogicalShardMod": 1663,
+      "PostgreSql": {
+        "Address": "master.sharddb13.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 1664,
+      "ToLogicalShardMod": 1791,
+      "PostgreSql": {
+        "Address": "master.sharddb14.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 1792,
+      "ToLogicalShardMod": 1919,
+      "PostgreSql": {
+        "Address": "master.sharddb15.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 1920,
+      "ToLogicalShardMod": 2047,
+      "PostgreSql": {
+        "Address": "master.sharddb16.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 2048,
+      "ToLogicalShardMod": 2175,
+      "PostgreSql": {
+        "Address": "master.sharddb17.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 2176,
+      "ToLogicalShardMod": 2303,
+      "PostgreSql": {
+        "Address": "master.sharddb18.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 2304,
+      "ToLogicalShardMod": 2431,
+      "PostgreSql": {
+        "Address": "master.sharddb19.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 2432,
+      "ToLogicalShardMod": 2559,
+      "PostgreSql": {
+        "Address": "master.sharddb20.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 2560,
+      "ToLogicalShardMod": 2687,
+      "PostgreSql": {
+        "Address": "master.sharddb21.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 2688,
+      "ToLogicalShardMod": 2815,
+      "PostgreSql": {
+        "Address": "master.sharddb22.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 2816,
+      "ToLogicalShardMod": 2943,
+      "PostgreSql": {
+        "Address": "master.sharddb23.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 2944,
+      "ToLogicalShardMod": 3071,
+      "PostgreSql": {
+        "Address": "master.sharddb24.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 3072,
+      "ToLogicalShardMod": 3199,
+      "PostgreSql": {
+        "Address": "master.sharddb25.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 3200,
+      "ToLogicalShardMod": 3327,
+      "PostgreSql": {
+        "Address": "master.sharddb26.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 3328,
+      "ToLogicalShardMod": 3455,
+      "PostgreSql": {
+        "Address": "master.sharddb27.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 3456,
+      "ToLogicalShardMod": 3583,
+      "PostgreSql": {
+        "Address": "master.sharddb28.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 3584,
+      "ToLogicalShardMod": 3711,
+      "PostgreSql": {
+        "Address": "master.sharddb29.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 3712,
+      "ToLogicalShardMod": 3839,
+      "PostgreSql": {
+        "Address": "master.sharddb30.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 3840,
+      "ToLogicalShardMod": 3967,
+      "PostgreSql": {
+        "Address": "master.sharddb31.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 3968,
+      "ToLogicalShardMod": 4095,
+      "PostgreSql": {
+        "Address": "master.sharddb32.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 4096,
+      "ToLogicalShardMod": 4223,
+      "PostgreSql": {
+        "Address": "master.sharddb33.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 4224,
+      "ToLogicalShardMod": 4351,
+      "PostgreSql": {
+        "Address": "master.sharddb34.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 4352,
+      "ToLogicalShardMod": 4479,
+      "PostgreSql": {
+        "Address": "master.sharddb35.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 4480,
+      "ToLogicalShardMod": 4607,
+      "PostgreSql": {
+        "Address": "master.sharddb36.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 4608,
+      "ToLogicalShardMod": 4735,
+      "PostgreSql": {
+        "Address": "master.sharddb37.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 4736,
+      "ToLogicalShardMod": 4863,
+      "PostgreSql": {
+        "Address": "master.sharddb38.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 4864,
+      "ToLogicalShardMod": 4991,
+      "PostgreSql": {
+        "Address": "master.sharddb39.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 4992,
+      "ToLogicalShardMod": 5119,
+      "PostgreSql": {
+        "Address": "master.sharddb40.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 5120,
+      "ToLogicalShardMod": 5247,
+      "PostgreSql": {
+        "Address": "master.sharddb41.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 5248,
+      "ToLogicalShardMod": 5375,
+      "PostgreSql": {
+        "Address": "master.sharddb42.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 5376,
+      "ToLogicalShardMod": 5503,
+      "PostgreSql": {
+        "Address": "master.sharddb43.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 5504,
+      "ToLogicalShardMod": 5631,
+      "PostgreSql": {
+        "Address": "master.sharddb44.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 5632,
+      "ToLogicalShardMod": 5759,
+      "PostgreSql": {
+        "Address": "master.sharddb45.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 5760,
+      "ToLogicalShardMod": 5887,
+      "PostgreSql": {
+        "Address": "master.sharddb46.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 5888,
+      "ToLogicalShardMod": 6015,
+      "PostgreSql": {
+        "Address": "master.sharddb47.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 6016,
+      "ToLogicalShardMod": 6143,
+      "PostgreSql": {
+        "Address": "master.sharddb48.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 6144,
+      "ToLogicalShardMod": 6271,
+      "PostgreSql": {
+        "Address": "master.sharddb49.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 6272,
+      "ToLogicalShardMod": 6399,
+      "PostgreSql": {
+        "Address": "master.sharddb50.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 6400,
+      "ToLogicalShardMod": 6527,
+      "PostgreSql": {
+        "Address": "master.sharddb51.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 6528,
+      "ToLogicalShardMod": 6655,
+      "PostgreSql": {
+        "Address": "master.sharddb52.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 6656,
+      "ToLogicalShardMod": 6783,
+      "PostgreSql": {
+        "Address": "master.sharddb53.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 6784,
+      "ToLogicalShardMod": 6911,
+      "PostgreSql": {
+        "Address": "master.sharddb54.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 6912,
+      "ToLogicalShardMod": 7039,
+      "PostgreSql": {
+        "Address": "master.sharddb55.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 7040,
+      "ToLogicalShardMod": 7167,
+      "PostgreSql": {
+        "Address": "master.sharddb56.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 7168,
+      "ToLogicalShardMod": 7295,
+      "PostgreSql": {
+        "Address": "master.sharddb57.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 7296,
+      "ToLogicalShardMod": 7423,
+      "PostgreSql": {
+        "Address": "master.sharddb58.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 7424,
+      "ToLogicalShardMod": 7551,
+      "PostgreSql": {
+        "Address": "master.sharddb59.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 7552,
+      "ToLogicalShardMod": 7679,
+      "PostgreSql": {
+        "Address": "master.sharddb60.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 7680,
+      "ToLogicalShardMod": 7807,
+      "PostgreSql": {
+        "Address": "master.sharddb61.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 7808,
+      "ToLogicalShardMod": 7935,
+      "PostgreSql": {
+        "Address": "master.sharddb62.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 7936,
+      "ToLogicalShardMod": 8063,
+      "PostgreSql": {
+        "Address": "master.sharddb63.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    },
+    {
+      "FromLogicalShardMod": 8064,
+      "ToLogicalShardMod": 8191,
+      "PostgreSql": {
+        "Address": "master.sharddb64.tt.bjs.p1staff.com",
+        "Database": "putong-shard",
+        "Port": "6432",
+        "Password": "rai4ohCi",
+        "Settings": "sslmode-disable",
+        "User": "putong",
+        "PoolSize": 20
+      }
+    }
+  ],
+  "PostgreSqlChatSharded": [
+    {
+      "FromLogicalShardMod": 0,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb1.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb1.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 511
+    },
+    {
+      "FromLogicalShardMod": 512,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb2.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb2.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 1023
+    },
+    {
+      "FromLogicalShardMod": 1024,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb3.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb3.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 1535
+    },
+    {
+      "FromLogicalShardMod": 1536,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb4.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb4.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 2047
+    },
+    {
+      "FromLogicalShardMod": 2048,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb5.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb5.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 2559
+    },
+    {
+      "FromLogicalShardMod": 2560,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb6.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb6.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 3071
+    },
+    {
+      "FromLogicalShardMod": 3072,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb7.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb7.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 3583
+    },
+    {
+      "FromLogicalShardMod": 3584,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb8.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb8.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 4095
+    },
+    {
+      "FromLogicalShardMod": 4096,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb9.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb9.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 4607
+    },
+    {
+      "FromLogicalShardMod": 4608,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb10.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb10.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 5119
+    },
+    {
+      "FromLogicalShardMod": 5120,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb11.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb11.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 5631
+    },
+    {
+      "FromLogicalShardMod": 5632,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb12.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb12.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 6143
+    },
+    {
+      "FromLogicalShardMod": 6144,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb13.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb13.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 6655
+    },
+    {
+      "FromLogicalShardMod": 6656,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb14.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb14.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 7167
+    },
+    {
+      "FromLogicalShardMod": 7168,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb15.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb15.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 7679
+    },
+    {
+      "FromLogicalShardMod": 7680,
+      "PostgreSql": {
+        "Address": "1.master.chatsharddb16.tt.bjs.p1staff.com",
+        "Database": "putong-chat-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.chatsharddb16.tt.bjs.p1staff.com",
+          "Database": "putong-chat-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 8191
+    }
+  ],
+  "PostgreSqlFollowshipSharded": [
+    {
+      "FromLogicalShardMod": 0,
+      "PostgreSql": {
+        "Address": "master.followshipdb1.tt.bjs.p1staff.com",
+        "Database": "putong-followship-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "slave.followshipdb1.tt.bjs.p1staff.com",
+          "Database": "putong-followship-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 4095
+    },
+    {
+      "FromLogicalShardMod": 4096,
+      "PostgreSql": {
+        "Address": "master.followshipdb2.tt.bjs.p1staff.com",
+        "Database": "putong-followship-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "slave.followshipdb2.tt.bjs.p1staff.com",
+          "Database": "putong-followship-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 8191
+    }
+  ],
+  "PostgreSqlUserCounterSharded": [
+    {
+      "FromLogicalShardMod": 0,
+      "PostgreSql": {
+        "Address": "master.countersharddb1.tt.bjs.p1staff.com",
+        "Database": "putong-counter-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "slave.countersharddb1.tt.bjs.p1staff.com",
+          "Database": "putong-counter-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 2047
+    },
+    {
+      "FromLogicalShardMod": 2048,
+      "PostgreSql": {
+        "Address": "master.countersharddb2.tt.bjs.p1staff.com",
+        "Database": "putong-counter-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "slave.countersharddb2.tt.bjs.p1staff.com",
+          "Database": "putong-counter-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 4095
+    },
+    {
+      "FromLogicalShardMod": 4096,
+      "PostgreSql": {
+        "Address": "master.countersharddb3.tt.bjs.p1staff.com",
+        "Database": "putong-counter-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "slave.countersharddb3.tt.bjs.p1staff.com",
+          "Database": "putong-counter-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 6143
+    },
+    {
+      "FromLogicalShardMod": 6144,
+      "PostgreSql": {
+        "Address": "master.countersharddb4.tt.bjs.p1staff.com",
+        "Database": "putong-counter-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "slave.countersharddb4.tt.bjs.p1staff.com",
+          "Database": "putong-counter-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 8191
+    }
+  ],
+  "PostgreSqlMomentSharded": [
+    {
+      "FromLogicalShardMod": 0,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb1.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb1.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 511
+    },
+    {
+      "FromLogicalShardMod": 512,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb2.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb2.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 1023
+    },
+    {
+      "FromLogicalShardMod": 1024,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb3.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb3.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 1535
+    },
+    {
+      "FromLogicalShardMod": 1536,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb4.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb4.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 2047
+    },
+    {
+      "FromLogicalShardMod": 2048,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb5.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb5.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 2559
+    },
+    {
+      "FromLogicalShardMod": 2560,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb6.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb6.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 3071
+    },
+    {
+      "FromLogicalShardMod": 3072,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb7.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb7.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 3583
+    },
+    {
+      "FromLogicalShardMod": 3584,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb8.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb8.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 4095
+    },
+    {
+      "FromLogicalShardMod": 4096,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb9.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb9.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 4607
+    },
+    {
+      "FromLogicalShardMod": 4608,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb10.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb10.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 5119
+    },
+    {
+      "FromLogicalShardMod": 5120,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb11.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb11.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 5631
+    },
+    {
+      "FromLogicalShardMod": 5632,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb12.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb12.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 6143
+    },
+    {
+      "FromLogicalShardMod": 6144,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb13.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb13.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 6655
+    },
+    {
+      "FromLogicalShardMod": 6656,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb14.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb14.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 7167
+    },
+    {
+      "FromLogicalShardMod": 7168,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb15.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb15.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 7679
+    },
+    {
+      "FromLogicalShardMod": 7680,
+      "PostgreSql": {
+        "Address": "1.master.momentsharddb16.tt.bjs.p1staff.com",
+        "Database": "putong-moment-shard",
+        "Password": "rai4ohCi",
+        "PoolSize": 40,
+        "Port": "6432",
+        "Settings": "sslmode-disable",
+        "User": "putong"
+      },
+      "PostgreSqlReadOnly": [
+        {
+          "Address": "1.slave.momentsharddb16.tt.bjs.p1staff.com",
+          "Database": "putong-moment-shard",
+          "Password": "rai4ohCi",
+          "PoolSize": 40,
+          "Port": "6432",
+          "Settings": "sslmode-disable",
+          "User": "putong"
+        }
+      ],
+      "ToLogicalShardMod": 8191
+    }
+  ],
+  "PostgreSqlChatMs": {
+    "Address": "master.chatmsdb1.tt.bjs.p1staff.com",
+    "Database": "putong-chat-ms",
+    "Password": "iaTh4iph",
+    "PoolSize": 40,
+    "Port": "6432",
+    "Settings": "sslmode-disable",
+    "User": "putong"
+  },
+  "PostgreSqlChatMsReadOnly": [
+    {
+      "Address": "slave.chatmsdb1.tt.bjs.p1staff.com",
+      "Database": "putong-chat-ms",
+      "Password": "iaTh4iph",
+      "PoolSize": 40,
+      "Port": "6432",
+      "Settings": "sslmode-disable",
+      "User": "putong"
+    }
+  ]
+}
