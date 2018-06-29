@@ -1,0 +1,151 @@
+{
+  "Cloud": {
+    "AWSStorageDriver": {
+      "ApiKey": "AKIAPFLIFZUZBB7XWHWQ",
+      "ApiSecret": "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",
+      "AudioBucketName": "putong-testing-audio",
+      "AudioOriginalBucketName": "putong-testing-audio-original",
+      "ImageBucketName": "putong-testing-image",
+      "ImageOriginalBucketName": "putong-testing-image-original",
+      "VideoBucketName": "putong-testing-video",
+      "VideoOriginalBucketName": "putong-testing-video-original"
+    },
+    "BackupDriver": "DiskStorageDriver",
+    "BaseUrl": "http://cloud.staging1.p1staff.com/v1",
+    "DefaultDriver": "AWSStorageDriver",
+    "DiskStorageDriver": {
+      "Filepath": "/var/lib/putong/putong-cloud-storage/",
+      "TempFilepath": "/var/tmp/putong/"
+    },
+    "ListenAddress": ":18409",
+    "MaxMediaDurationSeconds": 310,
+    "MediaConvertTimeoutSeconds": 60,
+    "RetryFilePath": "/var/lib/putong/putong-cloud-service/default",
+    "UcloudStorageDriver": {
+      "AudioBucketName": "",
+      "AudioOriginalBucketName": "",
+      "ImageBucketName": "",
+      "ImageOriginalBucketName": "",
+      "PrivateKey": "",
+      "PublicKey": "",
+      "VideoBucketName": "",
+      "VideoOriginalBucketName": ""
+    },
+    "audioFormats": {
+      "32": {
+      }
+    },
+    "imageFormats": {
+      "128x128": {
+        "blur": 1.1,
+        "compression": 70,
+        "height": 128,
+        "optimize": true,
+        "resizeMethod": "crop",
+        "scaleUp": true,
+        "width": 128
+      },
+      "180x180": {
+        "blur": 1.1,
+        "compression": 70,
+        "height": 180,
+        "optimize ": true,
+        "resizeMethod": "crop",
+        "scaleUp": true,
+        "width": 180
+      },
+      "480x480": {
+        "blur": 1.1,
+        "compression": 70,
+        "height": 480,
+        "optimize": true,
+        "resizeMethod": "crop",
+        "scaleUp": true,
+        "width": 480
+      },
+      "640x640": {
+        "blur": 1.1,
+        "compression": 70,
+        "height": 640,
+        "optimize": true,
+        "resizeMethod": "crop",
+        "scaleUp": true,
+        "width": 640
+      },
+      "blur": {
+        "blur": 11,
+        "compression": 70,
+        "height": 180,
+        "optimize": true,
+        "resizeMethod": "crop",
+        "scaleUp": true,
+        "width": 180
+      },
+      "blurRetina": {
+        "blur": 28,
+        "compression": 70,
+        "height": 480,
+        "optimize": true,
+        "resizeMethod": "crop",
+        "scaleUp": true,
+        "width": 480
+      },
+      "max_180xX": {
+        "blur": 1.1,
+        "compression": 70,
+        "optimize ": true,
+        "resizeMethod": "landscape",
+        "scaleUp": false,
+        "width": 180
+      },
+      "max_480xX": {
+        "blur": 1.1,
+        "compression": 70,
+        "optimize ": true,
+        "resizeMethod": "landscape",
+        "scaleUp": false,
+        "width": 480
+      },
+      "max_640xX": {
+        "blur": 1.1,
+        "compression": 70,
+        "optimize ": true,
+        "resizeMethod": "landscape",
+        "scaleUp": false,
+        "width": 640
+      },
+      "max_720xX": {
+        "blur": 1.1,
+        "compression": 70,
+        "optimize ": true,
+        "resizeMethod": "landscape",
+        "scaleUp": false,
+        "width": 720
+      },
+      "max_960xX": {
+        "blur": 1.1,
+        "compression": 70,
+        "optimize ": true,
+        "resizeMethod": "landscape",
+        "scaleUp": false,
+        "width": 960
+      }
+    },
+    "videoFormats": {
+      "480x480": {
+      },
+      "max_480xX": {
+      }
+    }
+  },
+  "Log": {
+    "Output": [
+        "syslog"
+    ],
+    "Syslog": {
+      "Address": "10.9.169.163:514",
+      "Facility": "local6",
+      "Protocol": "udp"
+    }
+  }
+}

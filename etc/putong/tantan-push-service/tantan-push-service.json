@@ -1,0 +1,49 @@
+{
+	"debuglisten":":21228",
+	"debug" : {
+		"enable": true
+	},
+	"test" : true,
+	"Apns": {
+		"CertificateFile": "/etc/putong/putong-push-service/apns-cert.pem",
+		"KeyFile": "/etc/putong/putong-push-service/apns-key.pem",
+		"ServerAddress": "gateway.sandbox.push.apple.com:2195"
+	},
+	"umeng": {
+		"appKey": "534e662c56240b8f2f0048e4",
+		"appSecret": "x27h8ssavlz03qeq9vguu9eewfywlk3x",
+		"urlBase": "http://msg.umeng.com"
+	},
+	"jpush": {
+		"urlBase": "https://api.jpush.cn",
+		"appKey": "8e5cf4ca06728a452207f701",
+		"appSecret": "8d904103459d06cafde9f416"
+	},
+	"oppopush": {
+		"appKey": "L3BJpyKWYvC4wQ0DqYiFQh3X",
+        "appSecret": "T8FT4Ey7vM9lprT0MqcEeGDa",
+        "masterSecret": "3W7Lvue4yW301Gg7nAv9y5AY",
+        "hostURL": "https://api.push.oppomobile.com"
+	},
+	"mipush": {
+		"appSecret": "nFdaYNnTrWbnhN7cflpovA==",
+		"poolSize": 40
+	},
+	"eventlogclient": {
+		"enable":true,
+		"type" : "kafka"
+	},
+	"syslog": {
+		"Output": [
+			"syslog"
+		  ],
+		  "Syslog": {
+			"Address": "10.9.169.163:514",
+			"Facility": "local6",
+			"Protocol": "udp"
+		  }
+	},
+	"Cloud": {
+		"BaseUrl": "https://auto.tancdn.com/v1"
+	}
+}

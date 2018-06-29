@@ -1,0 +1,56 @@
+{
+	"Apns": {
+		"CertificateFile": "/etc/putong/putong-push-service/apns-cert.pem",
+		"KeyFile": "/etc/putong/putong-push-service/apns-key.pem",
+		"ServerAddress": "gateway.sandbox.push.apple.com:2195",
+		"PoolSize": 1
+	},
+	"umeng": {
+		"appKey": "534e662c56240b8f2f0048e4",
+		"appSecret": "x27h8ssavlz03qeq9vguu9eewfywlk3x",
+		"urlBase": "http://msg.umeng.com"
+	},
+	"jpush": {
+		"urlBase": "https://api.jpush.cn",
+		"appKey": "8e5cf4ca06728a452207f701",
+		"appSecret": "8d904103459d06cafde9f416"
+	},
+	"oppopush": {
+		"appKey": "L3BJpyKWYvC4wQ0DqYiFQh3X",
+		"appSecret": "T8FT4Ey7vM9lprT0MqcEeGDa",
+		"masterSecret": "3W7Lvue4yW301Gg7nAv9y5AY",
+		"hostURL": "https://api.push.oppomobile.com"
+	},
+	"Cloud": {
+		"BaseUrl": "https://auto.tancdn.com/v1"
+	},
+	"gtpush": {
+		"appID": "IUPFMiVivN9DOPaBJ97fP6",
+		"appKey": "rz2zFLbitP6ZMMOGj1uqx",
+		"appSecret": "vCmH9CoHST9LFQqFyyaFI2",
+		"masterSecret": "UnbZentn6DAqSIQJvtYpX1"
+	},
+    "fcm": {
+      "serverSecret": "AAAA0KVF_ZU:APA91bERZwfDRTO4tOj0KodO1fXUj4L2ce-MaQIwA5T_FiuXUFT2jMY8SBzL4bGyZ1Aiul8GSAwMzvXoLA3ECzIidGEnizaU4kJZnoThz2uOfBerKs0bmzkqg3GE4kNzJQZZyPrAEst4",
+      "httpProxy": "http://proxy.p1staff.com:1337",
+      "hostURL": "https://fcm.googleapis.com/fcm/send"
+	},
+	"mipush": {
+		"appSecret": "nFdaYNnTrWbnhN7cflpovA==",
+		"poolSize": 40
+	},
+	"sendStrategyConf": {
+		"disabled": [
+			"opush"
+		],
+		"recommended": [
+			"mipush",
+            "fcm"
+		],
+		"redistribution": {
+			"getui": {
+				"jpush": 1
+			}
+		}
+	}
+}

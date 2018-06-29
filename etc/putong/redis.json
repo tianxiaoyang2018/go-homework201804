@@ -1,0 +1,63 @@
+{
+  "Addr": "http://",
+  "ConversationCounter": {
+    "Enable": false,
+    "CacheTimeMin":1,
+    "CacheTimeMax":30,
+    "RedisConfig": {
+      "MasterName": "redis-cluster",
+      "Sentinels": [
+        "10.9.169.163:26380",
+        "10.9.169.163:26381",
+        "10.9.169.163:26382"
+      ]
+    }
+  },
+  "CounterCache": {
+    "KeyExpireTime": "10m",
+    "MaxConcurrentSync": 0,
+    "IsReadFromCacheEnable": true,
+    "IsCounterCacheEnable": true,
+    "RedisConfig": {
+      "MasterName": "redis-cluster",
+      "PoolSize": 10,
+      "PoolTimeout": "500ms",
+      "ReadTimeout": "500ms",
+      "WriteTimeout": "500ms",
+      "Sentinels": [
+        "10.9.169.163:26380",
+        "10.9.169.163:26381",
+        "10.9.169.163:26382"
+      ]
+    }
+  },
+  "Default": {
+  },
+  "Moment": {
+    "MasterName": "redis-cluster",
+    "PoolSize": 100,
+    "PoolTimeout": "1s",
+    "ReadOnly": false,
+    "ReadTimeout": "2s",
+    "Sentinels": [
+      "10.9.169.163:26380",
+      "10.9.169.163:26381",
+      "10.9.169.163:26382"
+    ],
+    "WriteTimeout": "2s"
+  },
+  "Contact": {
+    "DialTimeout":        "5s",
+    "ReadTimeout":        "4s",
+    "WriteTimeout":       "4s",
+    "PoolSize":           100,
+    "PoolTimeout":        "1s",
+    "IdleTimeout":        "5m",
+    "IdleCheckFrequency": "1m",
+    "Addrs": [
+      "10.9.169.163:6380",
+      "10.9.169.163:6381",
+      "10.9.169.163:6382"
+    ]
+  }
+}

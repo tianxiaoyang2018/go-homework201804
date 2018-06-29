@@ -1,16 +1,21 @@
 package main
 
 import (
+	"regexp"
 	"fmt"
 )
 
 func main() {
-	hashMap := map[string]int{
-		"a": 1,
-		"b": 2,
+	a := "\\/"
+	fmt.Println(a)
+	str := "啊啊    啊啊  和"
+	pat := "[ ]+"
+	re,_ := regexp.Compile(pat)
+
+	if ok, _ := regexp.Match(pat, []byte(str)); ok {
+		fmt.Println("match found")
 	}
-	for k, v := range hashMap {
-		fmt.Println(k, "-", v)
-	}
-	fmt.Println(hashMap["a"])
+
+	str = re.ReplaceAllString(str, " ")
+	fmt.Println(str)
 }

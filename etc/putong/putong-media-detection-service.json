@@ -1,0 +1,22 @@
+{
+  "Detector": {
+    "ListenAddress": ":18448",
+    "BaseUrl": "http://10.9.169.163:18448",
+    "MomentsGroupName": "moment-group-2017-10-20",
+    "UsersGroupName": "user-group-2017-10-20",
+    "Provider": {
+      "SenseTime": {
+        "UserConcurrency": 40,
+        "MomentConcurrency": 24,
+        "APIUrl": "https://master.sensetime.com",
+        "ApiId": "652a2afc5712453ea92620dfed2969c5",
+        "ApiSecret": "31cce217c7034a0fa24b4d209b0ec1c4",
+        "EnableDetectUserPornPicture": false,
+        "EnableDetectUserPoliticianPicture": false,
+        "EnableDetectMomentPornPicture": true,
+        "EnableDetectMomentPoliticianPicture": false
+      }
+    }
+  }
+}
+
