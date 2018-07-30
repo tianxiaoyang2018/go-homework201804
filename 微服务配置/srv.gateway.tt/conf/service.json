@@ -1,0 +1,216 @@
+{
+    "BackdoorEnabled":false,
+    "ChannelConfig": {
+        "BuflogSize" :                  10000000,
+        "UpdateLocationSize":           1000000
+    },
+    "TimeoutConfig": {
+      "DialTimeOutMs": 4000,
+      "RequestTimeOutMs": 5000
+    },
+    "BackendReliedService":{
+        "CounterRestful":"http://localhost:21260/user-counters/[userid]",
+        "CounterTimeoutMs":300,
+        "UpdateLocActivity":"http://localhost:21224/users/me/activity",
+        "WithMomentUrl":"http://localhost:21242/inner/moment/get_moment_by_userid",
+        "WithMomentTimeoutMs":3000,
+        "WithPublicMomentUrl":"http://localhost:21242/inner/moment/get_latest_moments",
+        "WithPublicMomentTimeoutMs":500,
+        "WithUserUrl":"http://localhost:21224/inner/users",
+        "WithUserTimeoutMs":3000,
+        "WithScenarioUrl":"http://restapi.basedata.lb:21256/inner/scenarios",
+        "WithContactUrl":"http://restapi.contact.lb:21246/inner/contacts",
+        "WithRelationshipUrl":"http://restapi.relationship.lb:21272/inner/relationships",
+        "WithQuestionUrl":"http://restapi.chat.lb:21232/inner/chat/questions"
+    },
+  "MacAccessToken": {
+    "AllowedTimeDiffInSeconds": 300,
+    "HmacSecrets": {
+      "ios1.7.1": "BGwe%4zMjZN7JJTc&f*GyX7L!g@8dpXuJ7!*rXR2QWc$-+Y2ZP",
+      "android1.7.1": "5tT!TQkf5fYbabw5?KL2659XgL^JgxWw8r9Y+bAvGwP-QfteQL",
+      "ios2.3.0": "&YZ!+GrX%yNW7-8GXcdeg@Z*7LjzQXw42uBRf$*p!TMJ7J2PcJ",
+      "android2.3.0": "2gr!4Yu$JW7pyMfXJXLQcdGcP7JZ7G8*&e+@w%!*TzNBZRX2jX",
+      "ios2.3.2": "ZjlhOWNiMTkxYTU2YzdjYWZhMWM3OTM1MzU3MWM2MTZkOGFjYW",
+      "android2.3.2": "p_ES5vb2HHb3QuctEmP2e2SsH54xtDNP6V66JAVoUthITpldNl",
+      "ios2.4.0": "-sudoOZtSy-InuFUwOzjXUyQ-mbyRA7ZBFSQgbO7OFjA3QDq7b",
+      "android2.4.0": "dRA1FdPwAhsRZ5ttcKs01TIuW_elZxiBGmvYIsiQM7-fuLGfsj",
+      "android2.4.2": "3X5T0!+QbxDWdcwggycO*&e+@w%NxfLcnWPRMXyFuIKuIyQZmZ",
+      "ios2.5.0": "Fos3BlAHcDjRXV3L6bp7eEE9bSvH2KJ2sYnBkkQg4GvQ80Eub9",
+      "android2.5.0": "tHo06g-dnlLxpgB7Kf8BWfVVWx66hiZ3wfIf-8RLSjHg3ZPH4w",
+      "android2.5.1": "pKMXgc_ATQdeqZ9aibtW04sZ5OYb1wjlNo43Ojweg1eiHnlHNM",
+      "ios2.5.2": "HjXkbmc5ugr93T3AnxOCwtOk931VlCoFXAOp4rVtbiluDr41iy",
+      "ios2.5.3": "aFsYLLSlxZ7k72Uq510DiTNMRCIOcmvMpT81Kbww3oU2ItDAE1",
+      "android2.5.3": "OZapluwHhJvRDExLcitGKTVTEgpZCYzvcRnS0Dd5v0yYl7Nnz1",
+      "ios2.6.0": "KS0hnF4jrbh7IcG1EqiF623CFsMLmIJyee5prVabq21pJUwHXw",
+      "android2.6.0": "ZeBjFmBI6so0FQF48R64jW8RefFRqeKmeRPxLuLwAUpeZZEmB2",
+      "ios2.6.6": "2E3O1H1fhaK55DGdlC7SIL2FGimIkajkbtT3gEKouCJ2k9nNFh",
+      "ios2.6.9": "vN-5QmwJyVceBjr6I_2lYtQxT85gg1PjcMA2WOwKRIH8eU4KYP",
+      "ios2.7.1": "WY7z-Wte4Tx6ktidLLKxvSZObe2LL1xFbA9miA_8_SSZgx3W2A",
+      "ios2.7.2": "p-aqAwEpTdL4kwKUlrqknWcuzr6wvnEicopRzWOqlGHxoe_6C6",
+      "ios2.8.3": "yybROo16-CARcwGbjIWwf6THFZHeYXd5clNlC_YYYSL0lP1Yud",
+      "android2.8.3": "HX8asOIgLCcJoHODsFus4R95XSUhXjNjRKaGqR4bQMtYEQQkab",
+      "ios2.8.5": "PAzviywZkXFqv_k3_oeKf5mgXzyHhtzMM8m4zzg7R87DbT3WH3",
+      "android2.8.5": "WeCdrzl_CYCpSTJVAzYwTT5CzHhsC1-RQEoULdV753R19Kdn7b"
+    },
+    "HMacSecretsV2": {
+        "Android": {
+            "android1.7.1": {
+                "Secret": "5tT!TQkf5fYbabw5?KL2659XgL^JgxWw8r9Y+bAvGwP-QfteQL",
+                "AppVersionRange": ["1.7.1", "2.3.0"]
+            },
+            "android2.3.0": {
+                "Secret": "2gr!4Yu$JW7pyMfXJXLQcdGcP7JZ7G8*&e+@w%!*TzNBZRX2jX",
+                "AppVersionRange": ["2.3.0", "2.3.2"]
+            },
+            "android2.3.2": {
+                "Secret": "p_ES5vb2HHb3QuctEmP2e2SsH54xtDNP6V66JAVoUthITpldNl",
+                "AppVersionRange": ["2.3.2", "2.4.0"]
+            },
+            "android2.4.0": {
+                "Secret": "dRA1FdPwAhsRZ5ttcKs01TIuW_elZxiBGmvYIsiQM7-fuLGfsj",
+                "AppVersionRange": ["2.4.0", "2.4.2"]
+            },
+            "android2.4.2": {
+                "Secret": "3X5T0!+QbxDWdcwggycO*&e+@w%NxfLcnWPRMXyFuIKuIyQZmZ",
+                "AppVersionRange": ["2.4.2", "2.5.0"]
+            },
+            "android2.5.0": {
+                "Secret": "tHo06g-dnlLxpgB7Kf8BWfVVWx66hiZ3wfIf-8RLSjHg3ZPH4w",
+                "AppVersionRange": ["2.5.0", "2.5.1"]
+            },
+            "android2.5.1": {
+                "Secret": "pKMXgc_ATQdeqZ9aibtW04sZ5OYb1wjlNo43Ojweg1eiHnlHNM",
+                "AppVersionRange": ["2.5.1", "2.5.3"]
+            },
+            "android2.5.3": {
+                "Secret": "OZapluwHhJvRDExLcitGKTVTEgpZCYzvcRnS0Dd5v0yYl7Nnz1",
+                "AppVersionRange": ["2.5.3", "2.6.0"]
+            },
+            "android2.6.0": {
+                "Secret": "ZeBjFmBI6so0FQF48R64jW8RefFRqeKmeRPxLuLwAUpeZZEmB2",
+                "AppVersionRange": ["2.6.0", "2.8.3"]
+            },
+            "android2.8.3": {
+                "Secret": "HX8asOIgLCcJoHODsFus4R95XSUhXjNjRKaGqR4bQMtYEQQkab",
+                "AppVersionRange": ["2.8.3", "2.8.5"]
+            },
+            "android2.8.5": {
+                "Secret": "WeCdrzl_CYCpSTJVAzYwTT5CzHhsC1-RQEoULdV753R19Kdn7b",
+                "AppVersionRange": ["2.8.5", "2.8.9"]
+            },
+            "android2.8.9": {
+                "Secret": "2XYPtavCMo6bjsK7yOidwcbERo4gTGKml3WuLVUCsKLjjpChu0",
+                "AppVersionRange": ["2.8.9", "4.0.0"]
+            }
+        },
+        "IOS": {
+            "ios1.7.1": {
+                "Secret": "BGwe%4zMjZN7JJTc&f*GyX7L!g@8dpXuJ7!*rXR2QWc$-+Y2ZP",
+                "AppVersionRange": ["1.7.1", "2.3.0"]
+            },
+            "ios2.3.0": {
+                "Secret": "&YZ!+GrX%yNW7-8GXcdeg@Z*7LjzQXw42uBRf$*p!TMJ7J2PcJ",
+                "AppVersionRange": ["2.3.0", "2.3.2"]
+            },
+            "ios2.3.2": {
+                "Secret": "ZjlhOWNiMTkxYTU2YzdjYWZhMWM3OTM1MzU3MWM2MTZkOGFjYW",
+                "AppVersionRange": ["2.3.2", "2.4.0"]
+            },
+            "ios2.4.0": {
+                "Secret": "-sudoOZtSy-InuFUwOzjXUyQ-mbyRA7ZBFSQgbO7OFjA3QDq7b",
+                "AppVersionRange": ["2.4.0", "2.5.0"]
+            },
+            "ios2.5.0": {
+                "Secret": "Fos3BlAHcDjRXV3L6bp7eEE9bSvH2KJ2sYnBkkQg4GvQ80Eub9",
+                "AppVersionRange": ["2.5.0", "2.5.2"]
+            },
+            "ios2.5.2": {
+                "Secret": "HjXkbmc5ugr93T3AnxOCwtOk931VlCoFXAOp4rVtbiluDr41iy",
+                "AppVersionRange": ["2.5.2", "2.5.3"]
+            },
+            "ios2.5.3": {
+                "Secret": "aFsYLLSlxZ7k72Uq510DiTNMRCIOcmvMpT81Kbww3oU2ItDAE1",
+                "AppVersionRange": ["2.5.3", "2.6.0"]
+            },
+            "ios2.6.0": {
+                "Secret": "KS0hnF4jrbh7IcG1EqiF623CFsMLmIJyee5prVabq21pJUwHXw",
+                "AppVersionRange": ["2.6.0", "2.6.6"]
+            },
+            "ios2.6.6": {
+                "Secret": "2E3O1H1fhaK55DGdlC7SIL2FGimIkajkbtT3gEKouCJ2k9nNFh",
+                "AppVersionRange": ["2.6.6", "2.6.9"]
+            },
+            "ios2.6.9": {
+                "Secret": "vN-5QmwJyVceBjr6I_2lYtQxT85gg1PjcMA2WOwKRIH8eU4KYP",
+                "AppVersionRange": ["2.6.9", "2.7.1"]
+            },
+            "ios2.7.1": {
+                "Secret": "WY7z-Wte4Tx6ktidLLKxvSZObe2LL1xFbA9miA_8_SSZgx3W2A",
+                "AppVersionRange": ["2.7.1", "2.7.2"]
+            },
+            "ios2.7.2": {
+                "Secret": "p-aqAwEpTdL4kwKUlrqknWcuzr6wvnEicopRzWOqlGHxoe_6C6",
+                "AppVersionRange": ["2.7.2", "2.8.3"]
+            },
+            "ios2.8.3": {
+                "Secret": "yybROo16-CARcwGbjIWwf6THFZHeYXd5clNlC_YYYSL0lP1Yud",
+                "AppVersionRange": ["2.8.3", "2.8.5"]
+            },
+            "ios2.8.5": {
+                "Secret": "PAzviywZkXFqv_k3_oeKf5mgXzyHhtzMM8m4zzg7R87DbT3WH3",
+                "AppVersionRange": ["2.8.5", "2.8.9"]
+            },
+            "ios2.8.9": {
+                "Secret": "Hmn2NCzpIzwvlTFCs1bTsjQOpzAEMzV8E8Ob1n8O2c7gVwfn2E",
+                "AppVersionRange": ["2.8.9", "4.0.0"]
+            }
+        }
+    },
+    "NewerSecretVersions": [
+        "android2.6.0",
+        "android2.8.3",
+        "android2.8.5",
+        "android2.8.9",
+        "ios2.6.0",
+        "ios2.6.6",
+        "ios2.6.9",
+        "ios2.7.1",
+        "ios2.7.2",
+        "ios2.8.3",
+        "ios2.8.5",
+        "ios2.8.9"
+    ]
+  },
+  "MinClientVersion": {
+    "General": {
+      "android": {
+        "MinVersion": "1.7.1",
+        "UpgradeUrl": "https://tantanapp.com/"
+      },
+      "ios": {
+        "MinVersion": "1.7.1",
+        "UpgradeUrl": "https://itunes.apple.com/cn/app/tantan/id861891048?mt=8"
+      }
+    },
+    "Signup": {
+      "android": {
+        "MinVersion": "2.8.4",
+        "UpgradeUrl": "https://tantanapp.com/"
+      },
+      "ios": {
+        "MinVersion": "2.8.3",
+        "UpgradeUrl": "https://itunes.apple.com/cn/app/tantan/id861891048?mt=8"
+      }
+    },
+    "Signin": {
+      "android": {
+        "MinVersion": "2.3.0",
+        "UpgradeUrl": "https://tantanapp.com/"
+      },
+      "ios": {
+        "MinVersion": "2.3.0",
+        "UpgradeUrl": "https://itunes.apple.com/cn/app/tantan/id861891048?mt=8"
+      }
+    }
+  }
+}

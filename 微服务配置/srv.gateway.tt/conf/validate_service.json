@@ -1,0 +1,1341 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "required":["ChannelConfig", "TimeoutConfig","BackendReliedService"],
+  "properties": {
+    "BackdoorEnabled": {
+      "type": "boolean"
+    },
+    "ChannelConfig": {
+      "type": "object",
+      "properties": {
+        "BuflogSize": {
+          "type": "integer",
+		  "maximum":90000000,
+		   "minimum": 0
+        },
+        "UpdateLocationSize": {
+          "type": "integer",
+		  "maximum":90000000,
+		   "minimum": 0
+        }
+      }
+    },
+    "TimeoutConfig": {
+      "type": "object",
+      "properties": {
+        "DialTimeOutMs": {
+          "type": "integer",
+          "maximum":90000000,
+          "minimum": 0
+        },
+        "RequestTimeOutMs": {
+          "type": "integer",
+          "maximum":90000000,
+          "minimum": 0
+        }
+      }
+    },
+    "BackendReliedService": {
+      "type": "object",
+      "required":["CounterRestful", "CounterTimeoutMs","UpdateLocActivity","WithMomentUrl","WithMomentTimeoutMs","WithPublicMomentUrl","WithPublicMomentTimeoutMs","WithUserUrl","WithUserTimeoutMs","WithScenarioUrl","WithContactUrl","WithRelationshipUrl","WithQuestionUrl"],
+      "properties": {
+        "CounterRestful": {
+          "type": "string",
+          "pattern":"http://.*"
+        },
+        "CounterTimeoutMs": {
+          "type": "integer",
+          "maximum":60000,
+          "minimum": 0
+        },
+        "UpdateLocActivity": {
+          "type": "string",
+          "pattern":"http://.*"
+        },
+        "WithMomentUrl": {
+          "type": "string",
+          "pattern":"http://.*"
+        },
+        "WithMomentTimeoutMs": {
+          "type": "integer",
+          "maximum":60000,
+          "minimum": 0
+        },
+        "WithPublicMomentUrl": {
+          "type": "string",
+          "pattern":"http://.*"
+        },
+        "WithPublicMomentTimeoutMs": {
+          "type": "integer",
+          "maximum":60000,
+          "minimum": 0
+        },
+        "WithUserUrl": {
+          "type": "string",
+          "pattern":"http://.*"
+        },
+        "WithUserTimeoutMs": {
+          "type": "integer",
+          "maximum":60000,
+          "minimum": 0
+        },
+        "WithSenarioUrl": {
+          "type": "string",
+          "pattern":"http://.*"
+        },
+        "WithContactUrl": {
+          "type": "string",
+          "pattern":"http://.*"
+        },
+        "WithRelationshipUrl": {
+          "type": "string",
+          "pattern":"http://.*"
+        },
+        "WithQuestionUrl": {
+          "type": "string",
+          "pattern":"http://.*"
+        }
+      }
+    },
+    "MacAccessToken": {
+      "$id": "/properties/MacAccessToken",
+      "type": "object",
+      "properties": {
+        "AllowedTimeDiffInSeconds": {
+          "$id": "/properties/MacAccessToken/properties/AllowedTimeDiffInSeconds",
+          "type": "integer",
+          "title": "The Allowedtimediffinseconds Schema ",
+          "default": 0,
+          "examples": [
+            300
+          ]
+        },
+        "HmacSecrets": {
+          "$id": "/properties/MacAccessToken/properties/HmacSecrets",
+          "type": "object",
+          "properties": {
+            "ios1.7.1": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios1.7.1",
+              "type": "string",
+              "title": "The Ios1.7.1 Schema ",
+              "default": "",
+              "examples": [
+                "BGwe%4zMjZN7JJTc&f*GyX7L!g@8dpXuJ7!*rXR2QWc$-+Y2ZP"
+              ]
+            },
+            "android1.7.1": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/android1.7.1",
+              "type": "string",
+              "title": "The Android1.7.1 Schema ",
+              "default": "",
+              "examples": [
+                "5tT!TQkf5fYbabw5?KL2659XgL^JgxWw8r9Y+bAvGwP-QfteQL"
+              ]
+            },
+            "ios2.3.0": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.3.0",
+              "type": "string",
+              "title": "The Ios2.3.0 Schema ",
+              "default": "",
+              "examples": [
+                "&YZ!+GrX%yNW7-8GXcdeg@Z*7LjzQXw42uBRf$*p!TMJ7J2PcJ"
+              ]
+            },
+            "android2.3.0": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/android2.3.0",
+              "type": "string",
+              "title": "The Android2.3.0 Schema ",
+              "default": "",
+              "examples": [
+                "2gr!4Yu$JW7pyMfXJXLQcdGcP7JZ7G8*&e+@w%!*TzNBZRX2jX"
+              ]
+            },
+            "ios2.3.2": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.3.2",
+              "type": "string",
+              "title": "The Ios2.3.2 Schema ",
+              "default": "",
+              "examples": [
+                "ZjlhOWNiMTkxYTU2YzdjYWZhMWM3OTM1MzU3MWM2MTZkOGFjYW"
+              ]
+            },
+            "android2.3.2": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/android2.3.2",
+              "type": "string",
+              "title": "The Android2.3.2 Schema ",
+              "default": "",
+              "examples": [
+                "p_ES5vb2HHb3QuctEmP2e2SsH54xtDNP6V66JAVoUthITpldNl"
+              ]
+            },
+            "ios2.4.0": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.4.0",
+              "type": "string",
+              "title": "The Ios2.4.0 Schema ",
+              "default": "",
+              "examples": [
+                "-sudoOZtSy-InuFUwOzjXUyQ-mbyRA7ZBFSQgbO7OFjA3QDq7b"
+              ]
+            },
+            "android2.4.0": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/android2.4.0",
+              "type": "string",
+              "title": "The Android2.4.0 Schema ",
+              "default": "",
+              "examples": [
+                "dRA1FdPwAhsRZ5ttcKs01TIuW_elZxiBGmvYIsiQM7-fuLGfsj"
+              ]
+            },
+            "android2.4.2": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/android2.4.2",
+              "type": "string",
+              "title": "The Android2.4.2 Schema ",
+              "default": "",
+              "examples": [
+                "3X5T0!+QbxDWdcwggycO*&e+@w%NxfLcnWPRMXyFuIKuIyQZmZ"
+              ]
+            },
+            "ios2.5.0": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.5.0",
+              "type": "string",
+              "title": "The Ios2.5.0 Schema ",
+              "default": "",
+              "examples": [
+                "Fos3BlAHcDjRXV3L6bp7eEE9bSvH2KJ2sYnBkkQg4GvQ80Eub9"
+              ]
+            },
+            "android2.5.0": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/android2.5.0",
+              "type": "string",
+              "title": "The Android2.5.0 Schema ",
+              "default": "",
+              "examples": [
+                "tHo06g-dnlLxpgB7Kf8BWfVVWx66hiZ3wfIf-8RLSjHg3ZPH4w"
+              ]
+            },
+            "android2.5.1": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/android2.5.1",
+              "type": "string",
+              "title": "The Android2.5.1 Schema ",
+              "default": "",
+              "examples": [
+                "pKMXgc_ATQdeqZ9aibtW04sZ5OYb1wjlNo43Ojweg1eiHnlHNM"
+              ]
+            },
+            "ios2.5.2": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.5.2",
+              "type": "string",
+              "title": "The Ios2.5.2 Schema ",
+              "default": "",
+              "examples": [
+                "HjXkbmc5ugr93T3AnxOCwtOk931VlCoFXAOp4rVtbiluDr41iy"
+              ]
+            },
+            "ios2.5.3": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.5.3",
+              "type": "string",
+              "title": "The Ios2.5.3 Schema ",
+              "default": "",
+              "examples": [
+                "aFsYLLSlxZ7k72Uq510DiTNMRCIOcmvMpT81Kbww3oU2ItDAE1"
+              ]
+            },
+            "android2.5.3": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/android2.5.3",
+              "type": "string",
+              "title": "The Android2.5.3 Schema ",
+              "default": "",
+              "examples": [
+                "OZapluwHhJvRDExLcitGKTVTEgpZCYzvcRnS0Dd5v0yYl7Nnz1"
+              ]
+            },
+            "ios2.6.0": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.6.0",
+              "type": "string",
+              "title": "The Ios2.6.0 Schema ",
+              "default": "",
+              "examples": [
+                "KS0hnF4jrbh7IcG1EqiF623CFsMLmIJyee5prVabq21pJUwHXw"
+              ]
+            },
+            "android2.6.0": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/android2.6.0",
+              "type": "string",
+              "title": "The Android2.6.0 Schema ",
+              "default": "",
+              "examples": [
+                "ZeBjFmBI6so0FQF48R64jW8RefFRqeKmeRPxLuLwAUpeZZEmB2"
+              ]
+            },
+            "ios2.6.6": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.6.6",
+              "type": "string",
+              "title": "The Ios2.6.6 Schema ",
+              "default": "",
+              "examples": [
+                "2E3O1H1fhaK55DGdlC7SIL2FGimIkajkbtT3gEKouCJ2k9nNFh"
+              ]
+            },
+            "ios2.6.9": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.6.9",
+              "type": "string",
+              "title": "The Ios2.6.9 Schema ",
+              "default": "",
+              "examples": [
+                "vN-5QmwJyVceBjr6I_2lYtQxT85gg1PjcMA2WOwKRIH8eU4KYP"
+              ]
+            },
+            "ios2.7.1": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.7.1",
+              "type": "string",
+              "title": "The Ios2.7.1 Schema ",
+              "default": "",
+              "examples": [
+                "WY7z-Wte4Tx6ktidLLKxvSZObe2LL1xFbA9miA_8_SSZgx3W2A"
+              ]
+            },
+            "ios2.7.2": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.7.2",
+              "type": "string",
+              "title": "The Ios2.7.2 Schema ",
+              "default": "",
+              "examples": [
+                "p-aqAwEpTdL4kwKUlrqknWcuzr6wvnEicopRzWOqlGHxoe_6C6"
+              ]
+            },
+            "ios2.8.3": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.8.3",
+              "type": "string",
+              "title": "The Ios2.8.3 Schema ",
+              "default": "",
+              "examples": [
+                "yybROo16-CARcwGbjIWwf6THFZHeYXd5clNlC_YYYSL0lP1Yud"
+              ]
+            },
+            "android2.8.3": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/android2.8.3",
+              "type": "string",
+              "title": "The Android2.8.3 Schema ",
+              "default": "",
+              "examples": [
+                "HX8asOIgLCcJoHODsFus4R95XSUhXjNjRKaGqR4bQMtYEQQkab"
+              ]
+            },
+            "ios2.8.5": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/ios2.8.5",
+              "type": "string",
+              "title": "The Ios2.8.5 Schema ",
+              "default": "",
+              "examples": [
+                "PAzviywZkXFqv_k3_oeKf5mgXzyHhtzMM8m4zzg7R87DbT3WH3"
+              ]
+            },
+            "android2.8.5": {
+              "$id": "/properties/MacAccessToken/properties/HmacSecrets/properties/android2.8.5",
+              "type": "string",
+              "title": "The Android2.8.5 Schema ",
+              "default": "",
+              "examples": [
+                "WeCdrzl_CYCpSTJVAzYwTT5CzHhsC1-RQEoULdV753R19Kdn7b"
+              ]
+            }
+          }
+        },
+        "HMacSecretsV2": {
+          "$id": "/properties/MacAccessToken/properties/HMacSecretsV2",
+          "type": "object",
+          "properties": {
+            "Android": {
+              "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android",
+              "type": "object",
+              "properties": {
+                "android1.7.1": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android1.7.1",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android1.7.1/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "5tT!TQkf5fYbabw5?KL2659XgL^JgxWw8r9Y+bAvGwP-QfteQL"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android1.7.1/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android1.7.1/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "1.7.1",
+                          "2.3.0"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "android2.3.0": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.3.0",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.3.0/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "2gr!4Yu$JW7pyMfXJXLQcdGcP7JZ7G8*&e+@w%!*TzNBZRX2jX"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.3.0/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.3.0/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.3.0",
+                          "2.3.2"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "android2.3.2": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.3.2",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.3.2/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "p_ES5vb2HHb3QuctEmP2e2SsH54xtDNP6V66JAVoUthITpldNl"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.3.2/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.3.2/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.3.2",
+                          "2.4.0"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "android2.4.0": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.4.0",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.4.0/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "dRA1FdPwAhsRZ5ttcKs01TIuW_elZxiBGmvYIsiQM7-fuLGfsj"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.4.0/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.4.0/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.4.0",
+                          "2.4.2"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "android2.4.2": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.4.2",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.4.2/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "3X5T0!+QbxDWdcwggycO*&e+@w%NxfLcnWPRMXyFuIKuIyQZmZ"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.4.2/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.4.2/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.4.2",
+                          "2.5.0"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "android2.5.0": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.5.0",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.5.0/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "tHo06g-dnlLxpgB7Kf8BWfVVWx66hiZ3wfIf-8RLSjHg3ZPH4w"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.5.0/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.5.0/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.5.0",
+                          "2.5.1"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "android2.5.1": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.5.1",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.5.1/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "pKMXgc_ATQdeqZ9aibtW04sZ5OYb1wjlNo43Ojweg1eiHnlHNM"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.5.1/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.5.1/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.5.1",
+                          "2.5.3"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "android2.5.3": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.5.3",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.5.3/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "OZapluwHhJvRDExLcitGKTVTEgpZCYzvcRnS0Dd5v0yYl7Nnz1"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.5.3/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.5.3/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.5.3",
+                          "2.6.0"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "android2.6.0": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.6.0",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.6.0/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "ZeBjFmBI6so0FQF48R64jW8RefFRqeKmeRPxLuLwAUpeZZEmB2"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.6.0/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.6.0/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.6.0",
+                          "2.8.3"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "android2.8.3": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.8.3",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.8.3/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "HX8asOIgLCcJoHODsFus4R95XSUhXjNjRKaGqR4bQMtYEQQkab"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.8.3/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.8.3/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.8.3",
+                          "2.8.5"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "android2.8.5": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.8.5",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.8.5/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "WeCdrzl_CYCpSTJVAzYwTT5CzHhsC1-RQEoULdV753R19Kdn7b"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.8.5/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.8.5/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.8.5",
+                          "2.8.9"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "android2.8.9": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.8.9",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.8.9/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "2XYPtavCMo6bjsK7yOidwcbERo4gTGKml3WuLVUCsKLjjpChu0"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.8.9/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/Android/properties/android2.8.9/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.8.9",
+                          "4.0.0"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "IOS": {
+              "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS",
+              "type": "object",
+              "properties": {
+                "ios1.7.1": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios1.7.1",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios1.7.1/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "BGwe%4zMjZN7JJTc&f*GyX7L!g@8dpXuJ7!*rXR2QWc$-+Y2ZP"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios1.7.1/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios1.7.1/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "1.7.1",
+                          "2.3.0"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.3.0": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.3.0",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.3.0/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "&YZ!+GrX%yNW7-8GXcdeg@Z*7LjzQXw42uBRf$*p!TMJ7J2PcJ"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.3.0/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.3.0/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.3.0",
+                          "2.3.2"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.3.2": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.3.2",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.3.2/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "ZjlhOWNiMTkxYTU2YzdjYWZhMWM3OTM1MzU3MWM2MTZkOGFjYW"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.3.2/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.3.2/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.3.2",
+                          "2.4.0"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.4.0": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.4.0",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.4.0/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "-sudoOZtSy-InuFUwOzjXUyQ-mbyRA7ZBFSQgbO7OFjA3QDq7b"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.4.0/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.4.0/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.4.0",
+                          "2.5.0"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.5.0": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.5.0",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.5.0/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "Fos3BlAHcDjRXV3L6bp7eEE9bSvH2KJ2sYnBkkQg4GvQ80Eub9"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.5.0/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.5.0/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.5.0",
+                          "2.5.2"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.5.2": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.5.2",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.5.2/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "HjXkbmc5ugr93T3AnxOCwtOk931VlCoFXAOp4rVtbiluDr41iy"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.5.2/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.5.2/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.5.2",
+                          "2.5.3"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.5.3": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.5.3",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.5.3/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "aFsYLLSlxZ7k72Uq510DiTNMRCIOcmvMpT81Kbww3oU2ItDAE1"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.5.3/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.5.3/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.5.3",
+                          "2.6.0"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.6.0": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.6.0",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.6.0/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "KS0hnF4jrbh7IcG1EqiF623CFsMLmIJyee5prVabq21pJUwHXw"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.6.0/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.6.0/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.6.0",
+                          "2.6.6"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.6.6": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.6.6",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.6.6/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "2E3O1H1fhaK55DGdlC7SIL2FGimIkajkbtT3gEKouCJ2k9nNFh"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.6.6/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.6.6/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.6.6",
+                          "2.6.9"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.6.9": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.6.9",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.6.9/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "vN-5QmwJyVceBjr6I_2lYtQxT85gg1PjcMA2WOwKRIH8eU4KYP"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.6.9/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.6.9/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.6.9",
+                          "2.7.1"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.7.1": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.7.1",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.7.1/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "WY7z-Wte4Tx6ktidLLKxvSZObe2LL1xFbA9miA_8_SSZgx3W2A"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.7.1/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.7.1/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.7.1",
+                          "2.7.2"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.7.2": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.7.2",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.7.2/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "p-aqAwEpTdL4kwKUlrqknWcuzr6wvnEicopRzWOqlGHxoe_6C6"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.7.2/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.7.2/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.7.2",
+                          "2.8.3"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.8.3": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.8.3",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.8.3/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "yybROo16-CARcwGbjIWwf6THFZHeYXd5clNlC_YYYSL0lP1Yud"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.8.3/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.8.3/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.8.3",
+                          "2.8.5"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.8.5": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.8.5",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.8.5/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "PAzviywZkXFqv_k3_oeKf5mgXzyHhtzMM8m4zzg7R87DbT3WH3"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.8.5/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.8.5/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.8.5",
+                          "2.8.9"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ios2.8.9": {
+                  "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.8.9",
+                  "type": "object",
+                  "properties": {
+                    "Secret": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.8.9/properties/Secret",
+                      "type": "string",
+                      "title": "The Secret Schema ",
+                      "default": "",
+                      "examples": [
+                        "Hmn2NCzpIzwvlTFCs1bTsjQOpzAEMzV8E8Ob1n8O2c7gVwfn2E"
+                      ]
+                    },
+                    "AppVersionRange": {
+                      "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.8.9/properties/AppVersionRange",
+                      "type": "array",
+                      "items": {
+                        "$id": "/properties/MacAccessToken/properties/HMacSecretsV2/properties/IOS/properties/ios2.8.9/properties/AppVersionRange/items",
+                        "type": "string",
+                        "title": "The 0th Schema ",
+                        "default": "",
+                        "examples": [
+                          "2.8.9",
+                          "4.0.0"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NewerSecretVersions": {
+          "$id": "/properties/MacAccessToken/properties/NewerSecretVersions",
+          "type": "array",
+          "items": {
+            "$id": "/properties/MacAccessToken/properties/NewerSecretVersions/items",
+            "type": "string",
+            "title": "The 0th Schema ",
+            "default": "",
+            "examples": [
+              "android2.6.0",
+              "android2.8.3",
+              "android2.8.5",
+              "android2.8.9",
+              "ios2.6.0",
+              "ios2.6.6",
+              "ios2.6.9",
+              "ios2.7.1",
+              "ios2.7.2",
+              "ios2.8.3",
+              "ios2.8.5",
+              "ios2.8.9"
+            ]
+          }
+        }
+      }
+    },
+    "MinClientVersion": {
+      "$id": "/properties/MinClientVersion",
+      "type": "object",
+      "properties": {
+        "General": {
+          "$id": "/properties/MinClientVersion/properties/General",
+          "type": "object",
+          "properties": {
+            "android": {
+              "$id": "/properties/MinClientVersion/properties/General/properties/android",
+              "type": "object",
+              "properties": {
+                "MinVersion": {
+                  "$id": "/properties/MinClientVersion/properties/General/properties/android/properties/MinVersion",
+                  "type": "string",
+                  "title": "The Minversion Schema ",
+                  "default": "",
+                  "examples": [
+                    "1.7.1"
+                  ]
+                },
+                "UpgradeUrl": {
+                  "$id": "/properties/MinClientVersion/properties/General/properties/android/properties/UpgradeUrl",
+                  "type": "string",
+                  "title": "The Upgradeurl Schema ",
+                  "default": "",
+                  "examples": [
+                    "https://tantanapp.com/"
+                  ]
+                }
+              }
+            },
+            "ios": {
+              "$id": "/properties/MinClientVersion/properties/General/properties/ios",
+              "type": "object",
+              "properties": {
+                "MinVersion": {
+                  "$id": "/properties/MinClientVersion/properties/General/properties/ios/properties/MinVersion",
+                  "type": "string",
+                  "title": "The Minversion Schema ",
+                  "default": "",
+                  "examples": [
+                    "1.7.1"
+                  ]
+                },
+                "UpgradeUrl": {
+                  "$id": "/properties/MinClientVersion/properties/General/properties/ios/properties/UpgradeUrl",
+                  "type": "string",
+                  "title": "The Upgradeurl Schema ",
+                  "default": "",
+                  "examples": [
+                    "https://itunes.apple.com/cn/app/tantan/id861891048?mt=8"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Signup": {
+          "$id": "/properties/MinClientVersion/properties/Signup",
+          "type": "object",
+          "properties": {
+            "android": {
+              "$id": "/properties/MinClientVersion/properties/Signup/properties/android",
+              "type": "object",
+              "properties": {
+                "MinVersion": {
+                  "$id": "/properties/MinClientVersion/properties/Signup/properties/android/properties/MinVersion",
+                  "type": "string",
+                  "title": "The Minversion Schema ",
+                  "default": "",
+                  "examples": [
+                    "2.8.4"
+                  ]
+                },
+                "UpgradeUrl": {
+                  "$id": "/properties/MinClientVersion/properties/Signup/properties/android/properties/UpgradeUrl",
+                  "type": "string",
+                  "title": "The Upgradeurl Schema ",
+                  "default": "",
+                  "examples": [
+                    "https://tantanapp.com/"
+                  ]
+                }
+              }
+            },
+            "ios": {
+              "$id": "/properties/MinClientVersion/properties/Signup/properties/ios",
+              "type": "object",
+              "properties": {
+                "MinVersion": {
+                  "$id": "/properties/MinClientVersion/properties/Signup/properties/ios/properties/MinVersion",
+                  "type": "string",
+                  "title": "The Minversion Schema ",
+                  "default": "",
+                  "examples": [
+                    "2.8.3"
+                  ]
+                },
+                "UpgradeUrl": {
+                  "$id": "/properties/MinClientVersion/properties/Signup/properties/ios/properties/UpgradeUrl",
+                  "type": "string",
+                  "title": "The Upgradeurl Schema ",
+                  "default": "",
+                  "examples": [
+                    "https://itunes.apple.com/cn/app/tantan/id861891048?mt=8"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Signin": {
+          "$id": "/properties/MinClientVersion/properties/Signin",
+          "type": "object",
+          "properties": {
+            "android": {
+              "$id": "/properties/MinClientVersion/properties/Signin/properties/android",
+              "type": "object",
+              "properties": {
+                "MinVersion": {
+                  "$id": "/properties/MinClientVersion/properties/Signin/properties/android/properties/MinVersion",
+                  "type": "string",
+                  "title": "The Minversion Schema ",
+                  "default": "",
+                  "examples": [
+                    "2.3.0"
+                  ]
+                },
+                "UpgradeUrl": {
+                  "$id": "/properties/MinClientVersion/properties/Signin/properties/android/properties/UpgradeUrl",
+                  "type": "string",
+                  "title": "The Upgradeurl Schema ",
+                  "default": "",
+                  "examples": [
+                    "https://tantanapp.com/"
+                  ]
+                }
+              }
+            },
+            "ios": {
+              "$id": "/properties/MinClientVersion/properties/Signin/properties/ios",
+              "type": "object",
+              "properties": {
+                "MinVersion": {
+                  "$id": "/properties/MinClientVersion/properties/Signin/properties/ios/properties/MinVersion",
+                  "type": "string",
+                  "title": "The Minversion Schema ",
+                  "default": "",
+                  "examples": [
+                    "2.3.0"
+                  ]
+                },
+                "UpgradeUrl": {
+                  "$id": "/properties/MinClientVersion/properties/Signin/properties/ios/properties/UpgradeUrl",
+                  "type": "string",
+                  "title": "The Upgradeurl Schema ",
+                  "default": "",
+                  "examples": [
+                    "https://itunes.apple.com/cn/app/tantan/id861891048?mt=8"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

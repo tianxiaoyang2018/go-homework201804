@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "Server": {
+      "type": "object",
+      "properties": {
+        "Listen": {
+          "type": "string",
+          "maxLength":6,
+         "minLength":6
+        },
+        "Keepalive": {
+          "type": "integer"
+        },
+        "EnableAccesslog": {
+          "type": "boolean"
+        },
+        "EnableCompress": {
+          "type": "boolean"
+        },
+        "Locations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required":["Proxy_pass","Locs","Name","Flags","Sample"],
+            "properties": {
+              "Name": {
+                "type": "string"
+              },
+              "Sample": {
+                "type": "number"
+              },
+              "Locs": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern":"^(/:?[0-9a-zA-Z-_\\*]+)+/?$"
+                }
+              },
+              "Flags": {
+                "type": "integer"
+              },
+              "Proxy_pass": {
+                "type": "object",
+                "properties": {
+                  "Backend": {
+                    "type": "string",
+					"pattern":"^([a-zA-Z0-9_\\-.]+:[0-9]{5},?)+$"
+                  },
+                  "Weight": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "required":["Listen", "Locations"]
+    }
+  }
+}
