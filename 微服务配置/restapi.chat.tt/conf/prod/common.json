@@ -1,0 +1,32 @@
+{
+    "Log" : {
+        "Output": [
+            "syslog"
+        ],
+        "Syslog": {
+            "Address": "127.0.0.1:514",
+            "Facility": "local6",
+            "Protocol": "udp"
+        },
+        "Level":"info",
+        "Flags" : []
+    },
+    "Debug" : {
+        "Listen": ":21228",
+        "Testing" : false
+    },
+    "Trace": {
+        "Enable": true,
+        "Format": "text",
+        "Log": {
+            "Output": [
+                "syslog"
+            ],
+            "Syslog": {
+                "Address": "127.0.0.1:514",
+                "Facility": "local5",
+                "Protocol": "udp"
+            }
+        }
+    }
+}

@@ -2,9 +2,12 @@ package main
 
 import "fmt"
 
+type User struct {
+	Id   int    `json:"id"`
+	Name string `json:"name"`
+}
+
 func main() {
-	fmt.Println(161734917%8192)
-	fmt.Println(261/128)
-	fmt.Println( 161735946%8192)
-	fmt.Println(1290/128)
+	arr := []int{1,2,3}
+	fmt.Printf("我擦%+v",arr)
 }

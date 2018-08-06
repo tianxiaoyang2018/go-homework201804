@@ -1,0 +1,41 @@
+{
+    "BaseUrlV11": "https://core.tantanapp.com",
+    "QuestionMessage": {
+      "NegativeAnswers": [
+        "no",
+        "不同意"
+      ],
+      "footers": {
+        "classic": {
+          "en": "\nI’ll answer first",
+          "zh": "\n我先回答"
+        },
+        "intimate": {
+          "en": "\nI’ll answer first",
+          "zh": "\n我先回答"
+        }
+      },
+      "headers": {
+        "classic": {
+          "en": "Let’s play a question game:\n",
+          "zh": "我们一起玩经典真心话吧：\n"
+        },
+        "intimate": {
+          "en": "Let’s play an intimate question game:\n",
+          "zh": "我们一起玩私密真心话吧：\n"
+        }
+     }
+  },
+  "RecallMessage": {
+    "en": "[This message was recalled]",
+    "zh": "[本条消息已被撤回]"
+  },
+
+  "CounterConfig": {
+    "RealExpireTime": "2h",
+    "UnRealExpireTime": "10m",
+    "RateLimitCapacity": 2000,
+    "RateLimitQuantum": 2000,
+    "Off": false
+  }
+}

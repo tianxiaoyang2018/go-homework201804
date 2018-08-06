@@ -18,7 +18,7 @@ func main() {
 
 	lockPrint(2)
 
-	time.Sleep(3*time.Second)
+	time.Sleep(3 * time.Second)
 
 	fmt.Printf("%s\n", "exit!")
 

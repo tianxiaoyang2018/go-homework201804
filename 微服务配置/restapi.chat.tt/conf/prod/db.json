@@ -1,0 +1,455 @@
+{
+    "Postgres": {
+        "putong-chat-shard": {
+            "SchemaPrefix": "rel_8192", 
+            "Shards": [
+                {
+                    "FromLogicalShardMod": 0, 
+                    "ToLogicalShardMod": 511, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb1.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb1.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 512, 
+                    "ToLogicalShardMod": 1023, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb2.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb2.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 1024, 
+                    "ToLogicalShardMod": 1535, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb3.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb3.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 1536, 
+                    "ToLogicalShardMod": 2047, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb4.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb4.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 2048, 
+                    "ToLogicalShardMod": 2559, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb5.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb5.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 2560, 
+                    "ToLogicalShardMod": 3071, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb6.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb6.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 3072, 
+                    "ToLogicalShardMod": 3583, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb7.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb7.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 3584, 
+                    "ToLogicalShardMod": 4095, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb8.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb8.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 4096, 
+                    "ToLogicalShardMod": 4607, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb9.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb9.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 4608, 
+                    "ToLogicalShardMod": 5119, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb10.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb10.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 5120, 
+                    "ToLogicalShardMod": 5631, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb11.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb11.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 5632, 
+                    "ToLogicalShardMod": 6143, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb12.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb12.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 6144, 
+                    "ToLogicalShardMod": 6655, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb13.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb13.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 6656, 
+                    "ToLogicalShardMod": 7167, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb14.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb14.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 7168, 
+                    "ToLogicalShardMod": 7679, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb15.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb15.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }, 
+                {
+                    "FromLogicalShardMod": 7680, 
+                    "ToLogicalShardMod": 8191, 
+                    "Master": {
+                        "Address": "1.master.chatsharddb16.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "rai4ohCi", 
+                        "Database": "putong-chat-shard", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "1.slave.chatsharddb16.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "rai4ohCi", 
+                            "Database": "putong-chat-shard", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }
+            ], 
+            "Mod": 8192
+        }, 
+        "putong-chat": {
+            "Shards": [
+                {
+                    "Master": {
+                        "Address": "master.chatmsdb1.tt.bjs.p1staff.com", 
+                        "Port": "6432", 
+                        "User": "putong", 
+                        "Password": "iaTh4iph", 
+                        "Database": "putong-chat-ms", 
+                        "Settings": "sslmode-disable", 
+                        "PoolTimeout": 10, 
+                        "PoolSize": 20
+                    }, 
+                    "Slaves": [
+                        {
+                            "Address": "slave.chatmsdb1.tt.bjs.p1staff.com", 
+                            "Port": "6432", 
+                            "User": "putong", 
+                            "Password": "iaTh4iph", 
+                            "Database": "putong-chat-ms", 
+                            "Settings": "sslmode-disable", 
+                            "PoolTimeout": 10, 
+                            "PoolSize": 20
+                        }
+                    ]
+                }
+            ]
+        }
+    }, 
+    "Mysql": {}
+}

@@ -1,18 +1,18 @@
 package main
 
 import (
-	"sync"
 	"fmt"
+	"sync"
 )
 
-var l sync.Mutex   // 只能加一次，不是可重入锁
+var l sync.Mutex // 只能加一次，不是可重入锁
 
 func fun(n int) int {
 	l.Lock()
-	if n <= 2{
+	if n <= 2 {
 		l.Unlock()
 		return n
-	}else {
+	} else {
 		sum := fun(n-1) + fun(n-2)
 		l.Unlock()
 		return sum

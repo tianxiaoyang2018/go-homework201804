@@ -10,12 +10,12 @@ func main() {
 	a()
 
 	fmt.Println("闭包定义和调用")
-	b:= func() func() {
+	b := func() func() {
 		return func() {
 			fmt.Println("2")
 		}
 	}
-	bb :=b()
+	bb := b()
 	bb()
 	b()()
 

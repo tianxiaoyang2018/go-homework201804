@@ -1,0 +1,41 @@
+{
+    "MaxSize": {
+      "Height": 1000,
+      "Width": 1000
+    },
+    "MinSize": {
+      "Height": 1,
+      "Width": 1
+    },
+    "Provider": {
+      "Biaoqingyun": {
+        "APPID": "b19657b521f34b52bbc94d5f84995f64",
+        "FileSize": "large",
+        "PageNumber": 1,
+        "PageSize": 50,
+        "Partner": "tantan",
+        "SSLRES": "true",
+        "SearchURI": "https://open-api.biaoqingmm.com/open-api/stickers/search",
+        "TrendingURI": "https://open-api.biaoqingmm.com/open-api/trending"
+      },
+      "Shanmeng": {
+        "Limit": 50,
+        "Offset": 0,
+        "OpenID": "1504842803",
+        "SearchURI": "https://api.tantan.weshine.im/1.0/search",
+        "Secret": "22f6577eeb42ac01381039bcd968ee54",
+        "TrendingURI": "https://api.tantan.weshine.im/1.0/hot"
+      },
+      "Soogif": {
+        "PageNumber": 1,
+        "PageSize": 50,
+        "Salt": "2babqefc1ec93e34fdaa7a11ba3",
+        "Scope": "tantan",
+        "SearchURI": "https://sapi.soogif.com/oapi/backend/image/search",
+        "TrendingCode": "641",
+        "TrendingURI": "https://sapi.soogif.com/oapi/backend/column/image/list",
+        "Type": "S_2M"
+      }
+    },
+    "Timeout": "2s"
+}
