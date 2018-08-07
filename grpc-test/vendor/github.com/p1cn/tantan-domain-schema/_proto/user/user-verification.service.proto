@@ -1,0 +1,96 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/user";
+
+import "user/user-verification.proto";
+
+service VerificationService {
+    rpc FindVerificationByUserID (FindVerificationByUserIDRequest) returns (UserVerificationReply);
+    rpc InsertVerification (InsertVerificationRequest) returns (UserVerificationReply);
+    rpc UpdateVerificationStatus (UpdateVerificationStatusRequest) returns (UserVerificationReply);
+
+    rpc FindVerifiedUserByUserIDs (FindVerifiedUserByUserIDsRequest) returns (VerifiedUsersReply);
+    rpc InsertVerifiedUser (InsertVerifiedUserRequest) returns (VerifiedUserReply);
+    rpc HideVerifiedUserSchoolName (HideVerifiedSchoolNameRequest) returns (VerifiedUserReply);
+    rpc DeleteVerifiedUserByUserID (DeleteVerifiedUserByUserIDRequest) returns (VerifiedUserReply);
+
+    rpc FindSchoolValidationByUserID (FindSchoolValidationByUserIDRequest) returns (SchoolValidationReply);
+    rpc IncreaseSchoolValidationTimes (IncreaseSchoolValidationTimesRequest) returns (SchoolValidationReply);
+
+    rpc FindPredictedSchoolByUserID (FindPredictedSchoolByUserIDRequest) returns (PredictedSchoolReply);
+}
+
+// get user verification
+message FindVerificationByUserIDRequest {
+    string userID = 1;
+}
+
+message UserVerificationReply {
+    UserVerification verification = 1;
+}
+
+// insert user verification
+message InsertVerificationRequest {
+    UserVerification verification = 1;
+}
+
+// update user verification
+message UpdateVerificationStatusRequest {
+    string userID = 1;
+    VerificationStatus status = 2;
+    repeated VerificationRejectionReason rejectionReasons = 3;
+}
+
+// get verified info
+message FindVerifiedUserByUserIDsRequest {
+    repeated string userIDs = 1;
+}
+
+message VerifiedUsersReply {
+    repeated VerifiedUser verifiedUsers = 1;
+}
+
+// insert verified info
+message InsertVerifiedUserRequest {
+    VerifiedUser verifiedUser = 1;
+}
+
+message VerifiedUserReply {
+    VerifiedUser verifiedUser = 1;
+}
+
+// set hide verified school name
+message HideVerifiedSchoolNameRequest {
+    string userID = 1;
+    bool hide = 2;
+}
+
+// delete verified user record
+message DeleteVerifiedUserByUserIDRequest {
+    string userID = 1;
+}
+
+// FindSchoolValidationByUserID
+message FindSchoolValidationByUserIDRequest {
+    string userID = 1;
+}
+
+message SchoolValidationReply {
+    SchoolValidation schoolValidation = 1;
+}
+
+// IncreaseSchoolValidationTimes
+message IncreaseSchoolValidationTimesRequest {
+    string userID = 1;
+}
+
+// FindPredictedSchoolByUserID
+message FindPredictedSchoolByUserIDRequest {
+    string userID = 1;
+}
+
+message PredictedSchoolReply {
+    PredictedSchool predictedSchool = 1;
+}

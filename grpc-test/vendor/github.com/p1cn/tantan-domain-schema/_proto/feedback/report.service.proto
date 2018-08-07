@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package feedback;
+
+import "feedback/report.proto";
+import "common/wrappers.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/feedback";
+
+service ReportService {
+    rpc InsertReports(ReportsParam) returns (ReportReply);
+    rpc FindReportsByUserId(ReportUserIdParam) returns (ReportReply);
+    rpc FindReportedTypeByUserId(ReportUserIdParam) returns (common.StringValueArray);
+    rpc FindReportPicturesById(ReportIdParam) returns (common.StringValueArray);
+    rpc FindByReporterUserId(ReportUserIdParam) returns (ReportReply); 
+    rpc CountersByReporters(CountersByReportersParam) returns (MapReportCounter);
+    rpc UpdateStatusByReporter(UpdateStatusByReporterParam) returns (common.BoolValue);
+    rpc DeleteReportById(ReportIdParam) returns (common.BoolValue);
+    rpc DeleteByCountent(DeleteByCountentParam) returns (common.BoolValue);
+}
+
+message ReportsParam {
+    repeated Report report = 1;
+}
+message ReportReply {
+    repeated Report report = 1;
+}
+
+message ReportUserIdParam {
+    string userId = 1;
+}
+
+message CountersByReportersParam {
+    repeated string userIds = 1;
+}
+
+message ReportIdParam {
+    string id = 1;
+}
+
+message MapReportCounter {
+    map<string, ReportCounter> reportCounter = 1;
+}
+
+message UpdateStatusByReporterParam {
+    string reportedBy = 1;
+    string oldStatus = 2;
+    string newStatus = 3;
+}
+
+message DeleteByCountentParam {
+    string contentId = 1;
+    string contentType = 2;
+}

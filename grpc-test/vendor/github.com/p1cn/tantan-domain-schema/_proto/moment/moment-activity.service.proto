@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package moment;
+
+import "moment/moment-activity.proto";
+import "common/wrappers.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/moment";
+
+service MomentActivityService {
+    rpc InsertActivity(MomentActivityParam) returns (MomentActivityReply);
+    rpc FindByUserId(common.Condition) returns (MomentActivityReply);
+    rpc UpdateAsReadByUserId(common.Condition) returns (common.BoolValue);
+    rpc DeleteByUserId(common.Condition) returns (common.BoolValue);
+    rpc DeleteByAction(DeleteByActionParam) returns (common.BoolValue);
+    rpc DeleteByMomentId(DeleteByMomentIdParam) returns (common.BoolValue);
+    rpc CountUnread(common.StringValue) returns (common.Int32Value);
+    rpc UpdateCointers(common.StringValueArray) returns (common.BoolValue);
+}
+
+message MomentActivityParam {
+    repeated MomentActivity activity = 1;
+}
+
+message MomentActivityReply {
+    repeated MomentActivity activity = 1;
+}
+
+message DeleteByActionParam {
+    string userId = 1;
+    string momentId = 2;
+    string actorUserId = 3;
+    string action = 4;
+    string messageId = 5;
+}
+
+message DeleteByMomentIdParam {
+    string userId = 1;
+    string momentId = 2;
+}

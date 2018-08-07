@@ -1,0 +1,103 @@
+syntax = "proto3";
+
+package chat;
+
+import "chat/media.proto";
+
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/chat";
+
+enum MessageType {
+    TEXT_MESSAGE  = 0;
+    VIDEO_MESSAGE = 1;
+    AUDIO_MESSAGE = 2;
+    PICTURE_MESSAGE = 3;
+    LOCATION_MESSAGE = 4;
+    STICKER_MESSAGE = 5;
+    QUESTION_MESSAGE = 6;
+    ANSWER_MESSAGE = 7;
+    COMMENT_MESSAGE = 8;
+    LIKE_MESSAGE = 9;
+}
+
+enum MessageStatus {
+    MESSAGE_STATUS_DEFAULT = 0;
+    MESSAGE_STATUS_DELETED  = 1;
+    MESSAGE_STATUS_INACTIVATED = 2;
+}
+
+message Message {
+
+    string id = 1;
+    string userId = 2;
+    string otherUserId = 3;
+
+    MessageType  type = 4;
+    bool recalled = 5;
+    string sentFrom = 6;
+
+    MessageStatus status = 7;
+
+    int64 createdTime = 8;
+    int64 updatedTime = 9;
+
+    TextMessage text = 10;
+    PictureMessage picture = 11;
+    VideoMessage video = 12;
+    AudioMessage audio = 13;
+    LocationMessage location = 14;
+    StickerMessage sticker = 15;
+    QuestionMessage question = 16;
+    AnswerMessage answer = 17;
+    MomentCommentMessage comment = 18;
+    MomentLikeMessage  momentLike = 19;
+
+}
+
+message LocationMessage {
+    string name = 1;
+    string address = 2;
+    string phone = 3;
+    repeated double coordinates = 4;
+}
+
+message StickerMessage {
+    string stickerId = 1;
+}
+
+message QuestionMessage {
+    string questionId = 1;
+}
+
+message AnswerMessage {
+    string referenceId = 1;
+
+    string stickerId = 2;
+    string value = 3;
+    repeated Media media  = 4;
+}
+
+message MomentCommentMessage {
+    string momentId = 1;
+    string value = 3;
+}
+
+message MomentLikeMessage {
+    string momentId = 1;
+}
+
+message TextMessage {
+    string value = 1;
+}
+
+message VideoMessage {
+    repeated Media media = 11;
+}
+
+message AudioMessage {
+    repeated Media media = 11;
+}
+
+message PictureMessage {
+    repeated Media media = 11;
+}

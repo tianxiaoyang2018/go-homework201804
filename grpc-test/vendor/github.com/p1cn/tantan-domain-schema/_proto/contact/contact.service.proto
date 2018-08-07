@@ -1,0 +1,100 @@
+syntax = "proto3";
+
+package contact;
+
+import "contact/contact.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/contact";
+
+service ContactService {
+    rpc GetBidirectionSecretCrushUserIds(GetBidirectionSecretCrushUserIdsRequest) returns (GetBidirectionSecretCrushUserIdsReply) {} //FindSecretCrushUserStatusesForUser
+    rpc UncrushCrushes(UncrushCrushesRequest) returns (UncrushCrushesReply) {}
+    rpc Upsert(UpsertRequest) returns (UpsertReply) {}
+    rpc SelectMobileContactHashesCount(SelectMobileContactHashesCountRequest) returns (SelectMobileContactHashesCountReply) {}
+    rpc FindSecretCrushes(FindSecretCrushesRequest) returns (FindSecretCrushesReply) {}
+    rpc FindAsUserIds(FindAsUserIdsRequest) returns (FindAsUserIdsReply) {}
+    rpc FindInversedAsUserIds(FindInversedAsUserIdsRequest) returns (FindInversedAsUserIdsReply) {}
+    rpc FindByIds(FindByIdsRequest) returns (FindByIdsReply) {}
+    rpc FindMobileHomeLocation(FindMobileHomeLocationRequest) returns (FindMobileHomeLocationReply) {}
+    rpc FindContactUserIds(FindContactUserIdsRequest) returns (FindContactUserIdsReply) {}
+    //rpc FindMutual(FindMutualRequest) returns (FindMutualReply) {}
+    //rpc FindMutualIds(FindMutualIdsRequest) returns (FindMutualIdsReply) {}
+}
+
+message GetBidirectionSecretCrushUserIdsRequest {
+    string userId = 1;
+}
+
+message GetBidirectionSecretCrushUserIdsReply {
+    repeated string userIds = 1;
+}
+
+message UncrushCrushesRequest {
+    string userId = 1;
+}
+
+message UncrushCrushesReply {}
+
+message UpsertRequest {
+    repeated Contact contacts = 1;
+}
+
+message UpsertReply {
+    repeated Contact contacts = 1;
+}
+
+message SelectMobileContactHashesCountRequest {
+    string userId = 1;
+}
+
+message SelectMobileContactHashesCountReply{
+    int64 count = 1;
+}
+
+message FindSecretCrushesRequest {
+    string userId = 1;
+}
+
+message FindSecretCrushesReply {
+    repeated Contact contacts = 1;
+}
+
+message FindAsUserIdsRequest {
+    string userId = 1;
+}
+
+message FindAsUserIdsReply {
+    repeated string userIds = 1;
+}
+
+message FindInversedAsUserIdsRequest {
+    string userId = 1;
+}
+
+message FindInversedAsUserIdsReply {
+    repeated string userIds = 1;
+}
+
+message FindByIdsRequest {
+    repeated string ids = 1;
+}
+
+message FindByIdsReply {
+    repeated Contact contacts = 1;
+}
+
+message FindMobileHomeLocationRequest {
+    string phone = 1;
+}
+
+message FindMobileHomeLocationReply {
+    string mobileArea = 1;
+}
+
+message FindContactUserIdsRequest {
+    repeated string hashes = 1;
+}
+
+message FindContactUserIdsReply {
+    repeated string userIds = 1;
+}

@@ -1,0 +1,4 @@
+{
+    "MqType" : "kafka",
+    "MqName" : "dcl"
+}

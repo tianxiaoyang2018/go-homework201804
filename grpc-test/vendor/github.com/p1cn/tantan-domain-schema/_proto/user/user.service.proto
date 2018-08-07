@@ -1,0 +1,227 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/user";
+
+import "common/media.proto";
+import "user/user.proto";
+import "user/common.proto";
+import "user/user-activity.proto";
+//import "user/domain/user-profile.proto";
+//import "user/domain/user-settings.proto";
+//import "user/domain/user-membership.proto";
+
+service UserService {
+    // 根据用户ID获取单个用户信息
+    rpc FindUserByID (FindUserByIDRequest) returns (UserReply);
+    // 根据用户ID获取单个用户信息,不返回profile信息
+    rpc FindUserByIDWithoutProfile (FindUserByIDRequest) returns (UserReply);
+    // 根据用户IDs批量获取用户信息
+    rpc FindUsersByIDs (FindUsersByIDsRequest) returns (UsersReply);
+    // 创建一个新用户
+    rpc InsertUser (InsertUserRequest) returns (UserReply);
+    // 更新用户资料图片
+    rpc UpdateUserProfileMedias (UpdateUserProfileMediasRequest) returns (UpdateUserProfileMediasReply);
+    // 审核用户资料图片
+    rpc ApproveUserProfileMedias (ApproveUserProfileMediasRequest) returns (ApproveUserProfileMediasReply);
+    // 更新用户信息
+    rpc UpdateUser (UpdateUserRequest) returns (UserReply);
+    // 修改手机号
+    rpc ResetPhone (ResetPhoneRequest) returns (ResetPhoneReply);
+    // 修改密码
+    rpc ResetPassword (ResetPasswordRequest) returns (ResetPasswordReply);
+    // 升级用户为会员
+    rpc UpgradeMembership (UpgradeMembershipRequest) returns (UpgradeMembershipReply);
+    // 撤销用户的会员
+    rpc RevokeMembership (RevokeMembershipRequest) returns (RevokeMembershipReply);
+    // 封禁用户
+    rpc BanUser (BanUserRequest) returns (BanUserReply);
+    // fake用户
+    rpc HiddenUser (HiddenUserRequest) returns (HiddenUserReply);
+    // ugly用户
+    rpc InappropriateUser (InappropriateUserRequest) returns (InappropriateUserReply);
+    // 审核通过
+    rpc PassUser (PassUserRequest) returns (PassUserReply);
+    // 注销用户
+    rpc InActivateUsersByIDs (InActivateUsersByIDsRequest) returns (InActivateUsersByIDsReply);
+    // 激活用户
+    rpc ActivateUsersByIDs (ActivateUsersByIDsRequest) returns (ActivateUsersByIDsReply);
+    // 更新用户的活跃信息
+    rpc UpdateUserActivity (UpdateUserActivityRequest) returns (UpdateUserActivityReply);
+    // 获取用户的完整手机号（包含国家编码，此方法比较鸡肋，后面考虑去掉）
+    rpc SelectUserMobileWithCountryCode (SelectUserMobileWithCountryCodeRequest) returns (Mobile);
+    // 更新用户状态
+    rpc UpdateUserStatus (UpdateUserStatusRequest) returns (EmptyReply);
+    // 更改用户性别
+    rpc ChangeUserGender (ChangeUserGenderRequest) returns (EmptyReply);
+    // 删除用户头像
+    rpc DeleteUserProfileMedias (DeleteUserProfileMediasRequest) returns (EmptyReply);
+}
+
+message FindUserByIDRequest {
+    string id = 1;
+}
+
+message UserReply {
+    User user = 1;
+}
+
+message FindUsersByIDsRequest {
+    repeated string ids = 1;
+}
+
+message UsersReply {
+    repeated User users = 1;
+}
+
+message FindUserActivitiesByIDsRequest {
+    repeated string ids = 1;
+}
+
+message UserActivitiesReply {
+    repeated UserActivity activities = 1;
+}
+
+message InsertUserRequest {
+    User user = 1;
+}
+
+message UpdateUserProfileMediasRequest {
+    string userID = 1;
+    repeated common.Media medias = 2;
+}
+
+message UpdateUserProfileMediasReply {
+    bool success = 1;
+    //    repeated domain.UserMedia medias = 2;
+}
+
+message UpdateUserRequest {
+    User user = 1;
+}
+
+message ResetPhoneRequest {
+    string userID = 1;
+    int32 countryCode = 2;
+    string mobileNumber = 3;
+}
+
+message ResetPhoneReply {
+    bool success = 1;
+}
+
+message ResetPasswordRequest {
+    string userID = 1;
+    string password = 2;
+}
+
+message ResetPasswordReply {
+    bool success = 1;
+}
+
+message UpgradeMembershipRequest {
+    string userID = 1;
+    int32 expireSeconds = 3;
+}
+
+message UpgradeMembershipReply {
+    bool success = 1;
+}
+
+message RevokeMembershipRequest {
+    string userID = 1;
+}
+
+message RevokeMembershipReply {
+    bool success = 1;
+}
+
+message BanUserRequest {
+    string userID = 1;
+}
+
+message BanUserReply {
+    bool success = 1;
+}
+
+message HiddenUserRequest {
+    string userID = 1;
+}
+
+message HiddenUserReply {
+    bool success = 1;
+}
+
+message InappropriateUserRequest {
+    string userID = 1;
+}
+
+message InappropriateUserReply {
+    bool success = 1;
+}
+
+message PassUserRequest {
+    string userID = 1;
+}
+
+message PassUserReply {
+    bool success = 1;
+}
+
+message InActivateUsersByIDsRequest {
+    repeated string ids = 1;
+}
+
+message InActivateUsersByIDsReply {
+    bool success = 1;
+}
+
+message ActivateUsersByIDsRequest {
+    repeated string ids = 1;
+}
+
+message ActivateUsersByIDsReply {
+    bool success = 1;
+}
+
+message UpdateUserActivityRequest {
+    UserActivity activity = 1;
+}
+
+message UpdateUserActivityReply {
+    bool success = 1;
+}
+
+message SelectUserMobileWithCountryCodeRequest {
+    string userID = 1;
+    string mobile = 2;
+}
+
+message ApproveUserProfileMediasRequest {
+    string userID = 1;
+}
+
+message ApproveUserProfileMediasReply {
+    repeated common.Media medias = 1;
+}
+
+message UpdateUserStatusRequest {
+    string userID = 1;
+    string newStatus = 3;
+    string oldStatus = 2;
+    bool checked = 4;
+}
+
+message ChangeUserGenderRequest {
+    string userID = 1;
+    UserGenderEnum gender = 2;
+}
+
+message DeleteUserProfileMediasRequest {
+    string userID = 1;
+    repeated string mediaIDs = 2;
+}
+
+message EmptyReply {
+}

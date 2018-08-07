@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/user";
+
+import "user/common.proto";
+
+message UserStatus {
+    string userID = 1;
+    UserStatusEnum status = 2;
+}

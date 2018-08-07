@@ -1,0 +1,173 @@
+syntax = "proto3";
+
+package chat;
+
+import "chat/chatcounters.proto";
+import "chat/conversation.proto";
+import "chat/message.proto";
+import "chat/question.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/chat";
+
+service ChatService {
+    
+    // chat counters
+    rpc FindChatCountersByUserId(FindChatCountersByUserIdRequest) returns (ChatCountersReply) {}
+
+    // conversations
+    rpc FindConversationsByOtherIds(FindConversationsByOtherIdsRequest) returns (ConversationsReply) {}
+    rpc FindConversationOtherUserIds(FindConversationOtherUserIdsRequest) returns (FindConversationOtherUserIdsReply) {}
+    rpc FindConversation(FindConversationRequest) returns (FindConversationReply) {}
+    
+    //
+    rpc InsertConversation(InsertConversationRequest) returns (InsertConversationReply) {}
+    rpc DeleteConversation(DeleteConversationRequest) returns (DeleteConversationReply) {}
+
+    // used for message, insert, find message
+    rpc InsertMessage(InsertMessageRequest) returns (InsertMessageReply) {}
+    rpc FindMessageByIds(FindMessageByIdsRequest) returns (FindMessageByIdsReply) {}
+    rpc FindMessage(FindMessageRequest) returns (FindMessageReply) {}
+
+    // question
+    rpc FindQuestionByIds(FindQuestionByIdsRequest) returns(FindQuestionByIdsReply) {}
+
+}
+
+// used for insert conversation
+message InsertConversationParam {
+    string userId = 1;
+    string otherUserId = 2;
+    ConversationStatus status = 3;
+}
+
+message InsertConversationRequest {
+    string source = 1;
+    repeated InsertConversationParam params = 2;
+}
+
+message InsertConversationReply {
+    repeated Conversation  conversations = 1;
+}
+
+message DeleteConversationParam {
+    string userId = 1;
+    string otherUserId = 2;
+}
+// used for delete converssation
+message DeleteConversationRequest {
+    string source = 1;
+    repeated DeleteConversationParam params = 2;
+}
+
+message DeleteConversationReply {
+}
+
+// used for find conversation
+message FindConversationRequest {
+    string userId = 1;
+    repeated string otherUserIds = 2;
+    
+    int64 untilTime = 3;
+    int64 sinceTime = 4;
+    
+    int64 offset = 5;
+    int64 limit = 6;
+
+    string filter = 7;
+    bool includeDeleted = 8;
+
+    string sort = 9;
+}
+message FindConversationReply {
+    repeated Conversation  conversations = 1;
+}
+
+// used for insert message
+message InsertMessageRequest {
+    string source = 1;
+    repeated Message messages = 2;
+}
+message InsertMessageReply {
+    repeated Message messages = 1;
+}
+
+
+// used for find message  by ids
+message FindMessageByIdsRequest {
+    repeated string ids = 1;
+}
+message FindMessageByIdsReply {
+    repeated Message messages = 1;
+}
+
+// used for find message
+message FindMessageRequest {
+    string userId = 1;
+    repeated string otherUserIds = 2;
+    
+    string sinceId = 3;
+    string untilId = 4;
+    
+    int64 offset = 5;
+    int64 limit = 6;
+
+    string filter = 7;
+    bool includeDeleted = 8;
+
+    string sort = 9;
+}
+
+message FindMessageReply {
+    repeated Message messages = 1;
+}
+
+
+// chat counters
+message ChatCountersReply {
+    repeated ChatCounters chatCounters = 1;
+}
+
+message FindChatCountersByUserIdRequest {
+    FindChatCountersByUserIdParams params = 1;
+}
+
+message FindChatCountersByUserIdParams {
+    string userId = 1;
+}
+
+// conversations
+message ConversationsReply {
+    repeated Conversation conversations = 1;
+}
+
+message FindConversationsByOtherIdsRequest {
+    FindConversationsByOtherIdsParams params = 1;
+}
+
+message FindConversationsByOtherIdsParams {
+    string userId = 1;
+    repeated string otherIds = 2;
+}
+
+message FindConversationOtherUserIdsRequest {
+    FindConversationOtherUserIdsParams params = 1;
+}
+
+message FindConversationOtherUserIdsParams {
+    string userId = 1;
+    repeated ConversationStatus status = 2;
+}
+
+message FindConversationOtherUserIdsReply {
+    repeated string userIds = 1;
+}
+
+// question
+message FindQuestionByIdsRequest {
+    repeated string questionIds = 1;
+    string language = 2;
+}
+
+message FindQuestionByIdsReply {
+    repeated Question questions = 1;
+}

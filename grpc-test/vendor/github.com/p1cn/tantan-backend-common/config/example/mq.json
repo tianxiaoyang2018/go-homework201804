@@ -1,0 +1,37 @@
+{
+    "Kafka":{
+        "moment": {
+            "Brokers": [
+                "127.0.0.1:9092"
+            ]
+        },
+        "dcl.producer" : {
+            "Brokers": [
+                "127.0.0.1:9092"
+            ],
+            "Producer": {
+                "Compression": 2,
+                "Flush": {
+                    "Bytes": 1048576,
+                    "Frequency": "2ms",
+                    "MaxMessages": 1,
+                    "Messages": 1
+                },
+                "MaxMessageBytes": 2097152,
+                "RequiredAcks": 1,
+                "Retry": {
+                    "Backoff": "100ms",
+                    "Max": 3
+                },
+                "Return": {
+                    "Errors": true,
+                    "Successes": true
+                },
+                "Timeout": "1s"
+            }
+        }
+    },
+    "RabbitMQ" : {
+        
+    }
+}

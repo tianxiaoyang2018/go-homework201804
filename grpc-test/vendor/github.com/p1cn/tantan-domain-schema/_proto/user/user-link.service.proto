@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/user";
+
+import "user/user-link.proto";
+
+service UserLinkService {
+    rpc FindUserLinksByIDs (FindUserLinksByIDsRequest) returns (UserLinksReply) {}
+    rpc FindUserLinksBySecrets (FindUserLinksBySecretsRequest) returns (UserLinksReply) {}
+    rpc InsertUserLinks (InsertUserLinksRequest) returns (UserLinksReply) {}
+    rpc UpdateUserLinkState (UpdateUserLinksStateRequest) returns (UserLinksReply) {}
+}
+
+message FindUserLinksByIDsRequest {
+    repeated string ids = 1;
+}
+
+message UserLinksReply {
+    repeated UserLink links = 1;
+}
+
+message FindUserLinksBySecretsRequest {
+    repeated string secrets = 1;
+}
+
+message InsertUserLinksRequest {
+    repeated UserLink links = 1;
+}
+
+message UpdateUserLinksStateRequest {
+    repeated UserLink links = 1;
+}

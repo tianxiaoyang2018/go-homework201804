@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package feedback;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/feedback";
+
+message Report {
+    string id = 1;
+    string userId = 2;
+    string contentId = 3;
+    string contentType = 4;
+    string reportedBy = 5;
+    string category = 6;
+    string value = 7;
+    string type = 8;
+    string status = 9;
+    int64 createdTime = 10;
+    repeated string pictures = 11;
+}
+
+message ReportCounter {
+    string reportedBy = 1;
+    int64 reports = 2;
+    int64 reportedUsers = 3;
+    int64 reportedUsersBanned = 4;
+}
+
+message ReportPicture {
+    string reportId = 1;
+    string pictureIdentifier = 2;
+}

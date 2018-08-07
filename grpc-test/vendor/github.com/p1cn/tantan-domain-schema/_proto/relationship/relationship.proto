@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+package relationship;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/relationship";
+
+/*old
+enum RelationshipState {
+    DEFAULT = 0;
+    LIKED = 1;
+    DISLIKED = 2;
+    BLOCKED = 3;
+    SUPERLIKED = 4;
+}*/
+
+enum RelationshipStateEnum {
+	LIKED = 0; 
+	DISLIKED = 1; 
+    DEFAULT = 2; 
+    BLOCKED = 3; 
+    SUPERLIKED = 4;
+//	CONTACT = 5;
+	CRUSHLIKED = 6;
+	
+//	STEP = 128;
+}
+
+message Tag {
+	string category = 1;
+	string name = 2;
+}
+message RelationshipUpdate {
+    string userId = 1;
+    string otherUserId = 2;
+    RelationshipStateEnum state = 3;
+    int64 createdTime = 4;
+	repeated Tag tags = 5;
+}
+
+message Relationship {
+    string userId = 1;//用户
+    string otherUserId = 2;//对方
+	RelationshipStateEnum state  = 3; //swipe，find各种都用，可以直接扩展到superlike? set to enum int
+	RelationshipStateEnum otherState = 4; //返回结果时用，写入时无效
+	int64 createdTime = 5;//state createtime 单位纳秒，实际精确到秒
+    int64 updatedTime = 6;//other state time actually
+	repeated Tag tags = 7;
+	repeated Tag otherTags = 8;
+//	int64 client_create_time = 11;
+//	string category = 5; //场景使用
+//	repeated string scenario_ids = 6; //场景使用
+//	repeated string other_scenario_ids = 7; //场景使用
+//	bool scenario_matched = 8; //场景使用
+//	string type = 12; //没用
+//	RelationshipAdditional additional = 13; //额外信息，undo 、 superlike、block等使用
+}

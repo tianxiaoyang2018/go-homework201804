@@ -1,0 +1,20 @@
+{
+    "CacheType":"redis_hash",
+
+    "Addrs": [
+        {"Name":"shard1" , "Addr":"192.168.4.83:36380"},
+        {"Name":"shard2" , "Addr":"192.168.4.83:36381"},
+        {"Name":"shard3" , "Addr":"192.168.4.83:36382"}
+    ],
+
+    "HashAlg":"crc16",
+
+    "HeartbeatFrequency": "10s",
+    "MaxRetries": 3,
+
+    "DialTimeout": "100ms",
+    "ReadTimeout": "100ms",
+    "WriteTimeout": "100ms",
+
+    "PoolSize": 5
+}

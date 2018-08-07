@@ -1,0 +1,20 @@
+{
+    "CacheType":"redis_sentinel",
+
+    "Name": "redis-cluster",
+
+    "Addrs": [
+        {"Name":"shard1" , "Addr":"192.168.4.83:26380"},
+        {"Name":"shard2" , "Addr":"192.168.4.83:26381"},
+        {"Name":"shard3" , "Addr":"192.168.4.83:26382"}
+    ],
+
+    "HeartbeatFrequency": "10s",
+    "MaxRetries": 3,
+
+    "DialTimeout": "100ms",
+    "ReadTimeout": "100ms",
+    "WriteTimeout": "100ms",
+
+    "PoolSize": 5
+}

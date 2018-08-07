@@ -1,0 +1,22 @@
+AbbServiceName: Moment
+AppName: svr.moment.tt
+DebugPort: 20225
+Cache: true
+MQ: true
+EventLog:     true
+Events:
+  - Topic: dcl.user
+    
+DclCommiter: true
+Models:
+  - Model:
+    DbName: Moment
+RPC:
+  AbbName: Moment
+  Listen: 20224
+ 
+Deps:
+  - Dep:
+    AbbServiceName: Chat
+  - Dep:
+    AbbServiceName: User

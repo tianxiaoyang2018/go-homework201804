@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package moment;
+
+import "moment/moment-like.proto";
+import "common/wrappers.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/moment";
+
+service MomentLikeService {
+    rpc InsertMomentLike(MomentLikeParam) returns (MomentLikeReply);
+    rpc InsertToModerationForBrandAccount(MomentLikeParam) returns (MomentLikeReply);
+    rpc FindByMomentId(FindByMomentIdParam) returns (MomentLikeReply);
+    rpc FindByMomentIdForModeration(FindByMomentIdForModerationParam) returns (MomentLikeReply);
+    rpc FindByUserIds(FindByUserIdsParam) returns (MomentLikeReply);
+    rpc DeleteByUserId(DeleteByUserIdParam) returns (common.BoolValue);
+    rpc DeleteForBrandAccount(DeleteForBrandAccountParam) returns (common.BoolValue);
+    rpc DeleteModerationLikeForBrandAccount(DeleteForBrandAccountParam) returns (common.BoolValue);
+}
+
+message MomentLikeParam {
+    repeated MomentLike momentLike = 1;
+}
+
+message MomentLikeReply {
+    repeated MomentLike momentLike = 1;
+}
+
+message FindByMomentIdParam {
+    string momentId = 2;
+    common.Condition condition = 3;
+}
+
+message FindByMomentIdForModerationParam {
+    string momentId = 1;
+    string momentOwnerId = 2;
+    common.Condition condition = 3;
+}
+
+message FindByUserIdsParam {
+    string momentId = 1;
+    repeated common.StringValueArray userIds = 2;
+}
+
+message DeleteByUserIdParam {
+    string momentId = 1;
+    string userId = 2;
+}
+
+message DeleteForBrandAccountParam {
+    string momentId = 1;
+    string likerId = 2;
+}

@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package common;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/common";
+
+import "common/media.proto";
+
+
+message VerificationStudies {
+    string schoolID = 1;
+    string schoolName = 2;
+    int64 startTime = 3;
+    repeated Media pictures = 4;
+}
+
+enum VerifiedType {
+    VERIFIED_TYPE_DEFAULT = 0;
+    VERIFIED_TYPE_STUDENT = 1;
+}
+
+enum VerificationStatus {
+    VERIFICATION_STATUS_DEFAULT = 0;
+    VERIFICATION_STATUS_PENDING = 1;
+    VERIFICATION_STATUS_VERIFIED = 2;
+    VERIFICATION_STATUS_REJECTED = 3;
+    VERIFICATION_STATUS_PREPENDING = 4;
+    VERIFICATION_STATUS_PREVERIFIED = 5;
+}
+
+message Verification {
+    string userID = 1;
+    VerifiedType verifiedType = 2;
+    VerificationStatus status = 3;
+    VerificationStudies studies = 4;
+    repeated string rejectionReasons = 5;
+    string rejectionPushValue = 6;
+    int64 createdTime = 7;
+}

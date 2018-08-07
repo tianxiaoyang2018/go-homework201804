@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package contact;
+
+import "relationship/relationship.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/contact";
+
+message Contact {
+    string userId                          = 1;
+    string name                            = 2;
+    string id                              = 3;
+    repeated string hashes                 = 4;
+    repeated string phoneNumbers           = 5;
+    bool secretCrush                       = 6;
+    relationship.Relationship relationship = 7;
+    repeated string otherUserIds           = 8;
+}

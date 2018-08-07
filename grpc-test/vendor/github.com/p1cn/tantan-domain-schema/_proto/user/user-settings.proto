@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/user";
+
+import "user/common.proto";
+
+message UserSettings {
+    string userID = 1;
+    UserSearchSettings search = 2;
+    UserPrivacySettings privacy = 3;
+    UserPushSettings push = 4;
+    UserBoostSettings boost = 5;
+}
+
+message UserSearchSettings {
+    UserGenderEnum lookingForGender = 1;
+    UserRoamingLocation roamingLocation = 2;
+    int32 radius = 3;
+    bool autoAdjustRadius = 4;
+    int32 maxAge = 5;
+    int32 minAge = 6;
+    repeated string priorities = 7;
+    UserIntentEnum intent = 8;
+}
+
+message UserRoamingLocation {
+    double longitude = 1;
+    double latitude = 2;
+}
+
+message UserPrivacySettings {
+    bool hideContacts = 1;
+    bool hideMutualContacts = 2;
+    bool hidePublicMoments = 3;
+}
+
+message UserPushSettings {
+    bool previewMessage = 1;
+    bool showMomentLikes = 2;
+}
+
+message UserBoostSettings {
+    int32 multiplier = 1;
+    int64 expiresTime = 2;
+    int64 durationSeconds = 3;
+    string identifier = 4;
+}

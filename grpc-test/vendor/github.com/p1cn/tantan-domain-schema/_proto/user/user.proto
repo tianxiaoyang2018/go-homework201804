@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/user";
+
+import "user/common.proto";
+import "user/user-activity.proto";
+import "user/user-membership.proto";
+import "user/user-profile.proto";
+import "user/user-settings.proto";
+import "user/user-status.proto";
+
+message User {
+    string id = 1;
+    string name = 2;
+    UserGenderEnum gender = 3;
+    int64 birthdate = 4;
+    int64 createdTime = 5;
+    UserStatus status = 6;// use UserStatusEnum, not use UserStatus, UserStatus only used in DCL.
+    UserSettings settings = 7;
+    UserProfile profile = 8;
+    UserMembership membership = 9;
+    UserActivity activity = 10;
+    Mobile mobile = 11;
+    string password = 12;
+}
+
+message Mobile {
+    int32 countryCode = 1;
+    string number = 2;
+}
+
+// TODO
+// UserCore ~ the core user info

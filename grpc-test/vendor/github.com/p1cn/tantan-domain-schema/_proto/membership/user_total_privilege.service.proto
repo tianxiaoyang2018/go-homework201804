@@ -1,0 +1,124 @@
+syntax = "proto3";
+
+package membership;
+
+import "membership/user_total_privilege.proto";
+// import "domain/wrappers.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/membership";
+
+service UserTotalPrivilegeService {
+    // User Total Privilege
+    rpc GetWhoLikedMe(GetWhoLikedMeRequest) returns (GetWhoLikedMeReply) {};
+
+    rpc GetBoostLimit(GetBoostLimitRequest) returns (GetBoostLimitReply) {};
+
+    rpc GiveBoostOnceByItemID(GiveBoostOnceByItemIDRequest) returns (GiveBoostOnceByItemIDReply) {};
+
+    rpc GetBoostBadge(GetBoostBadgeRequest) returns (GetBoostBadgeReply) {};
+    
+    rpc GetBoostVip(GetBoostVipRequest) returns (GetBoostVipReply) {};
+
+    rpc GetBoost(GetBoostRequest) returns (GetBoostReply) {};
+
+    rpc GetUserPrivilegesForCounters(GetUserPrivilegesForCountersRequest) returns (GetUserPrivilegesForCountersReply) {};
+
+    rpc FindUserTotalPrivilegeByAttribution(FindUserTotalPrivilegeByAttributionRequest) returns (FindUserTotalPrivilegeByAttributionReply) {};
+
+    rpc UpdateUserTotalPrivilegeWithDelta(UpdateUserTotalPrivilegeRequest) returns (UpdateUserTotalPrivilegeReply) {};
+
+}
+
+message GetUserPrivilegesForCountersRequest {
+    string userID = 1;
+}
+
+message GetUserPrivilegesForCountersReply {
+    repeated BoostLimit boostLimits  = 1;
+    BoostBadge          boostBadge  = 2;
+    WhoLikedMe          whoLikedMe  = 3;
+}
+    
+
+message GiveBoostOnceByItemIDRequest {
+    string      userID      = 1;
+    string      itemID      = 2;
+}
+
+message GiveBoostOnceByItemIDReply {
+    repeated UserTotalPrivilege UserTotalPrivilege = 1;
+}
+
+message FindUserTotalPrivilegeByAttributionRequest {
+    string      userID          = 1;
+    string      attributionID   = 2;
+    string      attributionType = 3;
+}
+
+message FindUserTotalPrivilegeByAttributionReply {
+    repeated UserTotalPrivilege UserTotalPrivilege = 1;
+}
+
+message GetBoostRequest {
+    string          userID  = 1;
+}
+
+message GetBoostReply {
+    repeated BoostLimit boostLimit  = 1;
+    BoostBadge          boostBadge  = 2;
+}
+
+message GetBoostLimitRequest {
+    string          userID  = 1;
+}
+
+message GetBoostLimitReply {
+    repeated BoostLimit boostLimit = 1;
+}
+
+message GetBoostVipRequest {
+    string          userID  = 1;
+}
+
+message GetBoostVipReply {
+	string      Name        = 1;
+	int64       Duration    = 2;
+	bool        Active      = 3;
+	int64       ExpiresTime = 4;
+}
+
+message GetBoostBadgeRequest {
+    string          userID  = 1;
+}
+
+message GetBoostBadgeReply {
+	string          identifier  = 1;
+	int32           Multiplier  = 2;
+	int32           Duration    = 3;
+	int32           Total       = 4;
+	int32           Remaining   = 5;
+	int64           ExpiresTime = 6;
+}
+
+message GetWhoLikedMeRequest {
+    string          userID  = 1;
+}
+
+message GetWhoLikedMeReply {
+    string 	Identifier	= 1;
+	int32	Total		= 2;
+	int32	Remaining	= 3;
+	int32	Reset		= 4;
+}
+
+message UpdateUserTotalPrivilegeRequest {
+    string  userID          = 1;
+    string  privilegeType   = 2;
+    string  identifier      = 3;
+    int32   used            = 4;
+}
+
+message UpdateUserTotalPrivilegeReply {
+    repeated UserTotalPrivilege UserTotalPrivilege = 1;
+}
+

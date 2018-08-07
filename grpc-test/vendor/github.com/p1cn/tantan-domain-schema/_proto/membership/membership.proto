@@ -1,0 +1,297 @@
+syntax = "proto3";
+
+package membership;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/membership";
+
+
+message UserPrivilege {
+	string 	UserID = 1;
+	int32 	SuperLikeQuota = 2;
+	int64	SuperLikeExpire = 3;
+	int32	LikeQuota = 4;
+	int64	LikeExpire = 5;
+	int32	UndoQuota = 6;
+	int64	UndoExpire = 7;
+	int32	RoamingLimit = 8;
+	int64	RoamingExpire = 9;
+}
+
+message UserPrivilegeUpdate {
+	string	TransactionId 	= 1;
+	string	UserID		= 2;
+	int32	SuperLikeQuota	= 3;
+	int32	LikeQuota	= 4;
+	int32	UndoQuota	= 5;
+	int32	RoamingLimit	= 6;
+	int32	BoostMultiplier	= 7;
+	int64	Expire		= 8;
+}
+
+message Order {
+	string 	ID 			= 1;
+	string 	UserID		= 2;
+	string 	Identifier 	= 3;
+	string 	ItemID		= 4;
+	repeated string	ProductIDs	= 5;
+	int32	Quantity	= 6;
+	int64	Duration	= 7;
+	Item	Item		= 8;
+	repeated Product	Products	= 9;
+	string	ProductType	= 10;
+	string 	AffiliateProductId = 11;
+	double	Amount		= 12;
+	string 	CurrencyCode	= 13;
+	PaymentChannelList	PaymentChannelList	= 14;
+	int64	ExpireTime	= 15;
+	string 	Platform	= 16;
+	string	PlatformUserID 	= 17; // *string
+	string	TransactionID	= 18; //*string
+	string	OriginalTransactionID = 19; // *string
+	string	OrderStatus	= 20;
+	bool	Processed 	= 21;
+	int64	ProcessedTime 	= 22;
+	string	Status			= 23;
+	int64	UpdatedTime		= 24;
+	int64	CreatedTime		= 25;
+}
+
+message Privileges {
+	string 	ID 			= 1;
+	string 	UserID		= 2;
+	string 	Identifier 	= 3;
+	string 	ItemID		= 4;
+	repeated string	ProductIDs	= 5;
+	int32	Quantity	= 6;
+	int64	Duration	= 7;
+	Item	Item		= 8;
+	repeated Product	Products	= 9;
+	string	ProductType	= 10;
+	string 	AffiliateProductId = 11;
+	double	Amount		= 12;
+	string 	CurrencyCode	= 13;
+	PaymentChannelList	PaymentChannelList	= 14;
+	int64	ExpireTime	= 15;
+	string 	Platform	= 16;
+	string	PlatformUserID 	= 17; // *string
+	string	TransactionID	= 18; //*string
+	string	OriginalTransactionID = 19; // *string
+	string	OrderStatus	= 20;
+	bool	Processed 	= 21;
+	int64	ProcessedTime 	= 22;
+	string	Status			= 23;
+	int64	UpdatedTime		= 24;
+	int64	CreatedTime		= 25;
+
+	string	AttributeType	= 26;
+}
+
+message Item {
+	string	Id		= 1;
+	string	Name	= 2;
+	repeated string	ProductIds	= 3;
+	int32	Quantity	= 4;
+	int64	Duration	= 5;
+	ItemPricings	Pricing = 6;
+	AffiliateProducts AffiliateProducts = 7;
+	string	Status		= 8;
+	int64	CreatedTime	= 9;
+}
+
+message ItemPricings {
+	ItemPricing	CNY	= 1;
+	ItemPricing	USD = 2;
+}
+
+message ItemPricing {
+	string	CurrencyCode	= 1;
+	string 	CurrencySymbol	= 2;
+	double	Price			= 3;
+	int64	UnitPeriod		= 4;
+	double	UnitPrice		= 5;
+	double	DiscountPrice	= 6;
+	double	Discount		= 7;
+}
+
+message AffiliateProducts {
+	AffiliateProduct	Alipay 		= 1;
+	AffiliateProduct	AppStore 	= 2;
+	AffiliateProduct	Wechat		= 3;
+}
+
+message AffiliateProduct {
+	string	AutoRenewable	= 1;
+	string 	NonRenewing		= 2;
+	string	Consumable		= 3;
+	string 	NonConsumable	= 4;
+}
+
+message Product {
+	string	Id		= 1;
+	string	Name	= 2;
+	string	ProductType	= 3;
+	string	Identifier	= 4;
+	ProductPrivileges	Privileges	= 5;
+	string	Status	= 6;
+	int64	CreatedTime = 7;
+}
+
+message ProductPrivileges {
+	PrivilegeMembership		Membership	= 1;
+	PrivilegeLike 			Like 		= 2;
+	PrivilegeUndo 			Undo  		= 3;
+	PrivilegeSuperLike 		SuperLike 	= 4;
+	PrivilegeBoost 			Boost 		= 5;
+	PrivilegeRoaming 		Roaming 	= 6;
+	PrivilegeSeeWhoLikedMe	SeeWhoLikedMe	= 7;
+	PrivilegeBoostBadge		BoostBadge		= 8;
+	PrivilegeBoostVip		BoostVip 		= 9;
+}
+
+// PrivilegeBoostVip BoostVip特权
+message PrivilegeBoostVip {
+	string	Identifier		= 1;
+}
+
+message PrivilegeBoostBadge {
+	string		PrivilegeType	= 1;
+	string 		Identifier		= 2;
+	int32		Multiplier 		= 3;
+	int32 		Duration  		= 4;
+}
+
+message PrivilegeMembership {
+	string 	Name	= 1;
+	int32	Level	= 2;
+}
+
+message PrivilegeLike {
+	int32	Total 	= 1;
+	int32 	Reset 	= 2;
+}
+
+message PrivilegeUndo {
+	int32 	Total 	= 1;
+	int32 	Reset 	= 2;
+}
+
+message PrivilegeSuperLike {
+	int32 	Quota 	= 1;
+	int32 	Reset 	= 2;
+}
+
+message PrivilegeBoost {
+	int32 	Multiplier 	= 1;
+	int32 	Duration 	= 2;
+	int32 	Quota 		= 3;
+	int32 	Reset 		= 4;
+	string	PrivilegeType	= 5;
+	string	Identifier		= 6;
+}
+
+message PrivilegeRoaming {
+	int32 	Total 		= 1;
+	int32 	Duration 	= 2;
+	int32 	Reset 		= 3;
+}
+
+message PrivilegeSeeWhoLikedMe {
+	string	PrivilegeType	= 1;
+	string 	Identifier		= 2;
+	int32	Total 			= 3;
+}
+
+message PaymentChannelList {
+	string	Amount		= 1;
+	string	FundChannel	= 2;
+}
+
+message TmTecSubTran {
+	string	Id			= 1;
+	string 	ParentID	= 2;
+	string 	Service		= 3;
+	string	Interface	= 4;
+	string	Parameters	= 5;
+	int64	CreatedTime	= 6;
+	int64	UpdatedTime	= 7;
+	string	Status		= 8;
+}
+
+message TmTecTran {
+	string	Id				= 1;
+	string	ParentID		= 2;
+	repeated TmTecSubTran	Subs	= 3;
+	bool			Order	= 4;
+	int32			RetryDuration	= 5;
+	string			Caller	= 6;
+	int32			TryTimes	= 7;
+	int64			UpdatedTime	= 8;
+	int64			CreatedTime = 9;
+	string			Status	= 10;
+	bool			AlreadyInserted = 11;
+}
+
+message MembershipCondition {
+	string	Id					= 1;
+	repeated string OtherIds	= 2;
+	int64	UntilTime			= 3;
+	int64	SinceTime			= 4;
+	string	UntilId				= 5;
+	string	SinceId				= 6;
+	int32	Offset				= 7;
+	int32	Limit				= 8;
+	bool	Matched				= 9;
+	string	Gender				= 10;
+	string	Filter				= 11;
+	string	Search				= 12;
+	bool	IncludeDeleted		= 13;
+	bool	OrderByUnread		= 14;
+	string	ResourceOwnerId		= 15;
+	string 	Sort				= 16;
+}
+
+// // VIP 2 - See
+// message SeeLimit {
+// 	string 	Identifier	= 1;
+// 	int32	Total		= 2;
+// 	int32	Remaining	= 3;
+// 	int32	Reset		= 4;
+// }
+
+// // VIP 2 - Boost
+// // BoostLimits 对boost的数量限制
+// // `multiplier` 和 `duration` 唯一确认一种boost
+// message BoostLimit {
+// 	string 	Identifier	= 1;
+// 	int32	Multiplier	= 2;
+// 	int32	Duration	= 3;
+// 	int32	Remaining	= 4;
+// 	int32	Total		= 5;
+// 	int32	Reset		= 6;
+// }
+
+// // VIP 2 - UserTotalPrivilege
+// message UserTotalPrivilege {
+// 	string	Id				= 1;
+// 	string	UserID			= 2;
+// 	string 	PrivilegeType	= 3;
+// 	string	Identifier		= 4;
+// 	UserTotalPrivilegeContent	Content = 5;
+// 	int64	BeginTime		= 6;
+// 	int64	EndTime			= 7;
+// 	int32	ResetPeriod		= 8;
+// 	int32	Total			= 9;
+// 	int32	Used			= 10;
+// 	int32	Remaining		= 11;
+// 	int32	ResetSecond		= 12;
+// 	int64	LastResetTime	= 13;
+// 	string	AttributionID	= 14;
+// 	string	AttributionType = 15;
+// 	int64	UpdatedTime		= 16;
+// 	int64	CreatedTime		= 17;
+// }
+
+// message UserTotalPrivilegeContent {
+// 	int32	Multiplier		= 1;
+// 	int32	Duration		= 2;
+// }

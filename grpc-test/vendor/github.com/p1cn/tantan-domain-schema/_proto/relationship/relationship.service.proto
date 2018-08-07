@@ -1,0 +1,85 @@
+syntax = "proto3";
+
+package relationship;
+import "relationship/relationship.proto";
+
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/relationship";
+
+
+service RelationshipService {
+	//插入新的relationship(目前只能单条插入、且仅供restapi-relationship调用，外部调用应使用restapi接口).
+    rpc Upsert(UpsertParam) returns (UpsertReply) {}
+	//返回所有我superlike过的其它指定用户的关系
+	rpc FindSuperLike(FindSuperLikeParam) returns (FindReply) {} 
+	//返回所有我superlike其它指定用户的关系,并且这些关系是matched的
+	rpc FindSuperLikeMatched(FindSuperLikeMatchedParam) returns (FindReply) {} 
+	//返回所有其它人superlike我的关系 
+	rpc FindOtherSuperLike(FindOtherSuperLikeParam) returns (FindReply) {}
+	//返回我与others中所有用户的relationship中第offset开始的limit条，满足matched or not条件. 注意：要对uid<0的teamAccount和promotionAccount做特殊处理
+	rpc Find(FindParam) returns (FindReply) {}
+}
+
+message UpsertParam {
+    RelationshipUpdate relationship = 1;
+}
+
+message UserCounterChange {
+    int32 receivedLikes      = 1;
+    int32 receivedDislikes   = 2;
+    int32 receivedBlocks     = 3;
+	int32 receivedSuperLikes = 4;
+	int32 receivedCrushes    = 5;
+	
+    int32 givenLikes         = 6;
+    int32 givenDislikes      = 7;
+    int32 givenBlocks        = 8;
+    int32 givenCrushes       = 9;
+    int32 givenSuperLikes    = 10;
+	
+    int32 matches            = 11;
+    int32 likeRating         = 12;
+	
+	int32 givenUndos         = 13;
+	//每日额度
+	int32 superLikeCount = 14;
+	int32 likesWithinLimit = 15;
+	//set to
+	double popularity = 16;
+}
+
+message UpsertReply {
+    Relationship relationship = 1;
+	UserCounterChange counterChange = 2;
+	UserCounterChange otherCounterChange = 3;
+}
+
+//order by time where beginTime or endTime is set
+message FindSuperLikeParam {
+	string me = 1;
+	repeated string others = 2;
+	int64 beginTime = 3;
+	int64 endTime = 4;
+}
+
+message FindSuperLikeMatchedParam {
+	string me = 1;
+	repeated string others = 2;	
+}
+
+message FindOtherSuperLikeParam {
+	string me = 1;
+	repeated string others = 2;
+}
+
+message FindParam {
+	string me = 1;
+	repeated string others = 2;
+	bool matched = 3;
+	int32 offset = 4;
+	int32 limit = 5;
+}
+
+message FindReply {
+   	repeated Relationship relationship = 1;
+}

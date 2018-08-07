@@ -1,0 +1,144 @@
+syntax = "proto3";
+
+package device;
+
+import "device/device.proto";
+import "common/wrappers.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/device";
+
+service DeviceService {
+    rpc FindDevicesByIds(FindDevicesByIdsRequest) returns (DevicesReply) {}
+    rpc FindDevicesByUserId(FindDevicesByUserIdRequest) returns (DevicesReply) {}
+    rpc FindDevicesByUserIds(FindDevicesByUserIdsRequest) returns (DevicesReply) {}
+    rpc FindDevicesByDeviceIdentifierTokens(FindDevicesByDeviceIdentifierTokensRequest) returns (DevicesReply) {}
+    rpc FindExistsByUserId(FindExistsByUserIdRequest) returns (common.BoolValue) {}
+    rpc FindDeviceIdentifiersByDeviceIdentifierTokens(FindDeviceIdentifiersByDeviceIdentifierTokensRequest) returns (DeviceIdentifiersReply) {}
+
+    rpc InsertDevice(InsertDeviceRequest) returns (DevicesReply) {}
+
+    rpc UpdateDevice(UpdateDeviceRequest) returns (DevicesReply) {}
+
+    rpc RemoveDevicesByIds(RemoveDevicesByIdsRequest) returns (DevicesReply) {}
+    rpc RemoveDevicesByUserIds(RemoveDevicesByUserIdsRequest) returns (DevicesReply) {}
+
+    rpc InvalidateToken(InvalidateTokenRequest) returns (InvalidateTokenReply) {}
+}
+
+message DevicesReply {
+    repeated Device devices = 1;
+}
+
+message DeviceIdentifiersReply {
+    repeated DeviceIdentifier deviceIdentifiers = 1;
+}
+
+message DeviceNameFilter {
+    string deviceName = 1;
+}
+
+message DeviceIdentifierTokensFilter {
+    repeated string tokens = 1;
+}
+
+message FindDevicesByIdsRequest {
+    FindDevicesByIdsParams params = 1;
+}
+
+message FindDevicesByIdsParams {
+    repeated string ids = 1;
+    bool includeDeleted = 2;
+}
+
+message FindDevicesByUserIdRequest {
+    FindDevicesByUserIdParams params = 1;
+}
+
+message FindDevicesByUserIdParams {
+    string userId = 1;
+    int32 offset = 2;
+    int32 limit = 3;
+    bool includeDeleted = 4;
+    bool firstDevice = 5;
+}
+
+message FindDevicesByUserIdsRequest {
+    FindDevicesByUserIdsParams params = 1;
+}
+
+message FindDevicesByUserIdsParams {
+    repeated string userIds = 1;
+    DeviceNameFilter deviceNameFilter = 2;
+}
+
+
+message FindDevicesByDeviceIdentifierTokensRequest {
+    FindDevicesByDeviceIdentifierTokensParams params = 1;
+}
+
+message FindDevicesByDeviceIdentifierTokensParams {
+    repeated string tokens = 1;
+    bool lastDevice = 2;
+}
+
+
+message FindExistsByUserIdRequest {
+    FindExistsByUserIdParams params = 1;
+}
+
+message FindExistsByUserIdParams {
+    string userId = 1;
+    DeviceIdentifierTokensFilter deviceIdentifierTokensFilter = 2;
+}
+
+
+message FindDeviceIdentifiersByDeviceIdentifierTokensRequest {
+    FindDeviceIdentifiersByDeviceIdentifierTokensParams params = 1;
+}
+
+message FindDeviceIdentifiersByDeviceIdentifierTokensParams {
+    repeated string tokens = 1;
+    bool firstDeviceIdentifier = 2;
+}
+
+message InsertDeviceRequest {
+    InsertDeviceParams params = 1;
+}
+
+message InsertDeviceParams {
+    Device device = 1;
+}
+
+message UpdateDeviceRequest {
+    UpdateDeviceParams params = 1;
+}
+
+message UpdateDeviceParams {
+    Device device = 1;
+}
+
+message RemoveDevicesByIdsRequest {
+    RemoveDevicesByIdsParams params = 1;
+}
+
+message RemoveDevicesByIdsParams {
+    repeated string ids = 1;
+}
+
+message RemoveDevicesByUserIdsRequest {
+    RemoveDevicesByUserIdsParams params = 1;
+}
+
+message RemoveDevicesByUserIdsParams {
+    repeated string userIds = 1;
+}
+
+message InvalidateTokenRequest {
+    InvalidateTokenParams params = 1;
+}
+
+message InvalidateTokenParams {
+    string token = 1;
+}
+
+message InvalidateTokenReply {}

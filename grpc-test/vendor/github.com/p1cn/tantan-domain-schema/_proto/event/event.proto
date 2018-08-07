@@ -1,0 +1,190 @@
+syntax = "proto3";
+
+package event;
+
+import "user/user.proto";
+import "user/user-activity.proto";
+import "user/user-link.proto";
+import "user/user-status.proto";
+import "user/user-verification.proto";
+import "device/device.proto";
+import "moment/moment.proto";
+import "moment/moment-like.proto";
+import "moment/moment-comment.proto";
+import "feedback/report.proto";
+import "relationship/match.proto";
+import "relationship/block.proto";
+import "common/friendship.proto";
+import "common/vote.proto";
+import "common/verification.proto";
+import "relationship/relationship.proto";
+import "common/scenario-user-counter.proto";
+import "common/context.proto";
+import "common/update.proto";
+import "chat/conversation.proto";
+import "chat/message.proto";
+import "contact/contact.proto";
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/event";
+
+message Event {
+    common.Context context = 1;
+
+    string topic = 2;
+
+    UserEvent user = 4;
+    DeviceEvent device = 5;
+    MatchEvent match = 6;
+    MessageEvent message = 7;
+    BlockEvent block = 8;
+    FriendshipEvent friendship = 9;
+    VoteEvent vote = 10;
+    VerificationEvent verification = 11;
+    MomentEvent moment = 12;
+    MomentLikeEvent momentLike = 13;
+    RelationshipEvent relationship = 14;
+    ScenarioUserCounterEvent scenarioUserCounter = 16;
+    ReportEvent report = 19;
+    UserActivityEvent userActivity = 20;
+    UserStatusEvent userStatus = 21;
+    UserLinkEvent userLink = 22;
+    BuildInfoEvent buildInfo = 23;
+    ConversationEvent conversation = 24;
+    ContactEvent contact = 25;
+	PopularityEvent popularity = 26;
+    MomentCommentEvent momentComment = 27;
+    LongTermBoostEvent longTermBoost = 28;
+    UserVerificationEvent userVerification = 29;
+}
+
+message LongTermBoostEvent {
+    int32       UserId                  = 1;
+	int64       BoostBadgeExpiredTime   = 2;
+	int32       BoostBadgeLevel         = 3;
+}
+
+message RelationshipEvent {
+    common.Action action = 1;
+    relationship.RelationshipUpdate new = 2;
+    relationship.RelationshipUpdate old = 3;
+	uint64 seqId1 = 4;
+	uint64 seqId2 = 5;
+}
+
+message MomentLikeEvent {
+    common.Action action = 1;
+    moment.MomentLike new = 2;
+    moment.MomentLike old = 3;
+}
+
+message MomentCommentEvent {
+    common.Action action = 1;
+    moment.MomentComment new = 2;
+    moment.MomentComment old = 3;
+}
+
+message MomentEvent {
+    common.Action action = 1;
+    moment.Moment new = 2;
+    moment.Moment old = 3;
+}
+
+message ReportEvent {
+    common.Action action = 1;
+    feedback.Report new = 2;
+}
+
+message UserEvent {
+    common.Action action = 1;
+    user.User new = 2;
+    user.User old = 3;
+}
+
+message DeviceEvent {
+    common.Action action = 1;
+    device.Device new = 2;
+    device.Device old = 3;
+}
+message BuildInfoEvent {
+    device.BuildInfo new = 1;
+}
+
+
+message MatchEvent {
+    common.Action action = 1;
+    relationship.Match new = 2;
+}
+
+message MessageEvent {
+    common.Action action = 1;
+    chat.Message new = 2;
+    chat.Message old = 3;
+}
+
+message BlockEvent {
+    common.Action action = 1;
+    relationship.Block new = 2;
+}
+
+message FriendshipEvent {
+    common.Action action = 1;
+    common.Friendship new = 2;
+    common.Friendship old = 3;
+}
+
+message VoteEvent {
+    common.Action action = 1;
+    common.Vote new = 2;
+}
+
+message VerificationEvent {
+    common.Action action = 1;
+    common.Verification new = 2;
+}
+
+message ScenarioUserCounterEvent {
+    common.Action action = 1;
+    common.ScenarioUserCounter new = 2;
+    common.ScenarioUserCounter old = 3;
+}
+
+message UserActivityEvent {
+    common.Action action = 1;
+    user.UserActivity new = 2;
+    user.UserActivity old = 3;
+}
+
+message UserStatusEvent {
+    common.Action action = 1;
+    user.UserStatus new = 2;
+    user.UserStatus old = 3;
+}
+
+message UserLinkEvent {
+    common.Action action = 1;
+    user.UserLink new = 2;
+    user.UserLink old = 3;
+}
+
+message ConversationEvent {
+    common.Action action = 1;
+    chat.Conversation new = 2;
+    chat.Conversation old = 3;
+}
+
+message ContactEvent {
+    common.Action action = 1;
+    repeated contact.Contact new = 2;
+    repeated contact.Contact old = 3;
+}
+
+message PopularityEvent {
+	common.Action action = 1;
+	string UserId = 2;
+	double Popularity = 3;
+}
+
+message UserVerificationEvent {
+	common.Action action = 1;
+	user.UserVerification new = 2;
+	user.UserVerification old = 3;
+}

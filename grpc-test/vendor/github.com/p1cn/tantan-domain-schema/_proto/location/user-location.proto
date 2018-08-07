@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package location;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/location";
+
+message UserLocation {
+    string userID = 1;
+    double longitude = 2;
+    double latitude = 3;
+    int64 timestamp = 4;
+}

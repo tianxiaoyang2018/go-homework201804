@@ -1,0 +1,26 @@
+{
+	"Services": {
+		"tantan-user-rpc": {
+			"Naming": {
+				"Target": "127.0.0.1:21226,127.0.0.1:11226",
+				"Type": "file"
+			}
+		},
+		"tantan-device-rpc": {
+			"Naming": {
+				"Target": "dns://device.grpc.tt",
+				"Type": "file"
+			},
+			"Grpc": {
+				"Dial": {
+					"WithBlock": false,
+					"WithTimeout": "10s",
+					"WithInsecure": true
+				},
+				"Call": {
+					"Timeout": "1s"
+				}
+			}
+		}
+	}
+}

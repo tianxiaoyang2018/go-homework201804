@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package moment;
+
+import "moment/moment-userfeedsetting.proto";
+import "common/wrappers.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/moment";
+
+service MomentUserFeedSettingService {
+    rpc FindByIds(common.Condition) returns (UserFeedSettingReply);
+    rpc FindMuted(common.Condition) returns (UserFeedSettingReply);
+    rpc UpsertMuted(common.Condition) returns (UserFeedSettingReply);
+    rpc DeleteMuted(common.Condition) returns (common.BoolValue);
+    rpc FindHidden(common.Condition) returns (UserFeedSettingReply);
+    rpc UpsertHidden(common.Condition) returns (UserFeedSettingReply);
+    rpc DeleteHidden(common.Condition) returns (common.BoolValue);
+    rpc DeleteUserFeedSetting(common.Condition) returns (common.BoolValue);
+}
+
+message UserFeedSettingParam {
+    repeated MomentUserFeedSetting setting = 1;
+}
+
+message UserFeedSettingReply {
+    repeated MomentUserFeedSetting setting = 1;
+}

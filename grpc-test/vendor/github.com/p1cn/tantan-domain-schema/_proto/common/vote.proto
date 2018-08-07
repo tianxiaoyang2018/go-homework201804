@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package common;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/common";
+
+message Vote {
+    string ID = 1;
+    string questionID = 2;
+    string ownerID = 3;
+    string voteID = 4;
+    repeated string candidateIDs = 5;
+    int64 createdTime = 6;
+    int64 votedTime = 7;
+}

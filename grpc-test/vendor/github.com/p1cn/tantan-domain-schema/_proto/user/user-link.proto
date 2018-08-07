@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/user";
+
+message UserLink {
+    string id = 1;
+    string userID = 2;
+    UserLinkIntent intent = 3;
+    string href = 4;
+    string secret = 5;
+    UserLinkState state = 6;
+    string channel = 7;
+    int64 createdTime = 8;
+    int64 publishedTime = 9;
+    int64 expiresTime = 10;
+    string otherUserID = 11;
+    int32 userReceivedLikes = 12;
+    string userProfilePictureIdentifier = 13;
+    string otherUserProfilePictureIdentifier = 14;
+    string regionID = 15;
+    string regionType = 16;
+    UserLinkParam param = 17;
+    string type = 18;
+}
+
+enum UserLinkIntent {
+    receivedLikes = 0;
+    matched = 1;
+    userCard = 2;
+    userLikedStatistics = 3;
+    superLike = 4;
+    userCardPreview = 5;
+}
+
+
+message UserLinkParam {
+    string autoLaunch = 1;
+    string template = 2;
+    string titleZh = 3;
+    string titleEn = 4;
+    string style = 5;
+    string releaseGroupName = 6;
+}
+
+enum UserLinkState {
+    USER_LINK_STATE_DEFAULT = 0;
+    retracted = 1;
+    published = 2;
+}

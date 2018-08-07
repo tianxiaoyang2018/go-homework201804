@@ -1,0 +1,110 @@
+syntax = "proto3";
+
+package moment;
+
+import "common/media.proto";
+import "moment/moment-common.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/moment";
+
+message MomentLocation {
+    string name = 1;
+    string address = 2;
+    string phone = 3;
+    repeated double coordinates = 4;
+}
+
+message MomentCount {
+    string momentId = 1;
+    string momentUserId = 2;
+    int32 total = 3;
+}
+
+message Moment {
+    string id = 1;
+    string userId = 2;
+    string value = 3;
+    MomentLocation location = 4;
+    repeated string messageIds = 5;
+    int32  messageCount = 6;
+    int32  messageLimit = 7;
+    int32  messageTotal = 8;
+    repeated string LikeIds = 9;
+    int32  likeCount = 10;
+    int32  likeLimit = 11;
+    int32  likeTotal = 12;
+    bool haveLiked = 13;
+    repeated common.Media media = 14;
+    int64 createdTime = 15;
+    MomentStatus status = 16;
+    string type = 17;
+    string visibility = 18;
+    bool muted = 19;
+
+    string landingPage = 20;
+    repeated string inspiredMessageIds = 21;
+    repeated string momentLikedUserIds = 22;
+    int32 MomentLikeCount = 23;
+    MomentShareRules shareRules = 24;
+
+
+    //repeated Media media = 5;
+    //string publicLink = 6;
+    //int64 createdTime = 7;
+    //bool muted = 8;
+    //string visibility = 9;
+    //MomentStatus status = 10;
+    //repeated string likeIds = 11; //LikeIds
+    //int32 likeCount = 12;
+    //int32 likeLimit = 13;
+    //int32 likeTotal = 14;
+    //bool haveLiked = 15;
+    //repeated string commentIds = 16;
+    //int32 commentCount = 17;
+    //int32 commentLimit = 18;
+    //int32 commentTotal = 19;
+    //landing page
+    //string landingPage = 20;
+}
+
+message MomentShareRules {
+    string shareType = 1;
+    ShareRuleRegions  regions = 2;
+    string gender = 3;
+    ShareRuleAgeRange age = 4;
+    ShareRuleMod mod = 5;
+    ShareRuleVerification verification = 6;
+    repeated string userStatus = 7;
+}
+
+message ShareRuleRegions {
+    repeated string countries = 1;
+    repeated string provinces = 2;
+    repeated string cities = 3;
+    repeated string districts = 4;
+}
+
+message ShareRuleAgeRange {
+    int32 min = 1;
+    int32 max = 2;
+}
+
+message ShareRuleMod {
+    int32 divisor = 1;
+    repeated int32 remainders = 2;
+}
+
+message ShareRuleVerification {
+    bool verified = 1;
+    repeated string schoolIds = 2;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+syntax = "proto3";
+
+package moment;
+
+import "moment/moment.proto";
+import "moment/moment-common.proto";
+import "common/wrappers.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/moment";
+
+service MomentService {
+    rpc InsertMoments(MomentsParam) returns (MomentsReply) {}
+    rpc FindMoments(common.Condition) returns (MomentsReply) {}
+    rpc FindByIds(FindByIdsParam) returns (MomentsReply) {}
+    rpc DeleteMoment(DeleteParam) returns (common.BoolValue) {}
+    rpc FindForUser(common.Condition) returns (MomentsReply) {}
+    rpc FindForUserByIds(FindForUserByIdsParam) returns (MomentsReply) {}
+    rpc FindForModeration(common.Condition) returns (MomentsReply) {}
+    rpc FindForBrandAccountByIds(FindForBrandAccountByIdsParam) returns (MomentsReply) {}
+    rpc FindByIdsForModeration(common.StringValueArray) returns (MomentsReply) {}
+    rpc FindMomentTotalCountByUserIds(common.StringValueArray) returns (MomentCountReply) {}
+    rpc ChangeStatusByIds(ChangeStatusByIdsParam) returns (MomentsReply) {}
+    rpc GetMomentsWithMedia(MomentsParam) returns (MomentsReply) {}
+
+    //rpc FindByIdsForBrandAccountFromModeration(domain.StringValueArray) returns (MomentsReply) {}
+    //rpc UpdateForBlockedRelationship(UpdateParam) returns (domain.BoolValue) {}
+}
+
+message MomentsParam {
+    repeated Moment moments = 1;
+}
+
+message FindByIdsParam{
+   common.StringValueArray  momentIds = 1;
+   string requestUid = 2;
+}
+
+message MomentsReply {
+    repeated Moment moments = 1;
+}
+
+message DeleteParam {
+    string momentId = 1;
+    string momentOwnerId = 2;
+}
+
+message UpdateParam {
+    string userId = 1;
+    string otherUserId = 2;
+}
+
+message FindForUserByIdsParam {
+    string userId = 1;
+    repeated string momentIds = 2;
+    string requestUid = 3;
+}
+
+message FindForBrandAccountByIdsParam {
+    string userId = 1;
+    string ownerId = 2;
+    repeated string momentIds = 3;
+}
+
+message MomentCountReply {
+    repeated MomentCount momentCount = 1;
+}
+message ChangeStatusByIdsParam {
+    MomentStatus status = 1;
+    common.StringValueArray momentIds = 2;
+}
+

@@ -1,0 +1,87 @@
+syntax = "proto3";
+
+package device;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/device";
+
+message Device {
+    string id = 1;
+    string ownerId = 2;
+    DevicePushNotifications pushNotifications = 3;
+    repeated DeviceIdentifier deviceIdentifiers = 4;
+    DeviceApp app = 5;
+    DeviceOperatingSystem operatingSystem = 6;
+    DeviceHardware hardware = 7;
+    int64 createdTime = 8;
+    enum DeviceStatusEnum {
+        STATUS_DEFAULT = 0;
+        STATUS_DELETED = 1;
+    }
+    DeviceStatusEnum status = 9;
+    string ringtone = 10;
+    //for 兼容
+    string deviceIdentifier = 11;
+}
+
+message DevicePushNotifications {
+    string service = 1;
+    string token = 2;
+    repeated PushNotificationToken tokens = 3;
+}
+
+message PushNotificationToken {
+    string service = 1;
+    string token = 2;
+    enum PushNotificationTokenStatusEnum {
+        STATUS_DEFAULT = 0;
+        STATUS_DELETED = 1;
+    }
+    PushNotificationTokenStatusEnum status = 3;
+}
+
+message DeviceIdentifier {
+    string name = 1;
+    string token = 2;
+    string id = 3;
+    string deviceId = 4;
+    int64 createdTime = 5;
+    int64 updatedTime = 6;
+    enum DeviceIdentifierStatusEnum {
+        STATUS_DEFAULT = 0;
+        STATUS_DELETED = 1;
+    }
+    DeviceIdentifierStatusEnum status = 7;
+}
+
+message DeviceApp {
+    string version = 1;
+    string build = 2;
+    string uiVersion = 3;
+    string language = 4;
+}
+
+message DeviceOperatingSystem {
+    string name = 1;
+    string version = 2;
+    string locale = 3;
+} 
+message DeviceHardware { 
+    string name = 1;
+    string macAddress = 2; 
+    string ipAddress = 3;
+}
+
+message BuildInfo {
+    string id = 1;
+    string ownerId = 2;
+    string buildInfoHash = 3;
+    string buildInfoJson = 4;
+    int64 createdTime = 5;
+    int64 updatedTime = 6;
+    enum BuildInfoStatusEnum {
+        STATUS_DEFAULT = 0;
+        STATUS_DELETED = 1;
+    }
+    BuildInfoStatusEnum status = 7;
+}
+

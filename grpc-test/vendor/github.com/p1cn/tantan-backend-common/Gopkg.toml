@@ -1,0 +1,38 @@
+
+
+##
+### http
+[[constraint]]
+  name = "github.com/gin-gonic/gin"
+  version = "v1.2"
+
+### grpc
+[[constraint]]
+  name = "google.golang.org/grpc"
+  version = "=v1.11.3"
+
+
+[[constraint]]
+  name = "github.com/golang/protobuf"
+  version = "=v1.1.0"
+
+### redis
+[[constraint]]
+  name = "github.com/go-redis/redis"
+  version = "v6.10.2"
+
+### postgres
+[[constraint]]
+  name = "gopkg.in/pg.v3"
+  version = "=v3.5.6"
+
+### kafka
+[[constraint]]
+  name = "github.com/Shopify/sarama"
+  version = "=v1.16.0"
+
+
+[[constraint]]
+  name = "github.com/bsm/sarama-cluster"
+  version = "=v2.1.13"
+

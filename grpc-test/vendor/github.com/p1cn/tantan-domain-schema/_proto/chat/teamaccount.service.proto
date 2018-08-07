@@ -1,0 +1,96 @@
+syntax = "proto3";
+
+package chat;
+
+import "chat/predefinedmessage.proto";
+import "chat/message.proto";
+
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/chat";
+
+service TeamAccountSerivce {
+
+    rpc SendChatMessage(SendChatMessageRequest) returns (SendChatMessageReply) {}
+    rpc SendMessageForAdmin(SendMessageForAdminRequest) returns (SendMessageForAdminReply) {}
+
+    rpc InsertPredefinedMessage(InsertPredefinedMessageRequest) returns (InsertPredefinedMessageReply) {}
+    rpc UpdatePredefinedMessage(UpdatePredefinedMessageRequest) returns (UpdatePredefinedMessageReply) {}
+     
+    rpc GetPredefinedMessageById(GetPredefinedMessageByIdRequest) returns (GetPredefinedMessageByIdReply) {}
+    rpc GetPredefinedMessageByKey(GetPredefinedMessageByKeyRequest) returns (GetPredefinedMessageByKeyReply) {}
+    rpc GetPredefinedMessageTextByKey(GetPredefinedMessageTextByKeyRequest) returns (GetPredefinedMessageTextByKeyReply) {}
+    rpc GetPredefinedMessage(GetPredefinedMessageRequest) returns (GetPredefinedMessageReply) {}
+}
+
+message SendChatMessageRequest {
+    string source = 1;
+    string userId = 2;
+    string messageKey = 3;
+    map<string,string> params = 4;
+}
+
+message SendChatMessageReply {
+    string messageId = 1;
+}
+
+message SendMessageForAdminRequest {
+    string source = 1;
+    repeated string userIds = 2;
+    Message message = 3;
+}
+
+message SendMessageForAdminReply {
+    repeated string messageId = 1;
+}
+
+//
+message GetPredefinedMessageByIdRequest {
+    string id = 1;
+}
+message GetPredefinedMessageByIdReply {
+    PredefinedMessage message = 1;
+}
+
+// 
+message GetPredefinedMessageByKeyRequest {
+    string key = 1;
+    string language =2;
+}
+
+message GetPredefinedMessageByKeyReply {
+    PredefinedMessage message = 1;
+}
+
+//
+message GetPredefinedMessageTextByKeyRequest{
+    string key = 1;
+    string language = 2;
+    map<string,string> replacements = 3;
+}
+
+message GetPredefinedMessageTextByKeyReply {
+    string text = 1;
+}
+
+// 
+message GetPredefinedMessageRequest {
+}
+message GetPredefinedMessageReply {
+    repeated PredefinedMessage messages = 1;
+}
+
+//
+message InsertPredefinedMessageRequest {
+    PredefinedMessage message = 1;
+}
+message InsertPredefinedMessageReply {
+    PredefinedMessage message = 1;
+}
+
+//
+message UpdatePredefinedMessageRequest {
+    PredefinedMessage message = 1;
+}
+message UpdatePredefinedMessageReply {
+    PredefinedMessage message = 1;
+}

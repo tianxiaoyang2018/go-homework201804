@@ -1,0 +1,25 @@
+AbbServiceName: Moderation
+AppName: moderation-service
+DebugPort: 20223
+Cache: true
+MQ: true
+EventLog:     true
+Events:
+  - Topic: dcl.match
+  - Topic: dcl.message
+Deps:
+  - Dep:
+    AbbServiceName: Chat
+  - Dep:
+    AbbServiceName: User
+  - Dep:
+    AbbServiceName: Device
+MQ: true
+EventLog:    true    
+HTTP:
+  Listen: 20224
+DclCommiter: true
+Models:
+  - Model:
+    DbName: Moment
+    

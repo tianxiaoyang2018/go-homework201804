@@ -1,0 +1,13 @@
+AbbServiceName: User
+AppName: user-rpc
+DebugPort: 20223
+Cache: true
+EventLog:     true
+DclCommiter: true
+Models:
+  - Model:
+    DbName: User
+RPC:
+  AbbName: User
+  Listen: 20222
+    

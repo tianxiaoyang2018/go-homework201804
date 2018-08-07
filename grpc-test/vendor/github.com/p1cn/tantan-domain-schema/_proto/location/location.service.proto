@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package location;
+
+import "location/passby.proto";
+import "location/user-location.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/location";
+
+service LocationService {
+    // insert user location
+    rpc InsertUserLocation (InsertUserLocationRequest) returns (UserLocationReply) {}
+    // find user passbys (userId)
+    rpc FindUsersPassbys (FindUsersPassbysRequest) returns (PassbysReply) {}
+    // find passbys between users (userId and otherUserId)
+    rpc FindPassbysBetweenUsers (FindPassbysBetweenUsersRequest) returns (PassbysReply) {}
+}
+
+// insert user location
+message InsertUserLocationRequest {
+    UserLocation userLocation = 1;
+}
+// reply
+message UserLocationReply {
+    repeated UserLocation userLocation = 1;
+}
+
+// find user's passbys request
+message FindUsersPassbysRequest {
+    FindUserPassbysParams params = 1;
+}
+// request params
+message FindUserPassbysParams {
+    string userId = 1;
+    int32 limit = 2;
+    int32 offset = 3;
+}
+// reply
+message PassbysReply {
+    repeated Passby passbys = 1;
+}
+// find passbys between users (userId and otherUserIds)
+message FindPassbysBetweenUsersRequest {
+    FindPassbysBetweenUsersParams params = 1;
+}
+// request params
+message FindPassbysBetweenUsersParams {
+    string userId = 1;
+    repeated string otherUserIds = 2;
+}

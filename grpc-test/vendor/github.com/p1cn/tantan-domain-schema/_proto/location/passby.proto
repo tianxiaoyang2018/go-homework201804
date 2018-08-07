@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package location;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/location";
+
+message Passby {
+    string userID = 1;
+    string otherUserID = 2;
+    double longitude = 3;
+    double latitude = 4;
+    int64 count = 5;
+    int64 timestamp = 6;
+}

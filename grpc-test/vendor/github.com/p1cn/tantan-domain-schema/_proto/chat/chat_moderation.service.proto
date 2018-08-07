@@ -1,0 +1,250 @@
+syntax = "proto3";
+
+package chat;
+
+import "chat/conversation.proto";
+import "chat/media.proto";
+import "chat/message.proto";
+import "chat/sticker.proto";
+import "chat/question.proto";
+
+import "chat/chat_core.service.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/chat";
+
+
+service ChatModerationService {
+    // chat counters
+    rpc FindChatCountersByUserId(FindChatCountersByUserIdRequest) returns (ChatCountersReply) {}
+
+    // conversations
+    rpc FindConversationsByOtherIds(FindConversationsByOtherIdsRequest) returns (ConversationsReply) {}
+    rpc FindConversationOtherUserIds(FindConversationOtherUserIdsRequest) returns (FindConversationOtherUserIdsReply) {}
+    rpc FindConversation(FindConversationRequest) returns (FindConversationReply) {}
+    
+    rpc InsertConversation(InsertConversationRequest) returns (InsertConversationReply) {}
+    rpc DeleteConversation(DeleteConversationRequest) returns (DeleteConversationReply) {}
+
+    // used for message
+    // for insert message
+    rpc InsertMessage(InsertMessageRequest) returns (InsertMessageReply) {}
+    rpc FindMessageByIds(FindMessageByIdsRequest) returns (FindMessageByIdsReply) {}
+    rpc FindMessage(FindMessageRequest) returns (FindMessageReply) {}
+
+    // question
+    rpc FindQuestionByIds(FindQuestionByIdsRequest) returns(FindQuestionByIdsReply) {}
+
+    // self method 
+
+    // conversation
+    rpc FindConversationForAdmin(FindConversationForAdminRequest) returns (FindConversationForAdminReply) {}
+    rpc FindConversationWithMessage(FindConversationWithMessageRequest) returns (FindConversationWithMessageReply) {}
+    rpc UpdateConversation(UpdateConversationRequest) returns (UpdateConversationReply) {}
+
+    // messages
+    rpc SelectMessageForModeration(SelectMessageForModerationRequest) returns (SelectMessageForModerationReply) {}
+    rpc InsertMessageWithoutSendingEvent(InsertMessageWithoutSendingEventRequest) returns(InsertMessageWithoutSendingEventReply) {}
+    rpc UpdateMessageRecalled(UpdateMessageRecalledRequest) returns (UpdateMessageRecalledReply) {}
+
+    //sticker
+    rpc FindStickerByIds(FindStickerByIdsRequest) returns (FindStickerByIdsReply) {}
+    rpc GetStickerMedia(GetStickerMediaRequest) returns(GetStickerMediaReply) {}
+
+    // question
+    rpc FindQuestionByIdsForModeration(FindQuestionByIdsForModerationRequest) returns (FindQuestionByIdsForModerationReply) {}
+    rpc FindQuestionForModeration(FindQuestionForModerationRequest) returns (FindQuestionForModerationReply) {}
+    rpc FindQuestionByKeyword(FindQuestionByKeywordRequest) returns (FindQuestionByKeywordReply) {}
+    rpc InsertQuestions(InsertQuestionsRequest) returns (InsertQuestionsReply) {}
+    rpc UpdateQuestions(UpdateQuestionsRequest) returns (UpdateQuestionsReply) {}
+    rpc InsertQuestionTranslation(InsertQuestionTranslationRequest) returns(InsertQuestionTranslationReply) {}
+    rpc UpdateQuestionTranslation(UpdateQuestionTranslationRequest) returns(UpdateQuestionTranslationReply) {}
+    rpc InsertAnswers(InsertAnswersRequest) returns (InsertAnswersReply) {}
+    rpc UpdateAnswers(UpdateAnswersRequest) returns (UpdateAnswersReply) {}
+    rpc DeleteAnswer(DeleteAnswerRequest) returns (DeleteAnswerReply) {}
+    rpc InsertAnswerTranslation(InsertAnswerTranslationRequest) returns(InsertAnswerTranslationReply) {}
+    rpc UpdateAnswerTranslation(UpdateAnswerTranslationRequest) returns(UpdateAnswerTranslationReply) {}
+
+}
+
+// for find conversation 
+message FindConversationForAdminRequest {
+    string userId = 1;
+    int32  offset = 2;
+    int32  limit = 3; 
+}
+message FindConversationForAdminReply {
+    repeated Conversation conversations = 1;
+}
+
+// find conversations having message
+message FindConversationWithMessageRequest {
+    string userId = 1;
+    int32  offset = 2;
+    int32  limit = 3; 
+}
+message FindConversationWithMessageReply {
+    repeated Conversation conversations = 1;
+}
+
+// for update conversation
+message UpdateConversationRequest {
+    repeated Conversation conversations = 1;
+}
+
+message UpdateConversationReply {
+    repeated Conversation conversations = 1;
+}
+
+message SelectMessageForModerationRequest{
+    string userId = 1;
+    int32 limit = 2;
+}
+message SelectMessageForModerationReply {
+    repeated Message messages = 1;
+}
+
+message InsertMessageWithoutSendingEventRequest {
+    repeated Message messages = 1;
+}
+message InsertMessageWithoutSendingEventReply {
+    repeated Message messages = 1;
+}
+
+//message MessageRecalledRequest {
+//    string id = 1;
+//    bool recalled = 2;
+//}
+message UpdateMessageRecalledRequest {
+    repeated Message messages = 1;
+}
+message UpdateMessageRecalledReply {
+    repeated Message messages = 1;
+}
+
+//sticker
+message FindStickerByIdsRequest {
+    repeated string ids = 1;
+}
+message FindStickerByIdsReply {
+    repeated Sticker stickers = 1;
+}
+
+message GetStickerMediaRequest {
+    Sticker sticker = 1;
+}
+message GetStickerMediaReply {
+    Media media = 1;
+}
+
+
+message FindQuestionByIdsForModerationRequest {
+    repeated string questionIds = 1;
+    string language = 2;
+}
+
+message FindQuestionByIdsForModerationReply {
+    repeated Question questions = 1;
+}
+
+message FindQuestionForModerationRequest {
+    string filter = 1;
+    string usage = 2;
+    string status = 3;
+    string language = 4;
+
+    int32 limit = 5;
+    int32 offset = 6;
+}
+
+message FindQuestionForModerationReply {
+    repeated Question questions = 1;
+}
+
+message FindQuestionByKeywordRequest {
+    string keyword = 1;
+    string status = 2;
+    string language = 3;
+    int32 limit = 4;
+    int32 offset = 5;
+}
+
+message FindQuestionByKeywordReply {
+    repeated Question questions = 1;
+}
+
+message InsertQuestionsRequest {
+    repeated Question questions = 1;
+}
+
+message InsertQuestionsReply {
+    repeated Question questions = 1;
+}
+
+message UpdateQuestionsRequest {
+    repeated Question questions = 1;
+}
+
+message UpdateQuestionsReply {
+    repeated Question questions = 1;
+}
+
+message InsertQuestionTranslationRequest {
+    string questionId = 1;
+    string text = 2;
+    string language = 3;
+}
+
+message InsertQuestionTranslationReply {
+    repeated Question questions = 1;
+}
+
+message UpdateQuestionTranslationRequest {
+    string questionId = 1;
+    string text = 2;
+    string language = 3;
+}
+
+message UpdateQuestionTranslationReply {
+    repeated Question questions = 1;
+}
+
+message InsertAnswersRequest {
+    repeated Answer answers = 1;
+}
+
+message InsertAnswersReply {
+    repeated Answer answers = 1;
+}
+
+message UpdateAnswersRequest {
+    repeated Answer answers = 1;
+}
+
+message UpdateAnswersReply {
+    repeated Answer answers = 1;
+}
+
+message DeleteAnswerRequest {
+    string answerId = 1;
+}
+message DeleteAnswerReply {
+}
+
+message InsertAnswerTranslationRequest {
+    string answerId = 1;
+    string text = 2;
+    string language = 3;
+}
+message InsertAnswerTranslationReply {
+    repeated Answer answers = 1;
+}
+
+message UpdateAnswerTranslationRequest{
+    string answerId = 1;
+    string text = 2;
+    string language = 3;
+}
+message UpdateAnswerTranslationReply {
+    repeated Answer answers = 1;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package moment;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/moment";
+
+enum MomentStatus {
+    MOMENT_STATUS_DEFAULT = 0;
+    MOMENT_STATUS_DELETED = 1;
+    MOMENT_STATUS_HIDDEN = 2;
+    MOMENT_STATUS_INACTIVATED = 3;
+}

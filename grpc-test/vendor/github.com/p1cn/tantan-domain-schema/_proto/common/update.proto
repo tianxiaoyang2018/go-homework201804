@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package common;
+
+import "common/wrappers.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/common";
+
+message Action {
+    ActionOpEnum op = 1;
+}
+
+enum ActionOpEnum {
+    insert = 0;
+    update = 1;
+    delete = 2;
+}
+
+message UpdateValue {
+    DoubleValue doubleValue = 1;
+    FloatValue floatValue = 2;
+    Int64Value int64Value = 3;
+    UInt64Value uInt64Value = 4;
+    Int32Value int32Value = 5;
+    UInt32Value uInt32Value = 6;
+    BoolValue boolValue = 7;
+    StringValue stringValue = 8;
+    BytesValue bytesValue = 9;
+}

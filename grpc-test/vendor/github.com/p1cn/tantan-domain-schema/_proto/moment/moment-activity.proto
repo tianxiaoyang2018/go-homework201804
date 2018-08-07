@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+import "moment/moment-common.proto";
+package moment;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/moment";
+
+message MomentActivity {
+    string id = 1;
+    string userId = 2;
+    string actorUserId = 3;
+    string momentId = 4;  
+    string commentId = 5;     // change from  MessageId
+    string commentValue = 6;  // change from  MessageValue
+    MomentStatus status = 7;
+    int64 createdTime = 8;
+    bool read = 9;
+    ActivityAction action = 10;
+}
+
+enum ActivityAction {
+    ACTIVITYACTION_LIKE = 0;
+    ACTIVITYACTION_COMMENT = 1;
+}

@@ -1,0 +1,77 @@
+{
+	"Postgres" : {
+		"User": {
+			"Mod" : 8192,
+			"SchemaPrefix" : "rel_8192",
+			"Shards" : [
+				{
+					"FromLogicalShardMod" : 0, 
+					"ToLogicalShardMod" : 127,   
+					"Master" : {
+						"Address" : "192.168.4.5",
+						"Port" : "5432",
+						"User" : "putong",
+						"Password" : "fj47dSS2i1",
+						"Database" : "putong-shard",
+						"Settings" : "sslmode-disable",
+						"PoolSize" : 40
+					},          
+					"Slaves" : [
+						{
+							"Address" : "192.168.4.5",
+							"Port" : "5432",
+							"User" : "putong",
+							"Password" : "fj47dSS2i1",
+							"Database" : "putong-shard",
+							"Settings" : "sslmode-disable",
+							"PoolSize" : 40
+						},
+						{
+							"Address" : "192.168.4.5",
+							"Port" : "5432",
+							"User" : "putong",
+							"Password" : "fj47dSS2i1",
+							"Database" : "putong-shard",
+							"Settings" : "sslmode-disable",
+							"PoolSize" : 40
+						}
+					]
+				},
+				{
+					"FromLogicalShardMod" : 128, 
+					"ToLogicalShardMod" : 8191,   
+					"Master" : {
+						"Address" : "192.168.4.5",
+						"Port" : "5432",
+						"User" : "putong",
+						"Password" : "fj47dSS2i1",
+						"Database" : "putong-shard",
+						"Settings" : "sslmode-disable",
+						"PoolSize" : 40
+					},          
+					"Slaves" : [
+						{
+							"Address" : "192.168.4.5",
+							"Port" : "5432",
+							"User" : "putong",
+							"Password" : "fj47dSS2i1",
+							"Database" : "putong-shard",
+							"Settings" : "sslmode-disable",
+							"PoolSize" : 40
+						},
+						{
+							"Address" : "192.168.4.5",
+							"Port" : "5432",
+							"User" : "putong",
+							"Password" : "fj47dSS2i1",
+							"Database" : "putong-shard",
+							"Settings" : "sslmode-disable",
+							"PoolSize" : 40
+						}
+					]
+				}
+			]
+		}
+	},
+	"Mysql":{}
+}

@@ -1,0 +1,17 @@
+AbbServiceName: Push
+AppName: push-dcl
+DebugPort: 20223
+Cache: true
+MQ: true
+EventLog:     true
+Events:
+  - Topic: dcl.match
+  - Topic: dcl.message
+Deps:
+  - Dep:
+    AbbServiceName: Chat
+  - Dep:
+    AbbServiceName: User
+  - Dep:
+    AbbServiceName: Device
+    

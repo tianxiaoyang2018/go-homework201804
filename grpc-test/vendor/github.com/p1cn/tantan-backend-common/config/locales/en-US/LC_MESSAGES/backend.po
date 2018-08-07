@@ -1,0 +1,664 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-16 09:49+0100\n"
+"PO-Revision-Date: 2017-12-18 17:42+0000\n"
+"Last-Translator: henry\n"
+"Language-Team: English\n"
+"Language: en-US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Project-Id: 17300\n"
+"X-Loco-Lookup: id\n"
+"X-Loco-Api-Version: 1.0.18 20171124-1"
+
+#. Source text: [Audio]
+#: backend 完成.xlsx loco:58985f2c52e1a173538b456c
+msgid "MEDIA_MESSAGE_AUDIO_PREVIEW_TEXT"
+msgstr "[Audio]"
+
+#. Source text: [Audio] received, please update Tantan to listen to it
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4587
+msgid "MEDIA_MESSAGE_AUDIO_UPGRADE_TEXT"
+msgstr "[Audio] received, please update Tantan to listen to it"
+
+#. Source text: [Picture]
+#: backend 完成.xlsx loco:58985f2c52e1a173538b4568
+msgid "MEDIA_MESSAGE_IMAGE_PREVIEW_TEXT"
+msgstr "[Picture]"
+
+#. Source text: [Picture] received, please update Tantan to see it
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4586
+msgid "MEDIA_MESSAGE_IMAGE_UPGRADE_TEXT"
+msgstr "[Picture] received, please update Tantan to see it"
+
+#. Source text: [Location]
+#: backend 完成.xlsx loco:58985f2c52e1a173538b456b
+msgid "MEDIA_MESSAGE_LOCATION_PREVIEW_TEXT"
+msgstr "[Location]"
+
+#. Source text: [Location] received, please update Tantan to see it
+#: backend 完成.xlsx loco:58985eec52e1a16c538b458b
+msgid "MEDIA_MESSAGE_LOCATION_UPGRADE_TEXT"
+msgstr "[Location] received, please update Tantan to see it"
+
+#. Source text: ❤
+#: backend.xlsx loco:58204c1452e1a126758b4571
+msgid "MEDIA_MESSAGE_MOMENTLIKE_UPGRADE_TEXT"
+msgstr "❤"
+
+#. Source text: [Question Game] message received, please update Tantan to see the question options
+#: backend 完成.xlsx loco:58985eec52e1a16c538b458a
+msgid "MEDIA_MESSAGE_QUESTION_UPGRADE_TEXT"
+msgstr ""
+"[Question Game] message received, please update Tantan to see the question "
+"options"
+
+#. Source text: [Sticker]
+#: backend 完成.xlsx loco:58985f2c52e1a173538b456a
+msgid "MEDIA_MESSAGE_STICKER_PREVIEW_TEXT"
+msgstr "[Sticker]"
+
+#. Source text: [Sticker] received, please update Tantan to see it
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4589
+msgid "MEDIA_MESSAGE_STICKER_UPGRADE_TEXT"
+msgstr "[Sticker] received, please update Tantan to see it"
+
+#. Source text: [Video]
+#: backend 完成.xlsx loco:58985f2c52e1a173538b4569
+msgid "MEDIA_MESSAGE_VIDEO_PREVIEW_TEXT"
+msgstr "[Video]"
+
+#. Source text: [Video] received, please update Tantan to see it
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4588
+msgid "MEDIA_MESSAGE_VIDEO_UPGRADE_TEXT"
+msgstr "[Video] received, please update Tantan to see it"
+
+#. Source text: [Audio]
+#: backend 完成.xlsx loco:57b5575614d72501658b4568
+msgid "MEIDA_MESSAGE_AUDIO_PREVIEW_TEXT"
+msgstr "[Audio]"
+
+#. Source text: ❤
+#: backend 完成.xlsx loco:57ba7b0114d7250d1f8b456e
+msgid "MEIDA_MESSAGE_MOMENTLIKE_UPGRADE_TEXT"
+msgstr "❤"
+
+#. Source text: You've got %v new matches
+#: backend 完成.xlsx loco:58985eec52e1a16c538b457f
+msgid "PUSH_MESSAGE_AGGREGATED_MATCH_VALUE_TEXT"
+msgstr "You've got %v new matches"
+
+#. Source text: Unread messages from %v people
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4579
+msgid "PUSH_MESSAGE_AGGREGATED_MESSAGE_VALUE_TEXT"
+msgstr "Unread messages from %v people"
+
+#. Source text: Tantan
+#: backend.xlsx loco:57b2f65a14d7252a418b4572
+msgid "PUSH_MESSAGE_APPNAME_TEXT"
+msgstr "Tantan"
+
+#. Source text: %v sent you a voice message
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4571
+msgid "PUSH_MESSAGE_AUDIO_MESSAGE_TICKER_TEXT"
+msgstr "%v sent you a voice message"
+
+#. Source text: [Audio]
+#: backend 完成.xlsx loco:57b2f52c14d725e1418b456b
+msgid "PUSH_MESSAGE_AUDIO_MESSAGE_VALUE_TEXT"
+msgstr "[Audio]"
+
+#. Source text: %v sent a photo to you
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4572
+msgid "PUSH_MESSAGE_IMAGE_MESSAGE_TICKER_TEXT"
+msgstr "%v sent a photo to you"
+
+#. Source text: [Image]
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4578
+msgid "PUSH_MESSAGE_IMAGE_MESSAGE_VALUE_TEXT"
+msgstr "[Image]"
+
+#. Source text: %v sent a location to you
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4574
+msgid "PUSH_MESSAGE_LOCATION_MESSAGE_TICKER_TEXT"
+msgstr "%v sent a location to you"
+
+#. Source text: [Location]
+#: backend 完成.xlsx loco:57b2f63114d725c9418b456d
+msgid "PUSH_MESSAGE_LOCATION_MESSAGE_VALUE_TEXT"
+msgstr "[Location]"
+
+#. Source text: Someone around you just liked you! ❤ Add a real profile picture and find out who he is!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4568
+msgid "PUSH_MESSAGE_MASS_MESSAGE_FEMALE_TICKER_TEXT"
+msgstr ""
+"Someone around you just liked you! ❤ Add a real profile picture and find out "
+"who he is!"
+
+#. Source text: Someone around you just liked you! Add a real profile picture and find out who she is!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4569
+msgid "PUSH_MESSAGE_MASS_MESSAGE_MALE_TICKER_TEXT"
+msgstr ""
+"Someone around you just liked you! Add a real profile picture and find out "
+"who she is!"
+
+#. Source text: New Match!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b457c
+msgid "PUSH_MESSAGE_MATCH_TICKER_SHORT_TEXT"
+msgstr "New Match!"
+
+#. Source text: Congratulations, you've got a new match!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b457b
+msgid "PUSH_MESSAGE_MATCH_TICKER_TEXT"
+msgstr "Congratulations, you've got a new match!"
+
+#. Source text: New Message
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4570
+msgid "PUSH_MESSAGE_MESSAGE_TICKER_SHORT_TEXT"
+msgstr "New Message"
+
+#. Source text: %v sent you a message
+#: backend 完成.xlsx loco:58985eec52e1a16c538b456c
+msgid "PUSH_MESSAGE_MESSAGE_TICKER_TEXT"
+msgstr "%v sent you a message"
+
+#. Source text: %v has commented on your moment
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4577
+msgid "PUSH_MESSAGE_MOMENT_COMMENT_TICKER_TEXT"
+msgstr "%v has commented on your moment"
+
+#. Source text: New Moment
+#: loco:5a1fc889a39ff3c0118b4567
+msgid "PUSH_MESSAGE_MOMENT_MATCH_POST_TICKER_TEXT"
+msgstr "New Moment"
+
+#. Source text: Your match %v just posted a new moment! Check it out!
+#: loco:5a1fc7d7a39ff352118b4567
+msgid "PUSH_MESSAGE_MOMENT_MATCH_POST_VALUE_TEXT"
+msgstr "Your match %v just posted a new moment! Check it out!"
+
+#. Source text: Dear %v, in the first 24 hours with Tantan, you have liked %v people and %v people have liked you.
+#. 
+#. It’s actually quite easy for girls to get a match on Tantan! Based on our history data, if you sent out 5 likes, there are 90%%%% chances you’d get a match!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b45a0
+msgid "PUSH_MESSAGE_ONBOARDING_FEWSWIPES_FEMALE_MESSAGE"
+msgstr ""
+"Dear %v, in the first 24 hours with Tantan, you have liked %v people and %v "
+"people have liked you.\n"
+"\n"
+"It’s actually quite easy for girls to get a match on Tantan! Based on our "
+"history data, if you sent out 5 likes, there are 90%%%% chances you’d get a "
+"match!"
+
+#. Source text: Dear %v, in the first 24 hours with Tantan, you have liked %v people and %v people have liked you.
+#. 
+#. You’re almost there to get your first match! But you just need to be a little more patient. In Tantan an average boy gets a match for every 66 likes he sent. So keep swiping! You’re getting really close.
+#: backend 完成.xlsx loco:58985eec52e1a16c538b459d
+msgid "PUSH_MESSAGE_ONBOARDING_FEWSWIPES_MALE_MESSAGE"
+msgstr ""
+"Dear %v, in the first 24 hours with Tantan, you have liked %v people and %v "
+"people have liked you.\n"
+"\n"
+"You’re almost there to get your first match! But you just need to be a "
+"little more patient. In Tantan an average boy gets a match for every 66 "
+"likes he sent. So keep swiping! You’re getting really close."
+
+#. Source text: Dear %v, in the first 24 hours with Tantan, you have liked %v people and %v people have liked you.
+#. 
+#. It’s actually quite easy for girls to get a match on Tantan! Here are a few tips: update your profile picture to a perfect selfie. Complete your profile with more information, interests, and answers. Broaden your search settings for age and distance.You wouldn’t be far from getting a match!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b459f
+msgid "PUSH_MESSAGE_ONBOARDING_UNPOPULAR_FEMALE_MESSAGE"
+msgstr ""
+"Dear %v, in the first 24 hours with Tantan, you have liked %v people and %v "
+"people have liked you.\n"
+"\n"
+"It’s actually quite easy for girls to get a match on Tantan! Here are a few "
+"tips: update your profile picture to a perfect selfie. Complete your profile "
+"with more information, interests, and answers. Broaden your search settings "
+"for age and distance.You wouldn’t be far from getting a match!"
+
+#. Source text: Dear %v, in the first 24 hours with Tantan, you have liked %v people and %v people have liked you.
+#. 
+#. You’re almost there to get your first match! Here are a few tips: update your profile picture to one that showcases your lifestyle. Complete your profile with more information, interests and answers. Broaden your search settings for age and distance. These would highly increase your chances of matching!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b459e
+msgid "PUSH_MESSAGE_ONBOARDING_UNPOPULAR_MALE_MESSAGE"
+msgstr ""
+"Dear %v, in the first 24 hours with Tantan, you have liked %v people and %v "
+"people have liked you.\n"
+"\n"
+"You’re almost there to get your first match! Here are a few tips: update "
+"your profile picture to one that showcases your lifestyle. Complete your "
+"profile with more information, interests and answers. Broaden your search "
+"settings for age and distance. These would highly increase your chances of "
+"matching!"
+
+#. Source text: %v asked you a question
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4575
+msgid "PUSH_MESSAGE_QUESTION_MESSAGE_TICKER_TEXT"
+msgstr "%v asked you a question"
+
+#. Source text: [Question]
+#: backend 完成.xlsx loco:58985eec52e1a16c538b457a
+msgid "PUSH_MESSAGE_QUESTION_MESSAGE_VALUE_TEXT"
+msgstr "[Question]"
+
+#. Source text: 😄Actually boys around you look like this! Open Tantan to find them out.
+#: loco:588800dd52e1a111128b4568
+msgid "PUSH_MESSAGE_REMINDER_AFTER_CNY_FEMALE_NO_CITY_TICKER_TEXT"
+msgstr ""
+"😄Actually boys around you look like this! Open Tantan to find them out."
+
+#. Source text: 😄Actually boys around you in %s look like this! Open Tantan to find them out.
+#: loco:588696d252e1a1f36b8b456a
+msgid "PUSH_MESSAGE_REMINDER_AFTER_CNY_FEMALE_TICKER_TEXT"
+msgstr ""
+"😄Actually boys around you in %s look like this! Open Tantan to find them out."
+
+#. Source text: Tired with all those red packets? Time to check out some girls on Tantan!
+#: loco:5886968d52e1a1556c8b4567
+msgid "PUSH_MESSAGE_REMINDER_AFTER_CNY_MALE_TICKER_TEXT"
+msgstr ""
+"Tired with all those red packets? Time to check out some girls on Tantan!"
+
+#. Source text: Based on your Tantan usage, these are the boys we think will fit you best. Check them out!
+#: loco:588800cb52e1a1f4118b4567
+msgid "PUSH_MESSAGE_REMINDER_BEFORE_CNY_FEMALE_2017_TICKER_TEXT"
+msgstr ""
+"Based on your Tantan usage, these are the boys we think will fit you best. "
+"Check them out!"
+
+#. Source text: Based on your Tantan usage in 2016, these are the boys we think will fit you best. Check them out!
+#: loco:5886967e52e1a1db6b8b456b
+msgid "PUSH_MESSAGE_REMINDER_BEFORE_CNY_FEMALE_TICKER_TEXT"
+msgstr ""
+"Based on your Tantan usage in 2016, these are the boys we think will fit you "
+"best. Check them out!"
+
+#. Source text: Last chance to go home with a girlfriend during CNY. Open Tantan and swipe right!
+#: loco:5886966c52e1a1e36b8b456b
+msgid "PUSH_MESSAGE_REMINDER_BEFORE_CNY_MALE_TICKER_TEXT"
+msgstr ""
+"Last chance to go home with a girlfriend during CNY. Open Tantan and swipe "
+"right!"
+
+#. Source text: There are new people around you, find out who they are!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4581
+msgid "PUSH_MESSAGE_REMINDER_WITHOUT_LIKES_TICKER_TEXT"
+msgstr "There are new people around you, find out who they are!"
+
+#. Source text: New people around you
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4585
+msgid "PUSH_MESSAGE_REMINDER_WITHOUT_LIKES_TITLE_TEXT"
+msgstr "New people around you"
+
+#. Source text: Find out who they are!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4582
+msgid "PUSH_MESSAGE_REMINDER_WITHOUT_LIKES_VALUE_TEXT"
+msgstr "Find out who they are!"
+
+#. Source text: There are people nearby that liked you, find out who they are!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4580
+msgid "PUSH_MESSAGE_REMINDER_WITH_LIKES_TICKER_TEXT"
+msgstr "There are people nearby that liked you, find out who they are!"
+
+#. Source text: Someone liked you
+#: backend 完成.xlsx loco:57b2f7a314d725e4418b456f
+msgid "PUSH_MESSAGE_REMINDER_WITH_LIKES_TITLE_TEXT"
+msgstr "Someone liked you"
+
+#. Source text: Find out who!
+#: backend 完成.xlsx loco:57b2f7d114d7258d428b4575
+msgid "PUSH_MESSAGE_REMINDER_WITH_LIKES_VALUE_TEXT"
+msgstr "Find out who!"
+
+#. Source text: Someone is interested in having food with you!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b458f
+msgid "PUSH_MESSAGE_SCENARIO_FOOD_LIKE_TICKER_TEXT"
+msgstr "Someone is interested in having food with you!"
+
+#. Source text: Someone liked you
+#: backend 完成.xlsx loco:57ce8cf614d7253e268b4567
+msgid "PUSH_MESSAGE_SCENARIO_FOOD_LIKE_TITLE_TEXT"
+msgstr "Someone liked you"
+
+#. Source text: Find out who!
+#: backend 完成.xlsx loco:57ce8d3b14d725a1238b456c
+msgid "PUSH_MESSAGE_SCENARIO_FOOD_LIKE_VALUE_TEXT"
+msgstr "Find out who!"
+
+#. Source text: It's showtime! Someone is interested in watching a movie with you!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4590
+msgid "PUSH_MESSAGE_SCENARIO_MOVIE_LIKE_TICKER_TEXT"
+msgstr "It's showtime! Someone is interested in watching a movie with you!"
+
+#. Source text: Someone liked you
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4591
+msgid "PUSH_MESSAGE_SCENARIO_MOVIE_LIKE_TITLE_TEXT"
+msgstr "Someone liked you"
+
+#. Source text: Find out who!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4592
+msgid "PUSH_MESSAGE_SCENARIO_MOVIE_LIKE_VALUE_TEXT"
+msgstr "Find out who!"
+
+#. Source text: Get ready! Someone is interested in exercising with you!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b458e
+msgid "PUSH_MESSAGE_SCENARIO_SPORT_LIKE_TICKER_TEXT"
+msgstr "Get ready! Someone is interested in exercising with you!"
+
+#. Source text: Someone liked you
+#: backend 完成.xlsx loco:57ce8db814d72552268b4569
+msgid "PUSH_MESSAGE_SCENARIO_SPORT_LIKE_TITLE_TEXT"
+msgstr "Someone liked you"
+
+#. Source text: Find out who!
+#: backend 完成.xlsx loco:57ce8df014d725f9258b4569
+msgid "PUSH_MESSAGE_SCENARIO_SPORT_LIKE_VALUE_TEXT"
+msgstr "Find out who!"
+
+#. Source text: Crush notification
+#: backend 完成.xlsx loco:58985eec52e1a16c538b456d
+msgid "PUSH_MESSAGE_SECRET_LIKE_TICKER_SHORT_TEXT"
+msgstr "Crush notification"
+
+#. Source text: Someone you know has a crush on you! Find out who it is!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4567
+msgid "PUSH_MESSAGE_SECRET_LIKE_TICKER_TEXT"
+msgstr "Someone you know has a crush on you! Find out who it is!"
+
+#. Source text: You received a secret crush!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b456e
+msgid "PUSH_MESSAGE_SECRET_LIKE_TITLE_TEXT"
+msgstr "You received a secret crush!"
+
+#. Source text: Find out now
+#: backend 完成.xlsx loco:58985eec52e1a16c538b456f
+msgid "PUSH_MESSAGE_SECRET_LIKE_VALUE_TEXT"
+msgstr "Find out now"
+
+#. Source text: Secret Crush matched!
+#: backend 完成.xlsx loco:57b2eaba14d72573388b4568
+msgid "PUSH_MESSAGE_SECRET_MATCH_TICKER_SHORT_TEXT"
+msgstr "Secret Crush matched!"
+
+#. Source text: Amazing! A secret crush was made!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b456a
+msgid "PUSH_MESSAGE_SECRET_MATCH_TICKER_TEXT"
+msgstr "Amazing! A secret crush was made!"
+
+#. Source text: Secret Crush!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4596
+msgid "PUSH_MESSAGE_SECRET_MATCH_TITLE_TEXT"
+msgstr "Secret Crush!"
+
+#. Source text: Find out who
+#: backend 完成.xlsx loco:58985eec52e1a16c538b456b
+msgid "PUSH_MESSAGE_SECRET_MATCH_VALUE_TEXT"
+msgstr "Find out who"
+
+#. Source text: Congratulations!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b457d
+msgid "PUSH_MESSAGE_SINGLE_MATCH_TITLE_TEXT"
+msgstr "Congratulations!"
+
+#. Source text: You've got a new match
+#: backend 完成.xlsx loco:58985eec52e1a16c538b457e
+msgid "PUSH_MESSAGE_SINGLE_MATCH_VALUE_TEXT"
+msgstr "You've got a new match"
+
+#. Source text: %v sent a sticker to you
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4573
+msgid "PUSH_MESSAGE_STICKER_MESSAGE_TICKER_TEXT"
+msgstr "%v sent a sticker to you"
+
+#. Source text: [Sticker]
+#: backend 完成.xlsx loco:57b2f5cd14d7252a418b456e
+msgid "PUSH_MESSAGE_STICKER_MESSAGE_VALUE_TEXT"
+msgstr "[Sticker]"
+
+#. Source text: You invite friends have registered tantan, reward has been released!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b459a
+msgid "PUSH_MESSAGE_SUPERLIKE_INVITE_TICKER_TEXT"
+msgstr "You invite friends have registered tantan, reward has been released!"
+
+#. Source text: Get a friend registration reward
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4598
+msgid "PUSH_MESSAGE_SUPERLIKE_INVITE_TITLE_TEXT"
+msgstr "Get a friend registration reward"
+
+#. Source text: Some people around you Super Like you! Find out who they are now!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4599
+msgid "PUSH_MESSAGE_SUPERLIKE_RECEIVE_TICKER_TEXT"
+msgstr "Some people around you Super Like you! Find out who they are now!"
+
+#. Source text: Someone superliked you
+#: backend 完成.xlsx loco:58985eec52e1a16c538b459b
+msgid "PUSH_MESSAGE_SUPERLIKE_RECEIVE_TITLE_TEXT"
+msgstr "Someone superliked you"
+
+#. Source text: Somebody wants to know you! Could it be the one you are wating for?
+#: loco:59f182bda39ff3086a8b456a
+msgid "PUSH_MESSAGE_TBH_FRIEND_REQUEST_TICKER_TEXT"
+msgstr "Somebody wants to know you! Could it be the one you are wating for?"
+
+#. Source text: Oh, you are here!
+#: loco:5a179468820ee929508b4567
+msgid "PUSH_MESSAGE_TBH_FRIEND_REQUEST_TITLE_TEXT"
+msgstr "Oh, you are here!"
+
+#. Source text: Somebody sent you a gossip. Check it out!
+#: loco:5a179664820ee9db508b4567
+msgid "PUSH_MESSAGE_TBH_VOTE_RECEIVED_TICKER_TEXT"
+msgstr "Somebody sent you a gossip. Check it out!"
+
+#. Source text: You received a message!
+#: loco:59f6ce95a39ff371208b4568
+msgid "PUSH_MESSAGE_TBH_VOTE_RECEIVED_TITLE_TEXT"
+msgstr "You received a message!"
+
+#. Source text: %v sent you a video
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4576
+msgid "PUSH_MESSAGE_VIDEO_MESSAGE_TICKER_TEXT"
+msgstr "%v sent you a video"
+
+#. Source text: [Video]
+#: backend 完成.xlsx loco:57b2f56314d72511428b456b
+msgid "PUSH_MESSAGE_VIDEO_MESSAGE_VALUE_TEXT"
+msgstr "[Video]"
+
+#. Source text: I’ll answer first
+#: backend 完成.xlsx loco:57b40a5814d725d8778b4567
+msgid "QUESTION_MESSAGE_FOOTER_CLASSIC_TEXT"
+msgstr "I’ll answer first"
+
+#. Source text: I’ll answer first
+#: backend 完成.xlsx loco:58985eec52e1a16c538b458c
+msgid "QUESTION_MESSAGE_FOOTER_INTIMATE_TEXT"
+msgstr "I’ll answer first"
+
+#. Source text: Let’s play a mild truth or dare question:
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4583
+msgid "QUESTION_MESSAGE_HEADER_CLASSIC_TEXT"
+msgstr "Let’s play a mild truth or dare question:"
+
+#. Source text: Let’s play an intimate truth or dare question:
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4584
+msgid "QUESTION_MESSAGE_HEADER_INTIMATE_TEXT"
+msgstr "Let’s play an intimate truth or dare question:"
+
+#. Source text: [This message was recalled]
+#: backend 完成.xlsx loco:58985f2c52e1a173538b4567
+msgid "RECALLED_MESSAGE_TEXT"
+msgstr "[This message was recalled]"
+
+#. Source text: Your confirmation code is: {{verification_code}} (valid for {{verification_code_ttl}} minutes)
+#: backend 完成.xlsx loco:58985eec52e1a16c538b458d
+msgid "SMS_ACCOUNT_CHANGE_PHONE"
+msgstr ""
+"Your confirmation code is: {{verification_code}} (valid for "
+"{{verification_code_ttl}} minutes)"
+
+#. Source text: Your confirmation code is: {{verification_code}} (valid for {{verification_code_ttl}} minutes)
+#: backend 完成.xlsx loco:57c3e8d414d725c0768b4567
+msgid "SMS_ACCOUNT_RESET_PASSWORD"
+msgstr ""
+"Your confirmation code is: {{verification_code}} (valid for "
+"{{verification_code_ttl}} minutes)"
+
+#. Source text: Your confirmation code is: {{verification_code}} (valid for {{verification_code_ttl}} minutes)
+#: backend 完成.xlsx loco:57c3e85a14d725d7768b4567
+msgid "SMS_ACCOUNT_SIGN_IN_VERIFICATION"
+msgstr ""
+"Your confirmation code is: {{verification_code}} (valid for "
+"{{verification_code_ttl}} minutes)"
+
+#. Source text: Your confirmation code is: {{verification_code}} (valid for {{verification_code_ttl}} minutes)
+#: backend 完成.xlsx loco:57c3e62514d725b1728b4574
+msgid "SMS_ACCOUNT_SIGN_UP_VERIFICATION"
+msgstr ""
+"Your confirmation code is: {{verification_code}} (valid for "
+"{{verification_code_ttl}} minutes)"
+
+#. Source text: Hi, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4597
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITHOUT_NAME"
+msgstr ""
+"Hi, someone has a crush on you from Tantan! Download Tantan to find who it "
+"is: https://d.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com
+#: backend 完成.xlsx loco:582024e252e1a116718b456d
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://d.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://s.tantanapp.com
+#: backend 完成.xlsx loco:5833e86352e1a1a4658b4573
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V10"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://s.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://s.tantanapp.com
+#: backend 完成.xlsx loco:5833e89a52e1a1a4658b4576
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V11"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://s.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://s.tantanapp.com
+#: backend 完成.xlsx loco:585a3df452e1a168568b456a
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V12"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://s.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://s.tantanapp.com
+#: backend 完成.xlsx loco:585a3e7252e1a168568b456c
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V13"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://s.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://s.tantanapp.com
+#: backend.xlsx loco:585a3ee952e1a162568b456a
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V14"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://s.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com
+#: backend.xlsx loco:58639b5852e1a109658b4567
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V20"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://d.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com
+#: backend 完成.xlsx loco:5820256152e1a11c718b4568
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V3"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://d.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com
+#: backend 完成.xlsx loco:5820261452e1a151718b4569
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V4"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://d.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com
+#: backend 完成.xlsx loco:58203bcc52e1a12f738b4569
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V5"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://d.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com
+#: backend 完成.xlsx loco:58203c0d52e1a147738b4568
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V6"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://d.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com
+#: backend 完成.xlsx loco:58203c8652e1a1b7738b4567
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V7"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://d.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com
+#: backend 完成.xlsx loco:582ab05952e1a11c378b4569
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V8"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://d.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com
+#: backend 完成.xlsx loco:582ab0af52e1a1d6368b456b
+msgid "SMS_SECRET_CRUSH_PROMOTION_WITH_NAME_V9"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://d.tantanapp.com"
+
+#. Source text: Hi, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com
+#: backend 完成.xlsx loco:57c3ea2914d72599778b456e
+msgid "SMS_SECRET_CRUSH_WITHOUT_NAME"
+msgstr ""
+"Hi, someone has a crush on you from Tantan! Download Tantan to find who it "
+"is: https://d.tantanapp.com"
+
+#. Source text: Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find who it is: https://d.tantanapp.com
+#: backend 完成.xlsx loco:57c3e9b814d72536778b4568
+msgid "SMS_SECRET_CRUSH_WITH_NAME"
+msgstr ""
+"Hi {{name}}, someone has a crush on you from Tantan! Download Tantan to find "
+"who it is: https://d.tantanapp.com"
+
+#. Source text: Hi {{first_name}}, also try out our new app Tantan, a fun and easy way to meet people around you! https://d.tantanapp.com
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4594
+msgid "SMS_TANTAN_PROMOTION"
+msgstr ""
+"Hi {{first_name}}, also try out our new app Tantan, a fun and easy way to "
+"meet people around you! https://d.tantanapp.com"
+
+#. Source text: Feel free to give us your input and/or ask us any question right here in the chat and we will try our best to get back to you asap!
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4593
+msgid "TEAM_ACCOUNT_DESCRIPTION"
+msgstr ""
+"Feel free to give us your input and/or ask us any question right here in the "
+"chat and we will try our best to get back to you asap!"
+
+#. Source text: Team account
+#: backend 完成.xlsx loco:58985eec52e1a16c538b4595
+msgid "TEAM_ACCOUNT_NAME"
+msgstr "Team account"

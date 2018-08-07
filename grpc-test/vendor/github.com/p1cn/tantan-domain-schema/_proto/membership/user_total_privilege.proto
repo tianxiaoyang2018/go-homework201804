@@ -1,0 +1,68 @@
+syntax = "proto3";
+
+package membership;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/membership";
+
+
+// VIP 2 - See
+message SeeLimit {
+	string 	Identifier	= 1;
+	int32	Total		= 2;
+	int32	Remaining	= 3;
+	int32	Reset		= 4;
+}
+
+// VIP 2 - Boost
+// BoostLimits 对boost的数量限制
+// `multiplier` 和 `duration` 唯一确认一种boost
+message BoostLimit {
+	string 	Identifier	= 1;
+	int32	Multiplier	= 2;
+	int32	Duration	= 3;
+	int32	Remaining	= 4;
+	int32	Total		= 5;
+	int32	Reset		= 6;
+}
+
+message BoostBadge {
+	string          Identifier  = 1;
+	int32           Multiplier  = 2;
+	int32           Duration    = 3;
+	int32           Total       = 4;
+	int32           Remaining   = 5;
+	int64           ExpiresTime = 6;
+}
+
+message WhoLikedMe {
+	string 	Identifier	= 1;
+	int32	Total		= 2;
+	int32	Remaining	= 3;
+	int32	Reset		= 4;
+}
+
+// VIP 2 - UserTotalPrivilege
+message UserTotalPrivilege {
+	string	Id				= 1;
+	string	UserID			= 2;
+	string 	PrivilegeType	= 3;
+	string	Identifier		= 4;
+	UserTotalPrivilegeContent	Content = 5;
+	int64	BeginTime		= 6;
+	int64	EndTime			= 7;
+	int32	ResetPeriod		= 8;
+	int32	Total			= 9;
+	int32	Used			= 10;
+	int32	Remaining		= 11;
+	int32	ResetSecond		= 12;
+	int64	LastResetTime	= 13;
+	string	AttributionID	= 14;
+	string	AttributionType = 15;
+	int64	UpdatedTime		= 16;
+	int64	CreatedTime		= 17;
+}
+
+message UserTotalPrivilegeContent {
+	int32	Multiplier		= 1;
+	int32	Duration		= 2;
+}

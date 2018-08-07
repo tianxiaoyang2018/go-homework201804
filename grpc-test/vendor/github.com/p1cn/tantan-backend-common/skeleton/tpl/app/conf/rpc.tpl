@@ -1,0 +1,5 @@
+{
+    "Grpc" : {
+        "Listen" : ":{{.RPC.Listen}}"
+   }
+}

@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package chat;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/chat";
+
+message PredefinedMessage {
+    string id = 1;
+    string key = 2;
+    string language = 3;
+    
+    string text = 4;
+    
+    string pictureIdentifier = 5;
+    int64 pictureWidth = 6;
+    int64 pictureHeight = 7;
+
+    string videoIdentifier = 8;
+    int64 videoWidth = 9;
+    int64 videoHeight = 10;
+    float videoDuration = 11;
+
+    string audioIdentifier = 12;
+    float audioDuration = 13;
+
+    int64 CreatedTime   =14;
+	int64 UpdatedTime   =15;
+
+}

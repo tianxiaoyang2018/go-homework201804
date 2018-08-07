@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/user";
+
+enum UserGenderEnum {
+    male = 0;
+    female = 1;
+    both = 3;
+}
+
+enum UserStatusEnum {
+    default = 0;
+    hidden = 1;
+    banned = 2;
+    pending = 3;
+    inactive = 4;
+    inappropriate = 5;
+    inactivated = 6;
+}
+
+enum UserIntentEnum {
+    friend = 0;
+    date = 1;
+    fate = 2;
+    relationship = 3;
+}

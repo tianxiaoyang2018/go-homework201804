@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package common;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/common";
+
+message Context {
+    string traceID = 1;
+    string parentSpanID = 2;
+    string spanID = 3;
+    float sampled = 4;
+
+    string deviceId = 5;
+    string service = 6;
+    repeated string serviceTrace = 7;
+    repeated ContextBaggage baggages = 8;
+    bool debug = 9;
+    map<string, string> ext = 10;
+}
+
+message ContextBaggage {    
+    string key = 1;
+    string value  = 2;
+}

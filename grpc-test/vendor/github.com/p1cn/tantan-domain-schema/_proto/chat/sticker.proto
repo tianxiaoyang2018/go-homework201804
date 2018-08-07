@@ -1,0 +1,73 @@
+syntax = "proto3";
+
+package chat;
+
+import "chat/media.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/chat";
+
+message Sticker {
+
+    string id = 1;
+    string name = 2;
+    string Identifier = 3;
+    
+    string mainPicURL = 4;
+    int32 mainPicWidth = 5;
+    int32 mainPicHeight = 6;
+    string mainPicFormat = 7;
+
+    string thumbPicURL = 8;
+    int32 thumbPicWidth = 10;
+    int32 thumbPicHeight = 11;
+    string thumbPicFormat = 12;
+
+    string source = 13;
+    string userId = 14;
+    string status = 15;
+    int64 createdTime = 16;
+}
+
+message Package  {
+	string id = 1;          
+	string name  = 2;
+	string description = 3;
+	repeated Media pictures = 4;
+	repeated string stickerIds = 5;
+	string packageType = 6;
+	int64 createdTime = 7;
+	bool activated  = 8;
+}
+
+message Shop {
+	string id = 1;          
+	string name = 2;
+	string identifier = 3;
+	repeated string bundleIds  = 4;
+	repeated string campaignIds = 5;
+}
+
+message Bundle {
+	string id = 1;           
+	string name = 2;         
+	double price = 3;       
+	string currency = 4;     
+	string description  = 5;
+	string bundleStatus = 6;
+	repeated Media Pictures = 7;
+	repeated string PackageIds = 8;
+	int64 createdTime = 9;
+}
+
+message Campaign {
+	string id  = 1;            
+	string name = 2;           
+	string description = 3;  
+	string identifier = 4;
+	string code = 5;
+	string campaignStatus = 6;
+	repeated string bundleIds = 7;
+	repeated string itemIds = 8;
+	string status  = 9;
+	int64 createdTime = 10;
+}

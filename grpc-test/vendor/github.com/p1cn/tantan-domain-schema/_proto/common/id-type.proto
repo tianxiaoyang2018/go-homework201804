@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package common;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/common";
+
+message IdType {
+    string id = 1;
+    enum DomainObjectType {
+        USER = 0;
+        MESSAGE = 1;
+        COMMENT = 2;
+        MOMENT = 3;
+        MOMENT_LIKE = 4;
+        MOMENT_COMMENT = 5;
+        STICKER = 6;
+        QUESTION = 7;
+    }
+    DomainObjectType type = 2;
+}

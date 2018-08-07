@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package common;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/common";
+
+enum FriendshipState {
+    FRIENDSHIP_STATE_DEFAULT = 0;
+    FRIENDSHIP_STATE_INCOMING = 1;
+    FRIENDSHIP_STATE_OUTGOING = 2;
+    FRIENDSHIP_STATE_ACCEPTED = 3;
+}
+
+message Friendship {
+    string userID = 1;
+    string otherUserID = 2;
+    FriendshipState state = 3;
+    FriendshipState otherState = 4;
+    int64 createdTime = 5;
+}

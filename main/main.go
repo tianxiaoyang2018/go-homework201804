@@ -11,3 +11,4 @@ func main() {
 	arr := []int{1,2,3}
 	fmt.Printf("我擦%+v",arr)
 }
+// 握日 握日啊

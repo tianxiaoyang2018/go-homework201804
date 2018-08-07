@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package common;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/common";
+
+message Media {
+    string id = 1;
+    int32 order = 2;
+    enum MediaType {
+        PICTURE = 0;
+        AUDIO = 1;
+        VIDEO = 2;
+    }
+    MediaType mediaType = 3;
+    int64 createdTime = 4;
+
+    Video video = 5;
+    Audio audio = 6;
+    Picture picture = 7;
+
+    MediaStatusEnum status = 8;
+}
+
+message Video {
+    string identifier = 1;
+    int32 width = 2;
+    int32 height = 3;
+    double duration = 4;
+    Picture thumbnail = 5;
+}
+
+message Audio {
+    string identifier = 1;
+    double duration = 4;
+    Picture thumbnail = 5;
+}
+
+message Picture {
+    string identifier = 1;
+    int32 width = 2;
+    int32 height = 3;
+    uint64 dhash = 4;
+}
+
+enum MediaStatusEnum {
+    pending = 0;
+    default = 1;
+}

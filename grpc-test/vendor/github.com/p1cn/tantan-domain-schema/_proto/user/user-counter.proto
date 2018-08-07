@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/user";
+
+message UserCounter {
+    string userId            = 1;
+    string gender            = 2;
+    int64 receivedLikes      = 3;
+    int64 receivedDislikes   = 4;
+    int64 receivedBlocks     = 5;
+    int64 givenLikes         = 6;
+    int64 givenDislikes      = 7;
+    int64 givenBlocks        = 8;
+    int64 matches            = 9;
+    int64 likeRating         = 10;
+    double popularity        = 11;
+    int64 totalCrushes       = 12;
+    int64 givenCrushes       = 13;
+    int64 receivedCrushes    = 14;
+    int64 moments            = 15;
+    int64 unreadActivities   = 16;
+    int64 givenSuperLikes    = 17;
+    int64 givenUndos         = 18;
+    int64 receivedSuperLikes = 19;
+
+    int64 lastResetTime = 20;
+    int64 lastShareTime = 21;
+
+    int64 likesWithinLimit = 22;
+    int64 totalLikesLimit  = 23;
+    int64 remainingLikes   = 24;
+
+    int64 superLikeReward      = 25;
+    int64 superLikeBuy         = 26;
+    int64 superLikeRemaining   = 27;
+    int64 superLikeCount       = 28;
+    int64 superLikeQuota       = 29;
+    int64 superLikeDailyQuota  = 30;
+
+    int64 undoReward    = 31;
+    int64 undoBuy       = 32;
+    int64 undoRemaining = 33;
+    int64 undoCount     = 34;
+    int64 undoQuota     = 35;
+}

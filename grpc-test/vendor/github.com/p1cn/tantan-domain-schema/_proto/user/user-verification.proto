@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+package user;
+
+import "common/media.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/user";
+
+// --user verification--
+enum VerificationType {
+    VERIFICATION_TYPE_DEFAULT = 0;
+    VERIFICATION_TYPE_STUDENT = 1;
+    VERIFICATION_TYPE_STAFF = 2;
+}
+
+enum VerificationStatus {
+    VERIFICATION_STATUS_DEFAULT = 0;
+    VERIFICATION_STATUS_PENDING = 1;
+    VERIFICATION_STATUS_VERIFIED = 2;
+    VERIFICATION_STATUS_REJECTED = 3;
+    VERIFICATION_STATUS_PREPENDING = 4;
+    VERIFICATION_STATUS_PREVERIFIED = 5;
+}
+
+enum VerificationRejectionReason {
+    VERIFICATION_REJECTION_REASON_SCHOOL = 0;
+    VERIFICATION_REJECTION_REASON_STARTTIME = 1;
+    VERIFICATION_REJECTION_REASON_IDCARDCOVERPICTURE = 2;
+    VERIFICATION_REJECTION_REASON_IDCARDBACKPICTURE = 3;
+}
+
+message VerificationStudies {
+    string schoolID = 1;
+    string schoolName = 2;
+    repeated common.Picture pictures = 3;
+    int64 startTime = 4;
+}
+
+message UserVerification {
+    string ID = 1;
+    string userID = 2;
+    VerificationType verifiedType = 3;
+    VerificationStatus status = 4;
+    repeated VerificationRejectionReason rejectionReasons = 5;
+    VerificationStudies studies = 6;
+    int64 applyTime = 7;
+    string rejectionPushValue = 8;
+}
+
+// --verified user--
+enum AuditType {
+    AUDIT_TYPE_MANUAL = 0;
+    AUDIT_TYPE_AUTOMATIC = 1;
+}
+
+message VerifiedUser {
+    string ID = 1;
+    string userID = 2;
+    VerificationType verifiedType = 3;
+    string organizationID = 4;
+    string organizationName = 5;
+    int64 expiresTime = 6;
+    AuditType auditType = 7;
+    bool hideOrganizationName = 8;
+}
+
+// -- user school validation --
+message SchoolValidation {
+    string ID = 1;
+    string userID = 2;
+    int32 times = 3;
+}
+
+// -- user predicated school --
+message PredictedSchool {
+    string ID = 1;
+    string userID = 2;
+    repeated string schoolIDs = 3;
+}

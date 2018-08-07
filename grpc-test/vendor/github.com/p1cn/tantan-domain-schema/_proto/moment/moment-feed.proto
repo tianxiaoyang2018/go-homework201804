@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package moment;
+import "moment/moment-common.proto";
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/moment";
+
+message MomentFeed {
+    string id = 1;
+    string userId = 2;
+    repeated string userIds = 3;
+    string momentId = 4;
+    string momentUserId = 5;
+    int64 createdTime = 6;
+    MomentStatus status = 7;
+}
+

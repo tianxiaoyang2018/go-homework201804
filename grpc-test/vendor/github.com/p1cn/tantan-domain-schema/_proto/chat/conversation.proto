@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package chat;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/chat";
+
+message Conversation {
+    string id = 1;
+    string userId = 2;
+    string otherUserId = 3;
+
+    string readUntilId = 4;
+    string  clearedUntilId = 5;
+
+    bool acceptIntimateQuestion = 6;
+
+    int64 clearedTime = 7;
+    int64 updatedTime = 8;
+    int64 createdTime = 9;
+
+    ConversationStatus status = 10;
+
+    int64 otherUserLastActivity = 11;
+    int64 latestMessageTime = 12;
+    repeated string messageIds = 13;
+    string type = 14;
+    int64 unreadMessages = 15;
+    int64 messageCount = 16;
+
+}
+
+enum ConversationStatus {
+    CONVERSATION_STATUS_DEFAULT = 0;
+    CONVERSATION_STATUS_DELETED  = 1;
+    CONVERSATION_STATUS_INACTIVATED = 2;
+    CONVERSATION_STATUS_HIDDEN = 3;
+}
+

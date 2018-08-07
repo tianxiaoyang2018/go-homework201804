@@ -1,0 +1,49 @@
+{
+	"Log": {
+		"Output": [
+			"syslog",
+			"stderr"
+		],
+		"Syslog": {
+			"Address": "127.0.0.1:514",
+			"Facility": "local6",
+			"Protocol": "udp"
+		},
+		"Level": "debug",
+		"Flags": [
+			"file",
+			"date",
+			"level"
+		]
+	},
+	"Debug": {
+		"Listen": ":21228",
+		"Testing": true
+	},
+	"Trace": {
+		"Enable": true,
+		"EnableParts": [
+			"logs",
+			"tags"
+		],
+		"Format": "text",
+		"Log": {
+			"Output": [
+				"rotatefile", "syslog"
+			],
+			"Level": "info",
+			"Flags": [],
+			"RotateFile": {
+				"BaseName": "/tmp/log/tantan-push-dcl-trace-%s.log",
+				"When": "minute",
+				"Interval": 30,
+				"BufferSize": 10
+			},
+			"Syslog": {
+				"Address": "192.168.4.5:5140",
+				"Facility": "local7",
+				"Protocol": "udp"
+			}
+		}
+	}
+}

@@ -1,0 +1,165 @@
+syntax = "proto3";
+
+package membership;
+
+import "membership/membership.proto";
+// import "domain/wrappers.proto";
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/membership";
+
+service MembershipService {
+    rpc FindUserPrivilegesByUserIds(FindUserPrivilegesByUserIdsRequest) returns (UserPrivilegesReply) {}
+
+    // rpc UpsertUserPrivilegesByUserIds(UpdateUserPrivilegeRequest) returns (UserPrivilegesReply) {}
+
+    rpc UpdateUserProductPrivileges(UpdateUserProductPrivilegeRequest) returns (ProductPrivilegesReply) {}
+
+    rpc RevokeUserPrivilege(RevokeUserPrivilegeRequest) returns (RevokeUserPrivilegeReply) {}
+
+    // rpc UpdateProductPrivileges(ctx context.Context, userID string, privileges *domain.ProductPrivileges, expire int64) (*domain.ProductPrivileges, error)
+
+    rpc TmUpsertUserPrivilegesByUserIds(UpdateUserPrivilegeRequest) returns (UserPrivilegeReply) {}
+
+    rpc BuildUpdatePrivilegesTransaction(PrivilegesRequest) returns (TmTecTranReply) {};
+
+    rpc UpdateProductPrivileges(PrivilegesRequest) returns (TmTecTranReply) {};
+
+    
+    // User Total Privilege
+    // rpc GetWhoLikedMe(GetWhoLikedMeRequest) returns (GetWhoLikedMeReply) {};
+
+    // rpc GetBoostLimit(GetBoostLimitRequest) returns (GetBoostLimitReply) {};
+
+    // rpc GiveBoostOnceByItemID(GiveBoostOnceByItemIDRequest) returns (GiveBoostOnceByItemIDReply) {};
+
+    // rpc FindUserTotalPrivilegeByAttribution(FindUserTotalPrivilegeByAttributionRequest) returns (FindUserTotalPrivilegeByAttributionReply) {};
+
+}
+
+message RevokeUserPrivilegeRequest {
+    string          uid = 1;
+}
+
+message RevokeUserPrivilegeReply {
+    CODE           code    = 1;
+
+    enum CODE {
+        SuccCode				= 0;
+        UnknownErrCode			= -100;
+    }
+}
+
+// message GiveBoostOnceByItemIDRequest {
+//     string      userID      = 1;
+//     string      itemID      = 2;
+// }
+
+// message GiveBoostOnceByItemIDReply {
+//     repeated UserTotalPrivilege UserTotalPrivilege = 1;
+// }
+
+// message FindUserTotalPrivilegeByAttributionRequest {
+//     string      userID          = 1;
+//     string      attributionID   = 2;
+//     string      attributionType = 3;
+// }
+
+// message FindUserTotalPrivilegeByAttributionReply {
+//     repeated UserTotalPrivilege UserTotalPrivilege = 1;
+// }
+
+// message GetBoostLimitRequest {
+//     string          userID  = 1;
+// }
+
+// message GetBoostLimitReply {
+//     repeated BoostLimit boostLimit = 1;
+// }
+
+// message GetWhoLikedMeRequest {
+//     string          userID  = 1;
+// }
+
+// message GetWhoLikedMeReply {
+//     string 	Identifier	= 1;
+// 	int32	Total		= 2;
+// 	int32	Remaining	= 3;
+// 	int32	Reset		= 4;
+// }
+
+message UpdateUserProductPrivilegeRequest {
+    string              userID  = 1;
+    ProductPrivileges   privileges = 2;
+    int64               expire  = 3;
+}
+
+message ProductPrivilegesReply {
+    ProductPrivileges privileges = 1;
+}
+
+message UserPrivilegesReply {
+    repeated UserPrivilege userPrivilege = 1;
+}
+
+message UserPrivilegeReply {
+    UserPrivilege userPrivilege = 1;
+}
+
+message FindUserPrivilegesByUserIdsRequest {
+    FindUserPrivilegesByUserIdsParams params = 1;
+}
+
+message FindUserPrivilegesByUserIdsParams {
+    repeated string ids = 1;
+}
+
+message OrderRequest {
+    Order    order = 2;
+    // OrderParams params = 2;
+}
+
+message PrivilegesRequest {
+    Privileges    privilege = 2;
+    // OrderParams params = 2;
+}
+
+message OrderParams {
+    Order    order = 1;
+}
+
+// message TmTecTranReply {
+//     repeated domain.TmTecTran tmTecTran = 1;
+// }
+
+message TmTecTranReply {
+    CODE           code    = 1;
+
+    enum CODE {
+        SuccCode				= 0;
+        UnknownErrCode			= -100;
+        ErrClosedCode			= -101;
+        ErrNotCompleteCode		= -102;
+        ErrAlreadyAcceptedCode	= -103;
+        ErrCannotGetLockCode	= -104;
+    }
+}
+
+message UpdateUserPrivilegeRequest {
+    UserPrivilegeUpdate userPrivilege = 2;
+
+    // UpdateMembershipParams params = 2;
+}
+
+message UpdateUserPrivilegeParams {
+    UserPrivilegeUpdate userPrivilege = 1;
+}
+
+message InvalidateTokenRequest {
+    InvalidateTokenParams params = 1;
+}
+
+message InvalidateTokenParams {
+    string token = 1;
+}
+
+message InvalidateTokenReply {}

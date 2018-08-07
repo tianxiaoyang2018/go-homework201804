@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package relationship;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/relationship";
+
+message Block {
+    string userId = 1;
+    string otherUserId = 2;
+    int64 createdTime = 3; //纳秒级别？
+}

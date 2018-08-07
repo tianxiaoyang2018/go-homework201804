@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package common;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/common";
+
+message ScenarioUserCounter {
+    string userId = 1;
+    ScenarioCategory category = 2;
+    repeated string scenarioIds = 3;
+    int64 scenarioExpiresTime = 4;
+    int32 scenarioReceivedLikes = 5;
+}
+
+enum ScenarioCategory {
+    SCENARIO_CATEGORY_FOOD = 0;
+    SCENARIO_CATEGORY_SPORT = 1;
+    SCENARIO_CATEGORY_MOVIE = 2;
+    SCENARIO_CATEGORY_MISC = 3;
+}
+

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package chat;
+
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/chat";
+
+message ChatCounters {
+    string ownerId = 1;
+    ChatCountersConversations conversations = 2;
+    ChatCountersMessages messages = 3;
+}
+
+message ChatCountersConversations {
+    int32 total = 1;
+    int32 unread = 2;
+    int32 unseen = 3;
+}
+
+message ChatCountersMessages {
+    int32 unread = 1;
+}

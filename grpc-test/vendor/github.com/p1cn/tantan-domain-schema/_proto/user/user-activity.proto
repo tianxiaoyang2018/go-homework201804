@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "github.com/p1cn/tantan-domain-schema/golang/user";
+
+message UserActivity {
+    string userID = 1;
+    int64 timestamp = 2;
+    GeoLocation location = 3;
+    Region region = 4;
+    int32 durationSecond = 5;
+    bool firstTime = 6;
+}
+
+message GeoLocation {
+    double longitude = 1;
+    double latitude = 2;
+}
+
+message Region {
+    Translation country = 1;
+    Translation province = 2;
+    Translation city = 3;
+    Translation district = 4;
+    string countryID = 5;
+    string provinceID = 6;
+    string cityID = 7;
+    string districtID = 8;
+}
+
+message Translation {
+    string name = 1;
+    string en = 2;
+    string zh = 3;
+    string ko = 4;
+    string ja = 5;
+}

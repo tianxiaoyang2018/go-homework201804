@@ -1,0 +1,16 @@
+AbbServiceName: User
+AppName: user-service
+DebugPort: 20225
+Cache: true
+MQ: true
+EventLog:    true    
+HTTP:
+  Listen: 20224
+Deps:
+  - Dep:
+    AbbServiceName: Chat
+  - Dep:
+    AbbServiceName: User
+RPC:
+  AbbName: User
+  Listen: 20222
