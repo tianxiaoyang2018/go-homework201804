@@ -1,15 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+	"strings"
+)
 
-type User struct {
-	Id   int    `json:"id"`
-	Name string `json:"name"`
+func test() (string, error) {
+	return "abc", errors.New("123")
 }
-
+var err1 = errors.New("123 ")
 func main() {
-	arr := []int{1,2,3}
-	fmt.Printf("我擦%+v",arr)
+	var err error
+	str, err := test()
+	fmt.Println(str, err)
+	fmt.Println(strings.TrimSpace(err1.Error()))
+	if err.Error() == "123" {
+		fmt.Println("成功")
+	}
+	fmt.Println(strings.Contains("Conflict ","Conflict"))
 }
-// 握日 握日啊
-// 再来啊
