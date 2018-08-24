@@ -1,22 +1,12 @@
 package main
 
-import (
-	"errors"
-	"fmt"
-	"strings"
-)
+import "fmt"
 
-func test() (string, error) {
-	return "abc", errors.New("123")
-}
-var err1 = errors.New("123 ")
 func main() {
-	var err error
-	str, err := test()
-	fmt.Println(str, err)
-	fmt.Println(strings.TrimSpace(err1.Error()))
-	if err.Error() == "123" {
-		fmt.Println("成功")
+	arr := []string{"abc","def"}
+	for _, str := range arr {
+		str = "我"
+		fmt.Println(str)
 	}
-	fmt.Println(strings.Contains("Conflict ","Conflict"))
+	fmt.Println(arr)
 }
