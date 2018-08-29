@@ -1,12 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"time"
+	"fmt"
+)
 
 func main() {
-	arr := []string{"abc","def"}
-	for _, str := range arr {
-		str = "我"
-		fmt.Println(str)
-	}
-	fmt.Println(arr)
+	var timestamp int64 = 123
+	var time time.Time = time.Unix(timestamp, 0)
+	t := &time
+	fmt.Println(*t)
 }
