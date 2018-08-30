@@ -1,15 +1,13 @@
 package main
 
-import "fmt"
-
-type User struct {
-	Id   int    `json:"id"`
-	Name string `json:"name"`
-}
+import (
+	"time"
+	"fmt"
+)
 
 func main() {
-	arr := []int{1,2,3}
-	fmt.Printf("我擦%+v",arr)
+	var timestamp int64 = 123
+	var time time.Time = time.Unix(timestamp, 0)
+	t := &time
+	fmt.Println(*t)
 }
-// 握日 握日啊
-// 再来啊

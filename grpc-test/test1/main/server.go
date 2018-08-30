@@ -1,22 +1,21 @@
 package main
 
-
 // server.go
 
 import (
 	"log"
 	"net"
 
+	pb "github.com/tianxiaoyang2018/go-test/grpc-test/test1"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
-	pb "github.com/tianxiaoyang2018/go-test/grpc-test/test1"
 )
 
 const (
 	port = ":50051"
 )
 
-type server struct {}
+type server struct{}
 
 func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
 	return &pb.HelloReply{Message: "Hello " + in.Name}, nil
