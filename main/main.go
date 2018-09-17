@@ -11,3 +11,6 @@ func main() {
 	t := &time
 	fmt.Println(*t)
 }
+func Test() {
+	fmt.Println("123")
+}
