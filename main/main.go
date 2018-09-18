@@ -1,15 +1,13 @@
 package main
 
 import (
-	"time"
-	"fmt"
+"fmt"
+	"unicode/utf8"
 )
 
 func main() {
-	var timestamp int64 = 123
-	var time time.Time = time.Unix(timestamp, 0)
-	t := &time
-	fmt.Println(*t)
+	fmt.Println(utf8.RuneCountInString(""))
+
 }
 func Test() {
 	fmt.Println("123")
